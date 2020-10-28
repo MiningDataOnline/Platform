@@ -1,7 +1,7 @@
 <?php
 // connect to database
 $path = $_SERVER['DOCUMENT_ROOT'];
-$path .= "/private/db_1_conn.php";
+$path .= "/private/db_1_start_conn.php";
 require("$path");
 ?>
 
