@@ -8,13 +8,6 @@
 </html>
 
 
-<script>
-$(document).ready(function(){
-    $('select').formSelect();
-  });
-</script>
-
-
 <?php
 // close db_1 connection started in the header
 $conn->close();
