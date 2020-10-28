@@ -36,11 +36,11 @@ require("$path");
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 		<title>MinindDataOnline</title>
-    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100&display=swap" rel="stylesheet">		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 		<link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>	
+    		<link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100&display=swap" rel="stylesheet">		
 
 		<style>
 			body {
