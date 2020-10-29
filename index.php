@@ -1,19 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-<link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100&display=swap" rel="stylesheet">
-	
-	<style>
-body {
-    font-family: 'MuseoModerno', cursive;font-size: 22px;
-	background-color: #263238;	
-	}
-</style>
-</head>
-<body>
+<?php
+$path = $_SERVER['DOCUMENT_ROOT'];
+$path .= "/code/includes/header.php";
+require_once("$path"); 
+?>
 
-<center><h1 color="white">MDO</h1></center>
-<center><font >PLATFORM</font></center>
 
-</body>
-</html>
+ <!--Embed logo stored in dropbox-->
+ <center><img src="https://www.dropbox.com/s/ipzgo08y589xvsu/Screenshot%20from%202020-10-29%2000_05_07%281%29.png?raw=1" height="40%" width="40%"></center>
+
+
+<?php
+$path = $_SERVER['DOCUMENT_ROOT'];
+$path .= "/code/includes/footer.php";
+require_once("$path"); 
+?>
