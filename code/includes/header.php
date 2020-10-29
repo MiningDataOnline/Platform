@@ -1,7 +1,7 @@
 <?php
 // connect to database
 $path = $_SERVER['DOCUMENT_ROOT'];
-$path .= "/db_connections/db_1_start_conn.php";
+$path .= "/db_conn/db_1_start_conn.php";
 require("$path");
 ?>
 
