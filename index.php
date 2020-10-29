@@ -5,7 +5,6 @@ $path .= "/code/includes/header.php";
 require_once("$path"); 
 ?>
 
-hkjhlkh
 
 
  <!--Embed logo stored in dropbox-->
