@@ -14,13 +14,13 @@
 			if($_SESSION["logedin"] == "yes"){
 			?>
 			<li><font size="2" color="grey">User: </font><font size="2" color="grey"><?php echo $user?></font></li>
-			<li><a href="/user_account/account.php" target='_parent'><font size="2" color="grey">My Account</font></a></li>
-			<li><a href="/user_account/sign_out.php" target='_parent'><font size="2" color="grey">Sign Out</font></a></li>
+			<li><a href="/user_account/account.php" target='_parent'><font size="2" color="#5acefa">My Account</font></a></li>
+			<li><a href="/user_account/sign_out.php" target='_parent'><font size="2" color="#5acefa">Sign Out</font></a></li>
 			<?php
 			} else {
 			?>
-			<li><a href="/user_account/sign_in.php" target='_parent'><font size="2" color="grey">Sign In</font></a></li>
-			<li><a href="/user_account/sign_up.php" target='_parent'><font size="2" color="grey">Sign Up</font></a></li>
+			<li><a href="/user_account/sign_in.php" target='_parent'><font size="2" color="#5acefa">Sign In</font></a></li>
+			<li><a href="/user_account/sign_up.php" target='_parent'><font size="2" color="#5acefa">Sign Up</font></a></li>
 			<?php
 			}
 			?>
