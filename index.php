@@ -2,7 +2,7 @@
 // include header
 $path = $_SERVER['DOCUMENT_ROOT'];
 $path .= "/includes/header.php";
-require_once("$path"); 
+include ("$path"); 
 ?>
 
 <div class="navbar-fixed">		
@@ -29,5 +29,5 @@ require_once("$path");
 // include footer
 $path = $_SERVER['DOCUMENT_ROOT'];
 $path .= "/includes/footer.php";
-require_once("$path"); 
+include ("$path"); 
 ?>
