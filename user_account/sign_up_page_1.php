@@ -47,8 +47,6 @@ include("$path");
 <h5 class="center">Sign Up</h5><br><br>
 
 
-<div class="row">
-	<div class="col s12 m12">
 
 
 		<?php
@@ -64,10 +62,15 @@ include("$path");
 		<form action="sign_up2.php" method="post"> 
 			<div class="form-group"><br>					  
 				<table>
-					<col width="40%" /> 
-					<col width="60%" />
+					<col width="20%" /> 
+					<col width="30%" />
+					<col width="30%" /> 
+					<col width="20%" /> 
+					
 					<tbody>
 						<tr>
+							<td>
+							</td>							
 							<td valign="middle" style="padding-bottom: 2em;">
 								<div align="right"><font size="3" color="<?php echo $company_color?>">Username &emsp;</font></div>
 							</td>
@@ -75,8 +78,12 @@ include("$path");
 								<input style="background:#DEFFFF;color:#000000;" type="text" name="user"  value="" placeholder="Required" maxlength="25"  required>
 								<div align="left"><font size="1" color="#F0F0F0">Note 1: No white spaces allowed.</font></div>
 							</td>
+							<td>
+							</td>								
 						</tr>
 						<tr>
+														<td>
+							</td>	
 							<td valign="middle"  style="padding-bottom: 2em;">
 								<div align="right"><font size="3" color="<?php echo $company_color?>">Password &emsp;</font></div>
 							</td>
@@ -86,22 +93,32 @@ include("$path");
 								<div align="left"><font size="1" color="#F0F0F0">Note 3: Password must cointain at least 5 digits;</font></div>
 								<div align="left"><font size="1" color="#F0F0F0">Note 4: Your password must not be the same as your username.</font></div>
 							</td>
+														<td>
+							</td>	
 						</tr>
 						<tr>
+														<td>
+							</td>	
 							<td valign="middle"  style="padding-bottom: 2em;">
 								<div align="right"><font size="3" color="<?php echo $company_color?>"> Retype Password &emsp;</font></div>
 							</td>
 							<td valign="middle"  style="padding-bottom: 2em;">
 								<input style="background:#DEFFFF;color:#000000;"  type="password" name="pass2"  value="" placeholder="Required" maxlength="30"  required>
 							</td>
+														<td>
+							</td>	
 						</tr>
 						<tr>
+														<td>
+							</td>	
 							<td valign="middle" style="padding-bottom: 2em;">
 								<div align="right"><font size="3" color="<?php echo $company_color?>">E-Mail &emsp;</font></div>
 							</td>
 							<td valign="middle"  style="padding-bottom: 2em;">
 								<input style="background:#DEFFFF;color:#000000;" type="text" name="email"  value="" placeholder="Optional (recommended)"  maxlength="30" >
 							</td>
+														<td>
+							</td>	
 						</tr>
 					</tbody>
 				</table>
@@ -114,9 +131,6 @@ include("$path");
 		}
 		?>
 
-
-	</div>
-</div>
 
 
 
