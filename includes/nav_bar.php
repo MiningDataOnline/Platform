@@ -17,8 +17,7 @@
 			<li><a href="/user_account/account.php" target='_parent'><font size="2">My Account</font></a></li>
 			<li><a href="/user_account/sign_out.php" target='_parent'><font size="2">Sign Out</font></a></li>
 			<?php
-			}
-			else {
+			} else {
 			?>
 			<li><a href="/user_account/sign_in.php" target='_parent'><font size="2">Sign In</font></a></li>
 			<li><a href="/user_account/sign_up.php" target='_parent'><font size="2">Sign Up</font></a></li>
