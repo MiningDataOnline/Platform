@@ -40,7 +40,7 @@ include("$path");
 <?php
 // include top navigation bar
 $path = $_SERVER['DOCUMENT_ROOT'];
-$path .= "/includes/nav_bar_top.php";
+$path .= "/includes/nav_bar.php";
 include("$path"); 
 ?>
 
