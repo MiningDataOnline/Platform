@@ -9,7 +9,7 @@
 			<?php
 			// 
 			// if user is logged in show username, a link to "my account" and the option to sign out.
-			// if user is not logged in, show a link to the "sign in" and "sign up" form
+			// if user is not logged in, show a link to the "sign in" and the "sign up" form
 
 			if($_SESSION["logedin"] == "yes"){
 			?>
