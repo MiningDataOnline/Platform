@@ -9,7 +9,7 @@ require_once("$path");
 <?php
 // include top navigation bar
 $path = $_SERVER['DOCUMENT_ROOT'];
-$path .= "/includes/top_nav_bar.php";
+$path .= "/includes/nav_bar_top.php";
 require_once("$path"); 
 ?>
 
