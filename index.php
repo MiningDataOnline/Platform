@@ -2,7 +2,7 @@
 // include header
 $path = $_SERVER['DOCUMENT_ROOT'];
 $path .= "/includes/header.php";
-include ("$path"); 
+include("$path"); 
 ?>
 
 <div class="navbar-fixed">		
