@@ -1,37 +1,4 @@
-<?php
-// connect to database
-$path = $_SERVER['DOCUMENT_ROOT'];
-$path .= "/db_conn/db_1_start_conn.php";
-require("$path");
-?>
-
-
-
-
-<?php
-// start session
-session_start();
-$user = $_SESSION["user"];
-?>
-
-
-
-
-<?php
-/*
-// find out wich permissions the user has, in case the user is signed in
-$path = $_SERVER['DOCUMENT_ROOT'];
-$path .= "/code/config/user_permissions.php";
-require("$path");*/
-?>
-	
-	
-	
-
-
-
-
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
