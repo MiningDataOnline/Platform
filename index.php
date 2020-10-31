@@ -54,7 +54,7 @@ include("$path");
 <?php
 // include footer
 $path = $_SERVER['DOCUMENT_ROOT'];
-$path .= "/includes/footer.php";
+$path .= "/includes/footer.html";
 include ("$path"); 
 ?>
 
