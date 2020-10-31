@@ -1,4 +1,14 @@
+<div class="navbar-fixed">		
+	<nav class="#212121 grey darken-4" role="navigation">
+		<div class="nav-wrapper container"><a id="logo-container" href="/index.php" class="brand-logo">MiningDataOnline</a>
+			<ul class="right hide-on-med-and-down">			
+
+
+
+
+
 			<?php
+			// 
 			// if user is logged in show username, a link to "my account" and the option to sign out.
 			// if user is not logged in, show a link to the "sign in" and "sign up" form
 
@@ -19,3 +29,8 @@
       
       
  
+			</ul>
+
+		</div>						
+	</nav>			
+</div>	
