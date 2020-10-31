@@ -32,7 +32,7 @@ require("$path");*/
 <?php
 // include header
 $path = $_SERVER['DOCUMENT_ROOT'];
-$path .= "/includes/header.php";
+$path .= "/includes/header.html";
 include("$path"); 
 ?>
 
