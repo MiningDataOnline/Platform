@@ -2,7 +2,7 @@
 // connect to database
 $path = $_SERVER['DOCUMENT_ROOT'];
 $path .= "/db_conn/db_1_start_conn.php";
-require("$path");
+require_once("$path");
 ?>
 
 
@@ -49,12 +49,6 @@ include("$path");
  <!--Embed logo stored in dropbox-->
  <center><img src="https://www.dropbox.com/s/ipzgo08y589xvsu/Screenshot%20from%202020-10-29%2000_05_07%281%29.png?raw=1" height="30%" width="30%"></center>
 
-
-
-		<!--  Scripts-->
-		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-		<script src="/js/materialize.js"></script>
-		<script src="/js/init.js"></script>
 
 
 
