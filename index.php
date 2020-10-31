@@ -61,6 +61,6 @@ include ("$path");
 
 
 <?php
-// close db_1 connection
+// close db connection
 $conn->close();
 ?>
