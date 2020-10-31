@@ -1,4 +1,7 @@
 			<?php
+			// if user is logged in show username, a link to "my account" and the option to sign out.
+			// if user is not logged in, show a link to the "sign in" and "sign up" form
+
 			if($_SESSION["logedin"] == "yes"){
 			?>
 			<li><font size="2" color="grey">User: </font><font size="2" color="grey"><?php echo $user?></font></li>
@@ -15,11 +18,4 @@
 			?>
       
       
-      
-			<?php	
-			if ($company_editor == 1 || $company_auditor == 1  || $user =='administrador') {
-			?>			
-			<li><a href="/bills_overview.php" target='_parent'><font size="2">Bills</font></a></li>
-			<?php
-			}
-			?>
+ 
