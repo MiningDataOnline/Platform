@@ -1,7 +1,7 @@
 <?php
 // include header
 $path = $_SERVER['DOCUMENT_ROOT'];
-$path .= "/code/includes/header.php";
+$path .= "/includes/header.php";
 require_once("$path"); 
 ?>
 
@@ -13,6 +13,6 @@ require_once("$path");
 <?php
 // include footer
 $path = $_SERVER['DOCUMENT_ROOT'];
-$path .= "/code/includes/footer.php";
+$path .= "/includes/footer.php";
 require_once("$path"); 
 ?>
