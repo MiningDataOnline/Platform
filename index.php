@@ -36,34 +36,18 @@ $path .= "/includes/header.php";
 include("$path"); 
 ?>
 
-<div class="navbar-fixed">		
-	<nav class="#212121 grey darken-4" role="navigation">
-		<div class="nav-wrapper container"><a id="logo-container" href="/index.php" class="brand-logo">MiningDataOnline</a>
-<ul class="right hide-on-med-and-down">		
+	
 <?php
 // include top navigation bar
 $path = $_SERVER['DOCUMENT_ROOT'];
 $path .= "/includes/nav_bar.php";
 include("$path"); 
 ?>
-		</div>						
-	</nav>			
-</div>	
+
 
 
  <!--Embed logo stored in dropbox-->
  <center><img src="https://www.dropbox.com/s/ipzgo08y589xvsu/Screenshot%20from%202020-10-29%2000_05_07%281%29.png?raw=1" height="30%" width="30%"></center>
-
-
-	
-
-		<!--  Scripts-->
-		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-		<script src="/js/materialize.js"></script>
-		<script src="/js/init.js"></script>
-
-
-
 
 
 
