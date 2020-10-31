@@ -20,7 +20,7 @@
 			} else {
 			?>
 			<li><a href="/user_account/sign_in.php" target='_parent'><font size="2" color="#5acefa">Sign In</font></a></li>
-			<li><a href="/user_account/sign_up.php" target='_parent'><font size="2" color="#5acefa">Sign Up</font></a></li>
+			<li><a href="/user_account/sign_up_page_1.php" target='_parent'><font size="2" color="#5acefa">Sign Up</font></a></li>
 			<?php
 			}
 			?>
