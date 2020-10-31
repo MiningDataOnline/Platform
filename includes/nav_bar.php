@@ -5,7 +5,6 @@
 			<ul class="right hide-on-med-and-down">
 
 
-
 			<?php
 			// 
 			// if user is logged in show username, a link to "my account" and the option to sign out.
