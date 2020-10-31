@@ -62,10 +62,10 @@ include("$path");
 		<form action="sign_up2.php" method="post"> 
 			<div class="form-group"><br>					  
 				<table>
-					<col width="20%" /> 
+					<col width="10%" /> 
 					<col width="30%" />
 					<col width="30%" /> 
-					<col width="20%" /> 
+					<col width="30%" /> 
 					
 					<tbody>
 						<tr>
