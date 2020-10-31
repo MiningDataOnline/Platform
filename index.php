@@ -1,7 +1,7 @@
 <?php
 // connect to database db_1
 $path = $_SERVER['DOCUMENT_ROOT'];
-$path .= "/db_conn/db_1_start_conn.php";
+$path .= "/db_conn/start_conn_db_1.php";
 require_once("$path");
 ?>
 
@@ -62,5 +62,5 @@ include ("$path");
 
 <?php
 // close db connection
-$conn->close();
+$conn_db_1->close();
 ?>
