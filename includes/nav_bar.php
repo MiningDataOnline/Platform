@@ -31,4 +31,9 @@
 				<li><a href="#">Navbar Link</a></li>
 			</ul>
 			<a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+			
+		</div>						
+	</nav>			
+</div>				
+			
 					
