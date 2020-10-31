@@ -109,9 +109,7 @@ include("$path");
 									<center><button type="submit" name="submit2">Sign Up</button></center>
 								</div>
 							</form>
-						</div>
-
-					</div>							
+						
 						<?php
 						}
 						?>
