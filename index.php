@@ -57,3 +57,10 @@ $path = $_SERVER['DOCUMENT_ROOT'];
 $path .= "/includes/footer.php";
 include ("$path"); 
 ?>
+
+
+
+<?php
+// close db_1 connection
+$conn->close();
+?>
