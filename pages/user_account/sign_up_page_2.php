@@ -189,7 +189,7 @@ $i = 0;
 	// if everything alright -> insert users data in the database
 	<?php
 		}
-		else if ($pass1 == $pass2 && $i==0)
+		else if ($i==0)
 		{
 			$stmt = $conn->prepare("INSERT INTO users (user, pass, email, eth_wallet) VALUES (?, ?, ?, ?)");
 			$stmt->bind_param("ssss", $user, $pass, $email, $eth_wallet);
