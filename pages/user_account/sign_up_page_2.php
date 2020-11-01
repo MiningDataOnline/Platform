@@ -57,6 +57,7 @@ $email = mysqli_real_escape_string($conn, $_POST['email']);
 $eth_wallet = mysqli_real_escape_string($conn, $_POST['eth_wallet']);
 $submit_sign_up_form = mysqli_real_escape_string($conn, $_POST['submit_sign_up_form']);
 
+// everything alright with provided user data as long as i=0
 $i = 0;
 ?> 
 
@@ -183,14 +184,13 @@ $i = 0;
 		}
 		else if ($pass1 == $pass2 && $i==0)
 		{
-			$stmt = $conn->prepare("INSERT INTO users (user, pass, email, question1, answer1, question2, answer2) VALUES (?, ?, ?, ?, ?, ?, ?)");
-			$stmt->bind_param("sssssss", $user, $pass, $email, $question1, $answer1, $question2, $answer2);
+			$stmt = $conn->prepare("INSERT INTO users (user, pass, email, eth_wallet) VALUES (?, ?, ?, ?)");
+			$stmt->bind_param("ssss", $user, $pass, $email, $eth_wallet);
 			// set parameters and execute
 			$pass = password_hash($pass2, PASSWORD_DEFAULT);
-			$answer1 = password_hash($answer1, PASSWORD_DEFAULT);
-			$answer2 = password_hash($answer2, PASSWORD_DEFAULT);
 			$user = $user;
 			$email = $email;
+			$eth_wallet = $eth_wallet;
 			$stmt->execute();
 	?> 
 
