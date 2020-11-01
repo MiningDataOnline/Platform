@@ -122,6 +122,18 @@ else {
 					<td>
 					</td>	
 				</tr>
+				<tr>
+					<td>
+					</td>	
+					<td valign="middle" style="padding-bottom: 2em;">
+						<div align="right"><font size="3" color="<?php echo $company_color?>">ETH-Wallet Address &emsp;</font></div>
+					</td>
+					<td valign="middle"  style="padding-bottom: 2em;">
+						<input style="background:#DEFFFF;" type="text" name="eth_wallet"  value="" placeholder="Optional (recommended)"  maxlength="30" >
+					</td>
+					<td>
+					</td>	
+				</tr>				
 			</tbody>
 		</table>
 
