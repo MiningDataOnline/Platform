@@ -57,7 +57,7 @@ $email = mysqli_real_escape_string($conn, $_POST['email']);
 $eth_wallet = mysqli_real_escape_string($conn, $_POST['eth_wallet']);
 $submit_sign_up_form = mysqli_real_escape_string($conn, $_POST['submit_sign_up_form']);
 
-// everything alright with provided user data as long as i=0
+// everything alright with provided user data as long as i=0, otherwise (if i=1) the user account will not be created
 $i = 0;
 ?> 
 
@@ -198,6 +198,73 @@ $i = 0;
 		}
 		else if ($i==0)
 		{
+	?>
+			
+			
+			
+			
+			
+
+<?php
+// the follwing will only be executed once... when admin creates an account
+// table users is created
+// username, pass, email and eth_wallet columns created
+			
+if ($user='admin'){		
+			
+// create users table if it does not exist
+$table='users';
+$query = "SELECT id FROM $table";
+$result = mysqli_query($conn, $query);
+if(empty($result)) {
+	$query = "CREATE TABLE ".$table." (
+                          ID int(11) AUTO_INCREMENT,
+                          PRIMARY KEY  (id)
+                          )";
+	$result = mysqli_query($conn, $query);
+}
+
+// add username column
+$query = mysqli_query("SHOW COLUMNS FROM `$table` LIKE 'username'");
+$result = mysqli_query($conn, $query);
+if(empty($result)) {
+	$sqlalt="alter table `$table` add `username` varchar(25)";
+	$conn->query($sqlalt);
+}
+
+// add password column
+$query = mysqli_query("SHOW COLUMNS FROM `$table` LIKE 'pass'");
+$result = mysqli_query($conn, $query);
+if(empty($result)) {
+	$sqlalt="alter table `$table` add `pass` varchar(50)";
+	$conn->query($sqlalt);
+}
+
+// add email column
+$query = mysqli_query("SHOW COLUMNS FROM `$table` LIKE 'email'");
+$result = mysqli_query($conn, $query);
+if(empty($result)) {
+	$sqlalt="alter table `$table` add `email` varchar(25)";
+	$conn->query($sqlalt);
+}
+
+// eth wallet address column
+$query = mysqli_query("SHOW COLUMNS FROM `$table` LIKE 'eth_wallet'");
+$result = mysqli_query($conn, $query);
+if(empty($result)) {
+	$sqlalt="alter table `$table` add `eth_wallet` varchar(42)";
+	$conn->query($sqlalt);
+}
+
+	
+}
+?>
+			
+			
+			
+			
+<?php
+// eth wallet address column
 			$stmt = $conn->prepare("INSERT INTO users (user, pass, email, eth_wallet) VALUES (?, ?, ?, ?)");
 			$stmt->bind_param("ssss", $user, $pass, $email, $eth_wallet);
 			// set parameters and execute
