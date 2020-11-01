@@ -117,7 +117,7 @@ else {
 						<div align="right"><font size="3" color="<?php echo $company_color?>">E-Mail &emsp;</font></div>
 					</td>
 					<td valign="middle"  style="padding-bottom: 2em;">
-						<input style="background:#DEFFFF;" type="text" name="email"  value="" placeholder="Optional (recommended)"  maxlength="30" >	
+						<input style="background:#DEFFFF;" type="text" name="email"  value="" placeholder="Required"  maxlength="30" required>	
 					</td>
 					<td>
 					</td>	
