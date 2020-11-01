@@ -83,12 +83,13 @@ $i = 0;
 	<?php
 	}
 	else if (isset($submit_sign_up_form)) {
-		// in case user is signed out do this
+	// in case user is signed out do this
 
-		// check if user already exists
-		$sql = "SELECT user FROM users WHERE user='$user'";
-		$result = $conn->query($sql);
-		if ($result->num_rows > 0) {
+		
+	// check if user already exists
+	$sql = "SELECT user FROM users WHERE user='$user'";
+	$result = $conn->query($sql);
+	if ($result->num_rows > 0) {
 	?> 
 	<font size="3" color="#F0F0F0">
 		<?php
@@ -101,11 +102,12 @@ $i = 0;
 	<br><br>
 	<a href="/sign_up_in_out/sign_up.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
 
-	// check if username contains white spaces
+	
 	<?php
-		}
-		else if (preg_match('/\s/',$user))
-		{
+	// check if username contains white spaces
+	}
+	else if (preg_match('/\s/',$user))
+	{
 	?> 
 	<font size="3" color="#F0F0F0">
 		<?php
@@ -118,11 +120,12 @@ $i = 0;
 	<br><br>
 	<a href="/sign_up_in_out/sign_up.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
 
-	// check if password and retyped passwords are the same             
+	
 	<?php
-		}
-		else if ($pass1 != $pass2)
-		{
+	// check if password and retyped passwords are the same             
+	}
+	else if ($pass1 != $pass2)
+	{
 	?> 
 	<font size="3" color="#F0F0F0">
 		<?php
@@ -135,8 +138,9 @@ $i = 0;
 	<br><br>
 	<a href="/sign_up_in_out/sign_up.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
 
-	// check if password contain whate spaces                          
+	
 	<?php
+	// check if password contain whate spaces                          
 		}
 		else if (preg_match('/\s/',$pass1))
 		{
@@ -152,8 +156,9 @@ $i = 0;
 	<br><br>
 	<a href="/sign_up_in_out/sign_up.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
 
-	// check if password contains at least 5 digits                                        
+	
 	<?php
+	// check if password contains at least 5 digits                                        
 		}
 		else if (strlen( $pass1 ) <= 4)
 		{
@@ -169,8 +174,8 @@ $i = 0;
 	<br><br>
 	<a href="/sign_up_in_out/sign_up.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
 
-	// make sure that password and username are not the same                                       
 	<?php
+	// make sure that password and username are not the same                                       
 		}
 		else if ($pass1 == $user)
 		{
@@ -186,8 +191,9 @@ $i = 0;
 	<br><br>
 	<a href="/sign_up_in_out/sign_up.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
 
-	// if everything alright -> insert users data in the database
+	
 	<?php
+	// if everything alright -> insert users data in the database
 		}
 		else if ($i==0)
 		{
