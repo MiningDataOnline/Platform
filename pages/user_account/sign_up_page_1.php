@@ -50,6 +50,8 @@ include("$path");
 
 
 <?php
+// user need to be signed out in order to access the sign up form
+
 if($_SESSION["logedin"] == "yes"){
 	$user = $_SESSION["user"];
 ?>
