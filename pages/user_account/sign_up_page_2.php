@@ -264,7 +264,8 @@ if(empty($result)) {
 			
 			
 <?php
-// eth wallet address column
+// insert user data in the database
+			
 			$stmt = $conn->prepare("INSERT INTO users (user, pass, email, eth_wallet) VALUES (?, ?, ?, ?)");
 			$stmt->bind_param("ssss", $user, $pass, $email, $eth_wallet);
 			// set parameters and execute
