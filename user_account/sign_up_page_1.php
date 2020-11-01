@@ -75,7 +75,7 @@ include("$path");
 								<div align="right"><font size="3" color="<?php echo $company_color?>">Username &emsp;</font></div>
 							</td>
 							<td valign="middle"  style="padding-bottom: 2em;">
-								<input style="background:#DEFFFF;color:#000000;" type="text" name="user"  value="" placeholder="Required" maxlength="25"  required>
+								<input style="background:#DEFFFF;color:" type="text" name="user"  value="" placeholder="Required" maxlength="25"  required>
 								<div align="left"><font size="1" color="#F0F0F0">Note 1: No white spaces allowed.</font></div>
 							</td>
 							<td>
