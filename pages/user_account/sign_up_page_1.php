@@ -44,7 +44,7 @@ include("$path");
 
 
 
-<h5 class="center">Sign Up</h5><br><br>
+<h5 class="center"  class ="deep-orange-text">Sign Up</h5><br><br>
 
 
 
@@ -55,8 +55,8 @@ include("$path");
 if($_SESSION["logedin"] == "yes"){
 	$user = $_SESSION["user"];
 ?>
-<div align="center"><font size="3" color="#F0F0F0">You are currently signed in as "<?php echo $user?>"!</font></div><br>
-<div align="center"><font size="3" color="#F0F0F0">You need to sign out before you can create a new account!</font></div><br>
+<div align="center"><font size="3"  class ="deep-orange-text">You are currently signed in as "<?php echo $user?>"!</font></div><br>
+<div align="center"><font size="3"  class ="deep-orange-text">You need to sign out before you can create a new account!</font></div><br>
 <?php
 }
 else {
@@ -74,11 +74,11 @@ else {
 					<td>
 					</td>							
 					<td valign="middle" style="padding-bottom: 2em;">
-						<div align="right"><font size="3" color="<?php echo $company_color?>">Username &emsp;</font></div>
+						<div align="right"><font size="3"  class ="deep-orange-text">Username &emsp;</font></div>
 					</td>
 					<td valign="middle"  style="padding-bottom: 2em;">
 						<input style="background:#DEFFFF;" type="text" name="user"  value="" placeholder="Required" maxlength="25"  required>
-						<div align="left"><font size="1" color="#F0F0F0">Note 1: No white spaces allowed.</font></div>
+						<div align="left"><font size="1"  class ="deep-orange-text">Note 1: No white spaces allowed.</font></div>
 					</td>
 					<td>
 					</td>								
@@ -87,13 +87,13 @@ else {
 					<td>
 					</td>	
 					<td valign="middle"  style="padding-bottom: 2em;">
-						<div align="right"><font size="3" color="<?php echo $company_color?>">Password &emsp;</font></div>
+						<div align="right"><font size="3"  class ="deep-orange-text">Password &emsp;</font></div>
 					</td>
 					<td valign="middle"  style="padding-bottom: 2em;">
 						<input style="background:#DEFFFF;" type="password" name="pass1"  value="" placeholder="Required" maxlength="30"  required>
-						<div align="left"><font size="1" color="#F0F0F0">Note 2: No white spaces allowed;</font></div>
-						<div align="left"><font size="1" color="#F0F0F0">Note 3: Password must cointain at least 5 digits;</font></div>
-						<div align="left"><font size="1" color="#F0F0F0">Note 4: Your password must not be the same as your username.</font></div>
+						<div align="left"><font size="1"  class ="deep-orange-text">Note 2: No white spaces allowed;</font></div>
+						<div align="left"><font size="1"  class ="deep-orange-text">Note 3: Password must cointain at least 5 digits;</font></div>
+						<div align="left"><font size="1"  class ="deep-orange-text">Note 4: Your password must not be the same as your username.</font></div>
 					</td>
 					<td>
 					</td>	
@@ -102,7 +102,7 @@ else {
 					<td>
 					</td>	
 					<td valign="middle"  style="padding-bottom: 2em;">
-						<div align="right"><font size="3" color="<?php echo $company_color?>"> Retype Password &emsp;</font></div>
+						<div align="right"><font size="3"  class ="deep-orange-text"> Retype Password &emsp;</font></div>
 					</td>
 					<td valign="middle"  style="padding-bottom: 2em;">
 						<input style="background:#DEFFFF;"  type="password" name="pass2"  value="" placeholder="Required" maxlength="30"  required>
@@ -114,7 +114,7 @@ else {
 					<td>
 					</td>	
 					<td valign="middle" style="padding-bottom: 2em;">
-						<div align="right"><font size="3" color="<?php echo $company_color?>">E-Mail &emsp;</font></div>
+						<div align="right"><font size="3"  class ="deep-orange-text">E-Mail &emsp;</font></div>
 					</td>
 					<td valign="middle"  style="padding-bottom: 2em;">
 						<input style="background:#DEFFFF;" type="text" name="email"  value="" placeholder="Required"  maxlength="30" required>	
@@ -126,7 +126,7 @@ else {
 					<td>
 					</td>	
 					<td valign="middle" style="padding-bottom: 2em;">
-						<div align="right"><font size="3" color="<?php echo $company_color?>">ETH-Wallet Address &emsp;</font></div>
+						<div align="right"><font size="3"  class ="deep-orange-text">ETH-Wallet Address &emsp;</font></div>
 					</td>
 					<td valign="middle"  style="padding-bottom: 2em;">
 						<input style="background:#DEFFFF;" type="text" name="eth_wallet"  value="" placeholder="Optional"  maxlength="30" >
