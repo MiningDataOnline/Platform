@@ -199,72 +199,68 @@ $i = 0;
 		else if ($i==0)
 		{
 	?>
-			
-			
+
+
+			<?php
+			// the follwing will only be executed once... when admin creates an account
+			// table users is created
+			// username, pass, email and eth_wallet columns created
+
+			if ($user='admin'){		
+
+			// create users table if it does not exist
+			$table='users';
+			$query = "SELECT id FROM $table";
+			$result = mysqli_query($conn, $query);
+			if(empty($result)) {
+				$query = "CREATE TABLE ".$table." (
+						  ID int(11) AUTO_INCREMENT,
+						  PRIMARY KEY  (id)
+						  )";
+				$result = mysqli_query($conn, $query);
+			}
+
+			// add username column
+			$query = mysqli_query("SHOW COLUMNS FROM `$table` LIKE 'username'");
+			$result = mysqli_query($conn, $query);
+			if(empty($result)) {
+				$sqlalt="alter table `$table` add `username` varchar(25)";
+				$conn->query($sqlalt);
+			}
+
+			// add password column
+			$query = mysqli_query("SHOW COLUMNS FROM `$table` LIKE 'pass'");
+			$result = mysqli_query($conn, $query);
+			if(empty($result)) {
+				$sqlalt="alter table `$table` add `pass` varchar(50)";
+				$conn->query($sqlalt);
+			}
+
+			// add email column
+			$query = mysqli_query("SHOW COLUMNS FROM `$table` LIKE 'email'");
+			$result = mysqli_query($conn, $query);
+			if(empty($result)) {
+				$sqlalt="alter table `$table` add `email` varchar(25)";
+				$conn->query($sqlalt);
+			}
+
+			// eth wallet address column
+			$query = mysqli_query("SHOW COLUMNS FROM `$table` LIKE 'eth_wallet'");
+			$result = mysqli_query($conn, $query);
+			if(empty($result)) {
+				$sqlalt="alter table `$table` add `eth_wallet` varchar(42)";
+				$conn->query($sqlalt);
+			}
+
+
+			}
+			?>
 			
 			
 			
 
-<?php
-// the follwing will only be executed once... when admin creates an account
-// table users is created
-// username, pass, email and eth_wallet columns created
-			
-if ($user='admin'){		
-			
-// create users table if it does not exist
-$table='users';
-$query = "SELECT id FROM $table";
-$result = mysqli_query($conn, $query);
-if(empty($result)) {
-	$query = "CREATE TABLE ".$table." (
-                          ID int(11) AUTO_INCREMENT,
-                          PRIMARY KEY  (id)
-                          )";
-	$result = mysqli_query($conn, $query);
-}
-
-// add username column
-$query = mysqli_query("SHOW COLUMNS FROM `$table` LIKE 'username'");
-$result = mysqli_query($conn, $query);
-if(empty($result)) {
-	$sqlalt="alter table `$table` add `username` varchar(25)";
-	$conn->query($sqlalt);
-}
-
-// add password column
-$query = mysqli_query("SHOW COLUMNS FROM `$table` LIKE 'pass'");
-$result = mysqli_query($conn, $query);
-if(empty($result)) {
-	$sqlalt="alter table `$table` add `pass` varchar(50)";
-	$conn->query($sqlalt);
-}
-
-// add email column
-$query = mysqli_query("SHOW COLUMNS FROM `$table` LIKE 'email'");
-$result = mysqli_query($conn, $query);
-if(empty($result)) {
-	$sqlalt="alter table `$table` add `email` varchar(25)";
-	$conn->query($sqlalt);
-}
-
-// eth wallet address column
-$query = mysqli_query("SHOW COLUMNS FROM `$table` LIKE 'eth_wallet'");
-$result = mysqli_query($conn, $query);
-if(empty($result)) {
-	$sqlalt="alter table `$table` add `eth_wallet` varchar(42)";
-	$conn->query($sqlalt);
-}
-
-	
-}
-?>
-			
-			
-			
-			
-<?php
-// insert user data in the database
+			<?php
+			// insert user data in the database
 			
 			$stmt = $conn->prepare("INSERT INTO users (user, pass, email, eth_wallet) VALUES (?, ?, ?, ?)");
 			$stmt->bind_param("ssss", $user, $pass, $email, $eth_wallet);
@@ -274,19 +270,16 @@ if(empty($result)) {
 			$email = $email;
 			$eth_wallet = $eth_wallet;
 			$stmt->execute();
-	?> 
+			?> 
 
-	<font size="3" color="#F0F0F0">
-		<?php
-			echo "You have successfully signed up!";
-		?> 
-	</font>
+			<font size="3" color="#F0F0F0">
+				<?php
+					echo "You have successfully signed up!";
+				?> 
+			</font>
 
-	<br>
-	<a href="/sign_up_in_out/sign_in.php"><font size="3" color="#81DAF5">Sign In</font></a><br><br>
-
-</center>
-
+			<br>
+			<a href="/sign_up_in_out/sign_in.php"><font size="3" color="#81DAF5">Sign In</font></a><br><br>
 
 
 
@@ -295,7 +288,7 @@ if(empty($result)) {
 }
 ?>
 
-
+</center>
 
 
 <?php
