@@ -174,6 +174,7 @@ $i = 0;
 	<br><br>
 	<a href="/sign_up_in_out/sign_up.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
 
+	
 	<?php
 	// make sure that password and username are not the same                                       
 		}
