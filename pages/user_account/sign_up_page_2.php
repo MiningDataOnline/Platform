@@ -206,7 +206,7 @@ $i = 0;
 			// table users is created
 			// username, pass, email and eth_wallet columns created
 
-			if ($user='admin'){		
+			if ($user=='admin'){		
 
 			// create users table if it does not exist
 			$table='users';
