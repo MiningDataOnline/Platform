@@ -113,6 +113,7 @@ $i = 0;
 		?> 
 	</font>
 	<?php
+			$i = 1;
 	?>
 	<br><br>
 	<a href="/sign_up_in_out/sign_up.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
@@ -129,6 +130,7 @@ $i = 0;
 		?> 
 	</font>
 	<?php
+			$i = 1;
 	?>
 	<br><br>
 	<a href="/sign_up_in_out/sign_up.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
@@ -145,6 +147,7 @@ $i = 0;
 		?> 
 	</font>
 	<?php
+			$i = 1;
 	?>
 	<br><br>
 	<a href="/sign_up_in_out/sign_up.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
@@ -161,6 +164,7 @@ $i = 0;
 		?> 
 	</font>
 	<?php
+			$i = 1;
 	?>
 	<br><br>
 	<a href="/sign_up_in_out/sign_up.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
@@ -176,10 +180,13 @@ $i = 0;
 			echo "Username and password must not be the same!";
 		?> 
 	</font>
+	<?php
+			$i = 1;
+	?>
 	<br><br>
 	<a href="/sign_up_in_out/sign_up.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
 
-	// if everything alright insert users data in the database
+	// if everything alright -> insert users data in the database
 	<?php
 		}
 		else if ($pass1 == $pass2 && $i==0)
