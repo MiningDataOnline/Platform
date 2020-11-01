@@ -50,13 +50,12 @@ include("$path");
 
 
 <?php
-$user = clear($_POST['user']);
-$pass1 = clear($_POST['pass1']);
-$pass2 = clear($_POST['pass2']);
-$email = clear($_POST['email']);
-$eth_wallet = clear($_POST['eth_wallet']);
-$submit_sign_up_form = clear($_POST['submit_sign_up_form']);
-
+$user = mysqli_real_escape_string($conn, $_POST['user']);
+$pass1 = mysqli_real_escape_string($conn, $_POST['pass1']);
+$pass2 = mysqli_real_escape_string($conn, $_POST['pass2']);
+$email = mysqli_real_escape_string($conn, $_POST['email']);
+$eth_wallet = mysqli_real_escape_string($conn, $_POST['eth_wallet']);
+$submit_sign_up_form = mysqli_real_escape_string($conn, $_POST['submit_sign_up_form']);
 
 $i = 0;
 ?> 
@@ -73,9 +72,9 @@ $i = 0;
 
 
 	if($_SESSION["logedin"] == "yes"){
-		// in case user is signed in
+	// in case user is signed in, inform the user that he must sign out first
 
-		$user = $_SESSION["user"];
+	$user = $_SESSION["user"];
 	?>
 	<div align="center"><font size="3" color="#F0F0F0">You are currently signed in as "<?php echo $user?>"!</font></div><br>
 	<div align="center"><font size="3" color="#F0F0F0">You need to sign out before you can create a new account!</font></div><br>
