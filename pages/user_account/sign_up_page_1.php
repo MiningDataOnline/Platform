@@ -44,7 +44,7 @@ include("$path");
 
 
 
-<font class="center"  class ="deep-orange-text"  size="5">Sign Up</font><br><br>
+<font class="center"  class ="deep-orange-text"  font-size="5">Sign Up</font><br><br>
 
 
 
