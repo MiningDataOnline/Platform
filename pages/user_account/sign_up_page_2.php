@@ -99,8 +99,6 @@ $i = 0;
 	$i = 1;
 	?> 
 	</font>
-	<br><br>
-	<a href="sign_up_page_1.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
 	<?php
 	}
 	?> 		
@@ -118,8 +116,6 @@ $i = 0;
 	$i = 1;
 	?> 
 	</font>
-	<br><br>
-	<a href="sign_up_page_1.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
 	<?php
 	}
 	?> 
@@ -137,8 +133,6 @@ $i = 0;
 	$i = 1;
 	?> 
 	</font>
-	<br><br>
-	<a href="sign_up_page_1.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
 	<?php
 	}
 	?> 
@@ -155,8 +149,6 @@ $i = 0;
 	$i = 1;
 	?> 
 	</font>
-	<br><br>
-	<a href="sign_up_page_1.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
 	<?php
 	}
 	?> 
@@ -174,8 +166,6 @@ $i = 0;
 	$i = 1;
 	?> 
 	</font>
-	<br><br>
-	<a href="sign_up_page_1.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
 	<?php
 	}
 	?> 
@@ -193,8 +183,6 @@ $i = 0;
 	$i = 1;
 	?> 
 	</font>
-	<br><br>
-	<a href="sign_up_page_1.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
 	<?php
 	}
 	?> 
@@ -217,6 +205,19 @@ $i = 0;
 	<?php
 	}
 	?> 
+	
+	
+	
+	<?php
+	// if i=1 (something wrong with provided data) give the user the option to try again                                             
+	if ($i == 1)
+	{
+	?> 
+	<a href="sign_up_page_1.php"><font size="3" color="#81DAF5">Try Again</font></a>
+	<?php
+	}
+	?>
+	
 	
 	
 	
