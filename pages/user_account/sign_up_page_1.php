@@ -77,7 +77,7 @@ else {
 						<div align="right"><font size="3" class ="grey-text" >Username &emsp;</font></div>
 					</td>
 					<td valign="middle"  style="padding-bottom: 2em;">
-						<input style="background:#DEFFFF;" type="text" name="user"  value="" placeholder="Required" maxlength="25"  required>
+						<input style="background:#DEFFFF;" type="text" name="username"  value="" placeholder="Required" maxlength="25"  required>
 						<div align="left"><font size="1" class ="grey-text" >Note 1: No white spaces allowed.</font></div>
 					</td>
 					<td>
