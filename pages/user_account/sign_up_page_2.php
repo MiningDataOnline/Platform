@@ -100,7 +100,7 @@ $i = 0;
 			$i = 1;
 	?> 
 	<br><br>
-	<a href="/sign_up_in_out/sign_up.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
+	<a href="sign_up_page_1.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
 
 	
 	<?php
@@ -118,7 +118,7 @@ $i = 0;
 			$i = 1;
 	?>
 	<br><br>
-	<a href="/sign_up_in_out/sign_up.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
+	<a href="sign_up_page_1.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
 
 	
 	<?php
@@ -136,7 +136,7 @@ $i = 0;
 			$i = 1;
 	?>
 	<br><br>
-	<a href="/sign_up_in_out/sign_up.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
+	<a href="sign_up_page_1.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
 
 	
 	<?php
@@ -154,7 +154,7 @@ $i = 0;
 			$i = 1;
 	?>
 	<br><br>
-	<a href="/sign_up_in_out/sign_up.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
+	<a href="sign_up_page_1.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
 
 	
 	<?php
@@ -172,7 +172,7 @@ $i = 0;
 			$i = 1;
 	?>
 	<br><br>
-	<a href="/sign_up_in_out/sign_up.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
+	<a href="sign_up_page_1.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
 
 	
 	<?php
@@ -190,7 +190,7 @@ $i = 0;
 			$i = 1;
 	?>
 	<br><br>
-	<a href="/sign_up_in_out/sign_up.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
+	<a href="sign_up_page_1.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
 
 	
 	<?php
@@ -280,7 +280,7 @@ $i = 0;
 			</font>
 
 			<br>
-			<a href="/sign_up_in_out/sign_in.php"><font size="3" color="#81DAF5">Sign In</font></a><br><br>
+			<a href="sign_up_page_1.php"><font size="3" color="#81DAF5">Sign In</font></a><br><br>
 
 
 
