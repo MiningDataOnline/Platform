@@ -194,7 +194,7 @@ $i = 0;
 
 	
 	<?php
-	// if everything alright -> insert users data in the database
+	// if everything alright (i still = 0) -> insert users data in the database
 		}
 		else if ($i==0)
 		{
