@@ -129,7 +129,7 @@ else {
 						<div align="right"><font size="3" class ="lime-text" >ETH-Wallet Address &emsp;</font></div>
 					</td>
 					<td valign="middle"  style="padding-bottom: 2em;">
-						<input style="background:#DEFFFF;" type="text" name="eth_wallet"  value="" placeholder="Optional"  maxlength="30" >
+						<input style="background:#DEFFFF;" type="text" name="eth_wallet"  value="" placeholder="Optional"  maxlength="42" >
 					</td>
 					<td>
 					</td>	
