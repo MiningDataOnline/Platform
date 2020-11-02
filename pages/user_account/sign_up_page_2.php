@@ -93,7 +93,7 @@ $i = 0;
 	if (empty($user) || empty($pass1) || empty($pass2) || empty($email) || empty($eth_wallet))
 	{
 	?> 
-	<font size="3" class ="lime-text">
+	<font size="3" class ="red-text">
 	<?php
 	echo "At least one required user data is missing!";
 	$i = 1;
@@ -110,7 +110,7 @@ $i = 0;
 	$result = $conn->query($sql);
 	if ($result->num_rows > 0) {
 	?> 
-	<font size="3" class ="lime-text">
+	<font size="3" class ="red-text">
 	<?php
 	echo "This username has already been taken!";
 	$i = 1;
@@ -127,7 +127,7 @@ $i = 0;
 	if (preg_match('/\s/',$user))
 	{
 	?> 
-	<font size="3" class ="lime-text">
+	<font size="3" class ="red-text">
 	<?php
 	echo "Username contains whitespace (not allowed)!";
 	$i = 1;
@@ -143,7 +143,7 @@ $i = 0;
 	if ($pass1 != $pass2)
 	{
 	?> 
-	<font size="3" class ="lime-text">
+	<font size="3" class ="red-text">
 	<?php
 	echo "Passwords don't match!";
 	$i = 1;
@@ -160,7 +160,7 @@ $i = 0;
 	if (preg_match('/\s/',$pass1))
 	{
 	?> 
-	<font size="3" class ="lime-text">
+	<font size="3" class ="red-text">
 	<?php
 	echo "Password contains whitespace (not allowed)!";
 	$i = 1;
@@ -177,7 +177,7 @@ $i = 0;
 	if (strlen( $pass1 ) <= 4)
 	{
 	?> 
-	<font size="3" class ="lime-text">
+	<font size="3" class ="red-text">
 	<?php
 	echo "Password must countain at least 5 digits!";
 	$i = 1;
@@ -194,7 +194,7 @@ $i = 0;
 	if ($pass1 == $user)
 	{
 	?> 
-	<font size="3" class ="lime-text">
+	<font size="3" class ="red-text">
 	<?php
 	echo "Username and password must not be the same!";
 	$i = 1;
@@ -210,7 +210,7 @@ $i = 0;
 	// if email format not valid  -> i=1                                             
  	if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 	?> 
-	<font size="3" class ="lime-text">
+	<font size="3" class ="red-text">
 	<?php
 	echo "Wrong email format!";
 	$i = 1;
