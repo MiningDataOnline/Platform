@@ -137,7 +137,7 @@ else {
 			</tbody>
 		</table>
 
-		<center><button type="submit" name="sign_up_form">Sign Up</button></center>
+		<center><button type="submit" name="submit_sign_up_form">Sign Up</button></center>
 	</div>
 </form>
 
