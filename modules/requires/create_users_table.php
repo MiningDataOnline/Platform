@@ -16,7 +16,7 @@
 			$query = mysqli_query("SHOW COLUMNS FROM `$table` LIKE 'username'");
 			$result = mysqli_query($conn, $query);
 			if(empty($result)) {
-				$sqlalt="alter table `$table` add `user` varchar(25)";
+				$sqlalt="alter table `$table` add `username` varchar(25)";
 				$conn->query($sqlalt);
 			}
 
