@@ -83,7 +83,7 @@ $i = 0;
 
 	<?php
 	}
-	// in case user is signed out and $submit_sign_up_form is not empty check if user data is ok	
+	// in case user is signed out and $submit_sign_up_form is not empty check if user data is ok, and create users account if users data are ok
 	else if (isset($submit_sign_up_form)) {
 			
 	// as soon as one of the provided data is not ok -> i=1 and the user account will not be created
