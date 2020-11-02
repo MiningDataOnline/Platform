@@ -269,7 +269,7 @@ $i = 0;
 			<?php
 			// insert user data in the database
 			
-			$stmt = $conn->prepare("INSERT INTO users (user, pass, email, eth_wallet) VALUES (?, ?, ?, ?)");
+			$stmt = $conn->prepare("INSERT INTO users (username, pass, email, eth_wallet) VALUES (?, ?, ?, ?)");
 			$stmt->bind_param("ssss", $username, $pass, $email, $eth_wallet);
 			// set parameters and execute
 			$pass = password_hash($pass2, PASSWORD_DEFAULT);
