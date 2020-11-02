@@ -50,7 +50,7 @@ include("$path");
 
 
 <?php
-$user = mysqli_real_escape_string($conn, $_POST['user']);
+$username = mysqli_real_escape_string($conn, $_POST['username']);
 $pass1 = mysqli_real_escape_string($conn, $_POST['pass1']);
 $pass2 = mysqli_real_escape_string($conn, $_POST['pass2']);
 $email = mysqli_real_escape_string($conn, $_POST['email']);
@@ -74,10 +74,8 @@ $i = 0;
 
 	// in case user is signed in, inform user to sign out first
 	if($_SESSION["logedin"] == "yes"){
-		
-
-	$user = $_SESSION["user"];
 	?>
+	
 	<div align="center"><font size="3"  class ="grey-text" >You are currently signed in as "<?php echo $user?>"!</font></div><br>
 	<div align="center"><font size="3" class ="grey-text">You need to sign out before you can create a new account!</font></div><br>
 
@@ -90,7 +88,7 @@ $i = 0;
 
 		
 	// if a required user data is missing -> i=1
-	if (empty($user) || empty($pass1) || empty($pass2) || empty($email) || empty($eth_wallet))
+	if (empty($username) || empty($pass1) || empty($pass2) || empty($email) || empty($eth_wallet))
 	{
 	?> 
 	<font size="3" class ="red-text">
@@ -106,7 +104,7 @@ $i = 0;
 		
 	<?php		
 	// if username account already exists -> i=1
-	$sql = "SELECT user FROM users WHERE user='$user'";
+	$sql = "SELECT user FROM users WHERE user='$username'";
 	$result = $conn->query($sql);
 	if ($result->num_rows > 0) {
 	?> 
@@ -124,7 +122,7 @@ $i = 0;
 	
 	<?php
 	// if username contains white spaces  -> i=1
-	if (preg_match('/\s/',$user))
+	if (preg_match('/\s/',$username))
 	{
 	?> 
 	<font size="3" class ="red-text">
@@ -191,7 +189,7 @@ $i = 0;
 	
 	<?php
 	// if password and username are the same  -> i=1                                             
-	if ($pass1 == $user)
+	if ($pass1 == $username)
 	{
 	?> 
 	<font size="3" class ="red-text">
@@ -249,7 +247,7 @@ $i = 0;
 
 			<?php
 			// users tables and it columns are once created when admin creates an account (username = admin) before inserting users data in the database
-			if ($user=='admin'){		
+			if ($username=='admin'){		
 			?>
 
 				
@@ -272,10 +270,10 @@ $i = 0;
 			// insert user data in the database
 			
 			$stmt = $conn->prepare("INSERT INTO users (user, pass, email, eth_wallet) VALUES (?, ?, ?, ?)");
-			$stmt->bind_param("ssss", $user, $pass, $email, $eth_wallet);
+			$stmt->bind_param("ssss", $username, $pass, $email, $eth_wallet);
 			// set parameters and execute
 			$pass = password_hash($pass2, PASSWORD_DEFAULT);
-			$user = $user;
+			$user = $username;
 			$email = $email;
 			$eth_wallet = $eth_wallet;
 			$stmt->execute();
