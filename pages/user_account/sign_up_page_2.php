@@ -188,16 +188,14 @@ $i = 0;
 	}
 	else if ($i==0)
 	{	
-	// if everything is alright (i still = 0) -> create users account
+	// if everything is alright (i still = 0) 
+		// -> create users table in db in case username = admin (first account created)
+		// -> insert users data in db
 	?>
 
 
 			<?php
 			// users tables and it columns are once created when admin creates an account (username = admin) before inserting users data in the database
-			// First: table users is created
-			// Second: username, pass, email and eth_wallet columns created
-			// Third: insert user data in case they are ok
-
 			if ($user=='admin'){		
 
 			// create users table if it does not exist
