@@ -125,8 +125,8 @@ $i = 0;
 
 	
 	<?php
-	// check if password and retyped passwords are the same             
 	}
+	// check if password and retyped passwords are the same             
 	else if ($pass1 != $pass2)
 	{
 	?> 
