@@ -72,9 +72,9 @@ $i = 0;
 
 
 
+	// in case user is signed in, inform user to sign out first
 	if($_SESSION["logedin"] == "yes"){
 		
-	// in case user is signed in, inform the user that he must sign out first
 
 	$user = $_SESSION["user"];
 	?>
@@ -83,10 +83,9 @@ $i = 0;
 
 	<?php
 	}
+	// in case user is signed out and $submit_sign_up_form is not empty check if user data is ok	
 	else if (isset($submit_sign_up_form)) {
-		
-	// in case user is signed out and $submit_sign_up_form is not empty check if user data is ok
-		
+			
 	// as soon as one of the provided data is not ok -> i=1 and the user account will not be created
 	
 	// check if user already exists
@@ -97,11 +96,9 @@ $i = 0;
 	<font size="3" color="#F0F0F0">
 	<?php
 	echo "This username has already been taken!";
-	?> 
-	</font>
-	<?php
 	$i = 1;
 	?> 
+	</font>
 	<br><br>
 	<a href="sign_up_page_1.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
 
@@ -115,11 +112,9 @@ $i = 0;
 	<font size="3" color="#F0F0F0">
 	<?php
 	echo "Username contains whitespace (not allowed)!";
+	$i = 1;
 	?> 
 	</font>
-	<?php
-	$i = 1;
-	?>
 	<br><br>
 	<a href="sign_up_page_1.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
 
@@ -133,11 +128,9 @@ $i = 0;
 	<font size="3" color="#F0F0F0">
 	<?php
 	echo "Passwords don't match!";
+	$i = 1;
 	?> 
 	</font>
-	<?php
-	$i = 1;
-	?>
 	<br><br>
 	<a href="sign_up_page_1.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
 
@@ -151,11 +144,9 @@ $i = 0;
 	<font size="3" color="#F0F0F0">
 	<?php
 	echo "Password contains whitespace (not allowed)!";
+	$i = 1;
 	?> 
 	</font>
-	<?php
-	$i = 1;
-	?>
 	<br><br>
 	<a href="sign_up_page_1.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
 
@@ -169,11 +160,9 @@ $i = 0;
 	<font size="3" color="#F0F0F0">
 	<?php
 	echo "Password must countain at least 5 digits!";
+	$i = 1;
 	?> 
 	</font>
-	<?php
-	$i = 1;
-	?>
 	<br><br>
 	<a href="sign_up_page_1.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
 
@@ -187,11 +176,9 @@ $i = 0;
 	<font size="3" color="#F0F0F0">
 	<?php
 	echo "Username and password must not be the same!";
+	$i = 1;
 	?> 
 	</font>
-	<?php
-	$i = 1;
-	?>
 	<br><br>
 	<a href="sign_up_page_1.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
 
