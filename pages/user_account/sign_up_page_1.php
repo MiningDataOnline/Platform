@@ -147,7 +147,6 @@ else {
 
 
 
-
 <?php
 // include footer
 $path = $_SERVER['DOCUMENT_ROOT'];
