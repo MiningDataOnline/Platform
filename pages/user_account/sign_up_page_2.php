@@ -88,7 +88,7 @@ $i = 0;
 			
 	// as soon as one of the provided data is not ok -> i=1 and the user account will not be created
 	
-	// check if user already exists
+	// if username account already exists -> i=1
 	$sql = "SELECT user FROM users WHERE user='$user'";
 	$result = $conn->query($sql);
 	if ($result->num_rows > 0) {
@@ -104,7 +104,7 @@ $i = 0;
 
 	
 	<?php
-	// check if username contains white spaces
+	// if username contains white spaces  -> i=1
 	}
 	else if (preg_match('/\s/',$user))
 	{
@@ -121,7 +121,7 @@ $i = 0;
 	
 	<?php
 	}
-	// check if password and retyped passwords are the same             
+	// if password and retyped passwords are not the same -> i=1            
 	else if ($pass1 != $pass2)
 	{
 	?> 
@@ -136,7 +136,7 @@ $i = 0;
 
 	
 	<?php
-	// check if password contain whate spaces                          
+	// if password contain whate spaces -> i=1                         
 	}
 	else if (preg_match('/\s/',$pass1))
 	{
@@ -153,7 +153,7 @@ $i = 0;
 	
 	<?php
 	}
-	// check if password contains at least 5 digits                                        
+	// if password contains at less than 5 digits  -> i=1                                      
 	else if (strlen( $pass1 ) <= 4)
 	{
 	?> 
@@ -169,7 +169,7 @@ $i = 0;
 	
 	<?php
 	}
-	// make sure that password and username are not the same                                       
+	// if password and username are the same  -> i=1                                             
 	else if ($pass1 == $user)
 	{
 	?> 
@@ -193,7 +193,7 @@ $i = 0;
 
 
 			<?php
-			// users tables and it columns are once created when admin creates an account (username = admin)
+			// users tables and it columns are once created when admin creates an account (username = admin) before inserting users data in the database
 			// First: table users is created
 			// Second: username, pass, email and eth_wallet columns created
 			// Third: insert user data in case they are ok
