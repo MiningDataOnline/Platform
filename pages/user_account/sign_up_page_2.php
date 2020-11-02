@@ -98,7 +98,7 @@ $i = 0;
 	echo "At least one required user data is missing!";
 	$i = 1;
 	?> 
-	</font>
+	</font><br><br>
 	<?php
 	}
 	?> 		
@@ -115,7 +115,7 @@ $i = 0;
 	echo "This username has already been taken!";
 	$i = 1;
 	?> 
-	</font>
+	</font><br><br>
 	<?php
 	}
 	?> 
@@ -132,7 +132,7 @@ $i = 0;
 	echo "Username contains whitespace (not allowed)!";
 	$i = 1;
 	?> 
-	</font>
+	</font><br><br>
 	<?php
 	}
 	?> 
@@ -148,7 +148,7 @@ $i = 0;
 	echo "Passwords don't match!";
 	$i = 1;
 	?> 
-	</font>
+	</font><br><br>
 	<?php
 	}
 	?> 
@@ -165,7 +165,7 @@ $i = 0;
 	echo "Password contains whitespace (not allowed)!";
 	$i = 1;
 	?> 
-	</font>
+	</font><br><br>
 	<?php
 	}
 	?> 
@@ -182,7 +182,7 @@ $i = 0;
 	echo "Password must countain at least 5 digits!";
 	$i = 1;
 	?> 
-	</font>
+	</font><br><br>
 	<?php
 	}
 	?> 
@@ -199,7 +199,7 @@ $i = 0;
 	echo "Username and password must not be the same!";
 	$i = 1;
 	?> 
-	</font>
+	</font><br><br>
 	<?php
 	}
 	?> 
@@ -215,7 +215,7 @@ $i = 0;
 	echo "Wrong email format!";
 	$i = 1;
 	?> 
-	</font>
+	</font><br><br>
 	<?php
 	}
 	?> 	
