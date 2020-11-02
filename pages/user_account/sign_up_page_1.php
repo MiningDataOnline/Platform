@@ -61,7 +61,7 @@ if($_SESSION["logedin"] == "yes"){
 }
 else {
 ?>
-<form action="sign_up2.php" method="post"> 
+<form action="sign_up_page_2.php" method="post"> 
 	<div class="form-group"><br>					  
 		<table>
 			<col width="10%" /> 
