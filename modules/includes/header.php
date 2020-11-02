@@ -1,3 +1,11 @@
+<?php
+$query = "SELECT id FROM $table";
+$result = mysqli_query($conn, $query);
+if(empty($result)) {
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -47,3 +55,10 @@
 		</style>
 	</head>
 <body>
+	
+	
+<?php
+}
+?>
+
+	
