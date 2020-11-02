@@ -57,7 +57,7 @@ $email = mysqli_real_escape_string($conn, $_POST['email']);
 $eth_wallet = mysqli_real_escape_string($conn, $_POST['eth_wallet']);
 $submit_sign_up_form = mysqli_real_escape_string($conn, $_POST['submit_sign_up_form']);
 
-// everything alright with provided user data as long as i=0, otherwise (if i=1) the user account will not be created
+// user account will be created if  i stays equal to 0
 $i = 0;
 ?> 
 
