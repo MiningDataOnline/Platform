@@ -83,7 +83,7 @@ $i = 0;
 	<?php
 	}
 	else if (isset($submit_sign_up_form)) {
-	// in case user is signed out do this and $submit_sign_up_form not empty
+	// in case user is signed out and $submit_sign_up_form not empty do the following
 
 		
 	// check if user already exists
