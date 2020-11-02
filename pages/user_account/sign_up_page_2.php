@@ -73,6 +73,7 @@ $i = 0;
 
 
 	if($_SESSION["logedin"] == "yes"){
+		
 	// in case user is signed in, inform the user that he must sign out first
 
 	$user = $_SESSION["user"];
@@ -83,21 +84,23 @@ $i = 0;
 	<?php
 	}
 	else if (isset($submit_sign_up_form)) {
-	// in case user is signed out and $submit_sign_up_form not empty do the following
-
 		
+	// in case user is signed out and $submit_sign_up_form is not empty check if user data is ok
+		
+	// as soon as one of the provided data is not ok -> i=1 and the user account will not be created
+	
 	// check if user already exists
 	$sql = "SELECT user FROM users WHERE user='$user'";
 	$result = $conn->query($sql);
 	if ($result->num_rows > 0) {
 	?> 
 	<font size="3" color="#F0F0F0">
-		<?php
-			echo "This username has already been taken!";
-		?> 
+	<?php
+	echo "This username has already been taken!";
+	?> 
 	</font>
 	<?php
-			$i = 1;
+	$i = 1;
 	?> 
 	<br><br>
 	<a href="sign_up_page_1.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
@@ -110,12 +113,12 @@ $i = 0;
 	{
 	?> 
 	<font size="3" color="#F0F0F0">
-		<?php
-			echo "Username contains whitespace (not allowed)!";
-		?> 
+	<?php
+	echo "Username contains whitespace (not allowed)!";
+	?> 
 	</font>
 	<?php
-			$i = 1;
+	$i = 1;
 	?>
 	<br><br>
 	<a href="sign_up_page_1.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
@@ -128,12 +131,12 @@ $i = 0;
 	{
 	?> 
 	<font size="3" color="#F0F0F0">
-		<?php
-			echo "Passwords don't match!";
-		?> 
+	<?php
+	echo "Passwords don't match!";
+	?> 
 	</font>
 	<?php
-			$i = 1;
+	$i = 1;
 	?>
 	<br><br>
 	<a href="sign_up_page_1.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
@@ -141,68 +144,69 @@ $i = 0;
 	
 	<?php
 	// check if password contain whate spaces                          
-		}
-		else if (preg_match('/\s/',$pass1))
-		{
+	}
+	else if (preg_match('/\s/',$pass1))
+	{
 	?> 
 	<font size="3" color="#F0F0F0">
-		<?php
-			echo "Password contains whitespace (not allowed)!";
-		?> 
+	<?php
+	echo "Password contains whitespace (not allowed)!";
+	?> 
 	</font>
 	<?php
-			$i = 1;
+	$i = 1;
 	?>
 	<br><br>
 	<a href="sign_up_page_1.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
 
 	
 	<?php
+	}
 	// check if password contains at least 5 digits                                        
-		}
-		else if (strlen( $pass1 ) <= 4)
-		{
+	else if (strlen( $pass1 ) <= 4)
+	{
 	?> 
 	<font size="3" color="#F0F0F0">
-		<?php
-			echo "Password must countain at least 5 digits!";
-		?> 
+	<?php
+	echo "Password must countain at least 5 digits!";
+	?> 
 	</font>
 	<?php
-			$i = 1;
+	$i = 1;
 	?>
 	<br><br>
 	<a href="sign_up_page_1.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
 
 	
 	<?php
+	}
 	// make sure that password and username are not the same                                       
-		}
-		else if ($pass1 == $user)
-		{
+	else if ($pass1 == $user)
+	{
 	?> 
 	<font size="3" color="#F0F0F0">
-		<?php
-			echo "Username and password must not be the same!";
-		?> 
+	<?php
+	echo "Username and password must not be the same!";
+	?> 
 	</font>
 	<?php
-			$i = 1;
+	$i = 1;
 	?>
 	<br><br>
 	<a href="sign_up_page_1.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
 
 	
 	<?php
-	// if everything alright (i still = 0) -> insert users data in the database
-		}
-		else if ($i==0)
-		{
+	
+	}
+	else if ($i==0)
+	{	
+	// if everything is alright (i still = 0) -> create users account
 	?>
 
 
 			<?php
-			// the follwing will only be executed once... when admin creates an account
+			// users tables and it columns are once created when admin creates an account (username = admin)
 			// First: table users is created
 			// Second: username, pass, email and eth_wallet columns created
 			// Third: insert user data in case they are ok
