@@ -29,7 +29,7 @@ require("$path");
 <?php
 // include header
 $path = $_SERVER['DOCUMENT_ROOT'];
-$path .= "/includes/header.html";
+$path .= "/modules/includes/header.html";
 include("$path"); 
 ?>
 
@@ -37,7 +37,7 @@ include("$path");
 <?php
 // include top navigation bar
 $path = $_SERVER['DOCUMENT_ROOT'];
-$path .= "/includes/nav_bar.php";
+$path .= "/modules/includes/nav_bar.php";
 include("$path"); 
 ?>
 
@@ -337,7 +337,7 @@ $i = 0;
 <?php
 // include footer
 $path = $_SERVER['DOCUMENT_ROOT'];
-$path .= "/includes/footer.html";
+$path .= "/modules/includes/footer.html";
 include ("$path"); 
 ?>
 
