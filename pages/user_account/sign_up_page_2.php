@@ -208,7 +208,7 @@ $i = 0;
 	
 	<?php
 	// if email format not valid  -> i=1                                             
- 	if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {	{
+ 	if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 	?> 
 	<font size="3" color="#F0F0F0">
 	<?php
