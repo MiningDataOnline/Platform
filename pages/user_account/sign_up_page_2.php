@@ -200,11 +200,26 @@ $i = 0;
 	$i = 1;
 	?> 
 	</font>
-	<br><br>
-	<a href="sign_up_page_1.php"><font size="3" color="#81DAF5">Try Again</font></a><br><br>
 	<?php
 	}
 	?> 
+	
+
+	
+	<?php
+	// if email format not valid  -> i=1                                             
+ 	if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {	{
+	?> 
+	<font size="3" color="#F0F0F0">
+	<?php
+	echo "Wrong email format!";
+	$i = 1;
+	?> 
+	</font>
+	<?php
+	}
+	?> 	
+	
 	
 	
 	
