@@ -83,7 +83,7 @@ $i = 0;
 	<?php
 	}
 	else if (isset($submit_sign_up_form)) {
-	// in case user is signed out do this
+	// in case user is signed out do this and $submit_sign_up_form not empty
 
 		
 	// check if user already exists
@@ -203,8 +203,9 @@ $i = 0;
 
 			<?php
 			// the follwing will only be executed once... when admin creates an account
-			// table users is created
-			// username, pass, email and eth_wallet columns created
+			// First: table users is created
+			// Second: username, pass, email and eth_wallet columns created
+			// Third: insert user data in case they are ok
 
 			if ($user=='admin'){		
 
@@ -224,7 +225,7 @@ $i = 0;
 			$query = mysqli_query("SHOW COLUMNS FROM `$table` LIKE 'username'");
 			$result = mysqli_query($conn, $query);
 			if(empty($result)) {
-				$sqlalt="alter table `$table` add `username` varchar(25)";
+				$sqlalt="alter table `$table` add `user` varchar(25)";
 				$conn->query($sqlalt);
 			}
 
