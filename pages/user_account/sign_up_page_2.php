@@ -43,7 +43,7 @@ include("$path");
 
 
 
-<center><font size="8" class ="lime-text" >Sign Up</font></center><br><br>
+<center><font size="8" <?php echo $color_text; ?> >Sign Up</font></center><br><br>
 
 
 
@@ -78,7 +78,7 @@ $i = 0;
 
 	$user = $_SESSION["user"];
 	?>
-	<div align="center"><font size="3"  class ="<?php echo $color_text; ?>">You are currently signed in as "<?php echo $user?>"!</font></div><br>
+	<div align="center"><font size="3"  <?php echo $color_text; ?> >You are currently signed in as "<?php echo $user?>"!</font></div><br>
 	<div align="center"><font size="3" color="#F0F0F0">You need to sign out before you can create a new account!</font></div><br>
 
 	<?php
