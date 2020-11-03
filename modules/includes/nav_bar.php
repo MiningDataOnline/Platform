@@ -1,3 +1,10 @@
+<?php
+// don't show navigation bar before setting up the admin account (process in witch the users table an id-column is created)
+$query = "SELECT id FROM users";
+$result = mysqli_query($conn, $query);
+if(!empty($result)) {
+?>
+
 
 <div class="navbar-fixed">		
 	<nav class="#212121 grey darken-4" role="navigation">
@@ -31,3 +38,7 @@
 </div>				
 			
 					
+	
+<?php
+}
+?>
