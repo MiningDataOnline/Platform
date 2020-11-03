@@ -56,7 +56,7 @@ if(!empty($result)) {
 // write page title "Create Administrators Account" in case users table does not exist (that means, in case admins account has not been created yet)
 else {
 ?>
-<center><font size="8" class ="grey-text" >Create Admin Account</font></center><br><br>
+<center><font size="8" class ="grey-text" >Create Administrators Account</font></center><br><br>
 <?php
 }
 ?>	
