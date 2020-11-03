@@ -43,8 +43,23 @@ include("$path");
 
 
 
-
+<?php
+// write page title "Sign Up" if table users already exists
+$query = "SELECT id FROM users";
+$result = mysqli_query($conn, $query);
+if(!empty($result)) {
+?>	
 <center><font size="8" class ="grey-text" >Sign Up</font></center><br><br>
+<?php
+}
+// if users table does not exits, that means the administrators account has not been created yet
+// write page title "Create Administrators Account" in case users table does not exist (that means, in case admins account has not been created yet)
+else {
+?>
+<center><font size="8" class ="grey-text" >Create Admin Account</font></center><br><br>
+<?php
+}
+?>	
 
 
 
