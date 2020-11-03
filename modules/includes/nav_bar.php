@@ -1,5 +1,6 @@
 <?php
-// don't show navigation bar before setting up the admin account (process in witch the users table an id-column is created)
+// the navigation bar should only be available if the users table already exits
+// the users table is created when admin account is created (first accout created)
 $query = "SELECT id FROM users";
 $result = mysqli_query($conn, $query);
 if(!empty($result)) {
