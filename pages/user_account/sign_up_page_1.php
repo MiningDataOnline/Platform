@@ -77,8 +77,27 @@ else {
 						<div align="right"><font size="3" class ="grey-text" >Username &emsp;</font></div>
 					</td>
 					<td valign="middle"  style="padding-bottom: 2em;">
-						<input style="background:#DEFFFF;" type="text" name="username"  value="" placeholder="Required" maxlength="25"  required>
-						<div align="left"><font size="1" class ="grey-text" >Note 1: No white spaces allowed.</font></div>
+						
+						
+					<?php
+					// show username input if users table already exists
+					$query = "SELECT id FROM users";
+					$result = mysqli_query($conn, $query);
+					if(!empty($result)) {
+					?>	
+					<input style="background:#DEFFFF;" type="text" name="username"  value="" placeholder="Required" maxlength="25"  required>
+					<div align="left"><font size="1" class ="grey-text" >Note 1: No white spaces allowed.</font></div>
+					<?php
+					}
+					// if users table does not exits, that means the administration account has not been created yet
+					// the first account created must have the username admin obligatorily
+					else {
+					?>
+					<input type="hidden" name="username" value="admin"> 
+					<div align="left"><font size="3" class ="white-text" >admin</font></div>
+					<?php
+					}
+					?>						
 					</td>
 					<td>
 					</td>								
