@@ -1,8 +1,4 @@
-<?php
-$query = "SELECT id FROM $table";
-$result = mysqli_query($conn, $query);
-if(empty($result)) {
-?>
+
 
 
 
@@ -56,9 +52,5 @@ if(empty($result)) {
 	</head>
 <body>
 	
-	
-<?php
-}
-?>
 
 	
