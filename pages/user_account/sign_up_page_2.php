@@ -287,7 +287,7 @@ $i = 0;
 
 			<br>
 			<br>
-			<a href="sign_up_page_1.php"><font size="3" color="#81DAF5">Sign In</font></a>
+			<a href="/index.php"><font size="3" color="#81DAF5">Continue</font></a>
 
 
 
