@@ -65,7 +65,7 @@ if(empty($result)) {
 <?php
 // include footer
 $path = $_SERVER['DOCUMENT_ROOT'];
-$path .= "/modules/includes/footer.html";
+$path .= "/modules/includes/footer.php";
 include ("$path"); 
 ?>
 
