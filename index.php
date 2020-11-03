@@ -55,7 +55,7 @@ $query = "SELECT id FROM users";
 $result = mysqli_query($conn, $query);
 if(empty($result)) {
 ?>
-
+<center><a href="/pages/user_account/sign_up_page_1.php" target='_parent'><font size="5" color="#5acefa">Sign Up</font></a></center>
 <?php	
 }
 ?>
