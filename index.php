@@ -56,26 +56,21 @@ include("$path");
 //  in case users table exists set $users_table=1 otherwise it will sta =0
 $query = "SELECT id FROM users";
 $result = mysqli_query($conn, $query);
-if(empty($result)) {
-	
+if(empty($result)) {	
 	?>
 	<center><a href="/pages/user_account/sign_up_page_1.php" target='_parent'><font size="5" color="#5acefa">Get Started</font></a></center>
-
 	<?php
 	// in case users table exits and the user is admin, do the following
 	if ($user=='admin') {
-
-	// check if table config exits.... if not, give admin the link to settings page	
-	$query = "SELECT id FROM config";
-	$result = mysqli_query($conn, $query);
-	if(empty($result)) {
-	?>
-	<center><a href="/pages/settings/settings.php" target='_parent'><font size="5" color="#5acefa">Settings</font></a></center>
-	<?php	
-	}
-	
-	}
-			
+		// check if table config exits.... if not, give admin the link to settings page	
+		$query = "SELECT id FROM config";
+		$result = mysqli_query($conn, $query);
+		if(empty($result)) {
+			?>
+			<center><a href="/pages/settings/settings.php" target='_parent'><font size="5" color="#5acefa">Settings</font></a></center>
+			<?php	
+		}
+	}		
 }
 ?>	
 
