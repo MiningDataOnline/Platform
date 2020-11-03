@@ -32,7 +32,7 @@ require("$path");*/
 <?php
 // include header
 $path = $_SERVER['DOCUMENT_ROOT'];
-$path .= "/modules/includes/header.php";
+$path .= "/modules/includes/header.html";
 include("$path"); 
 ?>
 
@@ -55,7 +55,7 @@ $query = "SELECT id FROM users";
 $result = mysqli_query($conn, $query);
 if(empty($result)) {
 ?>
-<center><a href="/pages/user_account/sign_up_page_1.php" target='_parent'><font size="5" color="#5acefa">Sign Up</font></a></center>
+<center><a href="/pages/user_account/sign_up_page_1.php" target='_parent'><font size="5" color="#5acefa">Get Started</font></a></center>
 <?php	
 }
 ?>
@@ -65,7 +65,7 @@ if(empty($result)) {
 <?php
 // include footer
 $path = $_SERVER['DOCUMENT_ROOT'];
-$path .= "/modules/includes/footer.php";
+$path .= "/modules/includes/footer.html";
 include ("$path"); 
 ?>
 
