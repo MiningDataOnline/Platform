@@ -83,15 +83,13 @@ if ($user=='admin') {
 					</td>
 					<td valign="middle"  style="padding-bottom: 2em;">
             
-
-              <input type="radio" id="template_1.1" name="template" value="template_1.1">
-              <label for="template_1.1">template_1.1</label><br>
-              <input type="radio" id="template_1.2" name="template" value="template_1.2">
-              <label for="template_1.2">template_1.2</label><br>
-              <input type="radio" id="template_2.1" name="template" value="template_2.1">
-              <label for="template_2.1">template_2.1</label><br>
-              <input type="radio" id="template_2.2" name="template" value="template_2.2">            
-              <label for="template_2.2">template_2.2</label><br>
+						<select name="template"    class="browser-default"> 
+							<option value="template_1_1">template_1_1</option> 
+							<option value="template_1_2">template_1_2</option> 
+							<option value="template_1_3">template_1_3</option>
+							<option value="template_1_4">template_1_4</option> 
+						</select> 
+   
 
             
 					</td>
