@@ -68,7 +68,7 @@ if ($user=='admin') {
 					</td>
 					<td valign="middle"  style="padding-bottom: 2em;">
 
-            <input style="background:#DEFFFF;" type="password" name="category"  value="" placeholder="Required" maxlength="50"  required>
+            <input style="background:#DEFFFF;" name="category"  value="" placeholder="Required" maxlength="50"  required>
 						<div align="left"><font size="1" class ="grey-text" >Example: Dog Breeds, Nigerian Constitution, Word Constitutions, My Village Wheater Data, etc.;</font></div>
 						
 					</td>
