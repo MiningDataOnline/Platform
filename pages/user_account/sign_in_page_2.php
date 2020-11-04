@@ -58,6 +58,16 @@ include("$path");
               $pass = mysqli_real_escape_string($conn, $_POST['pass']);
 
 
+								$sql11 = "SELECT pass FROM users WHERE username='$username' LIMIT 1";
+								$result11 = $conn->query($sql11);
+								if ($result11->num_rows > 0) {
+									while($row11 = $result11->fetch_assoc()) {
+										$passdb =  $row11["pass"];
+									}
+								}  
+  
+  
+  
               if($_SESSION["logedin"] == "yes"){
               ?>
               <div align="center"><font size="3" color="#F0F0F0">You are currently signed in as "<?php echo $user?>"!</font></div><br>
