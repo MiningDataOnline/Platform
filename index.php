@@ -43,7 +43,7 @@ $path = $_SERVER['DOCUMENT_ROOT'];
 $path .= "/modules/includes/nav_bar.php";
 include("$path"); 
 ?>
-
+<br><br><br>
 
 
 <?php
