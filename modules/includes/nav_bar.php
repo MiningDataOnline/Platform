@@ -1,9 +1,23 @@
 <?php
-// the navigation bar should only be available if the users table already exits
-// the users table is created when admin account is created (first accout created)
+// the navigation bar should only be available if the users table and config table already exits
+
+// check if users table exists... 
+$users_table=0;
 $query = "SELECT id FROM users";
 $result = mysqli_query($conn, $query);
 if(!empty($result)) {
+$users_table=1;
+}
+
+// check if table config exits....
+$config_table=0;
+$query = "SELECT id FROM config";
+$result = mysqli_query($conn, $query);
+if(!empty($result)) {
+$config_table=1;
+}
+
+if($users_table==1 && $config_table==1) {
 ?>
 
 
