@@ -82,9 +82,9 @@ if($users_table==0 && $config_table==0) {
 
 
 <?php
-if($users_table==1 && $config_table==0) {
+if($users_table==1 && $config_table==0 && empty($user)) {
 ?>
-<center><a href="/pages/settings/settings_page_1.php" target='_parent'><font size="5" color="#5acefa">Settings</font></a></center>
+<center><a href="/pages/settings/sign_in_page_1.php" target='_parent'><font size="5" color="#5acefa">Sign In</font></a></center>
 <?php	
 }
 ?>
