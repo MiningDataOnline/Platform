@@ -48,7 +48,7 @@ include("$path");
 
 <?php
 // check if users table exists... 
-$config_table=0;
+$users_table=0;
 $query = "SELECT id FROM users";
 $result = mysqli_query($conn, $query);
 if(!empty($result)) {
