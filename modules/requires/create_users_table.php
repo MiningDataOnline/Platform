@@ -24,7 +24,7 @@
 			$query = mysqli_query("SHOW COLUMNS FROM `$table` LIKE 'pass'");
 			$result = mysqli_query($conn, $query);
 			if(empty($result)) {
-				$sqlalt="alter table `$table` add `pass` varchar(50)";
+				$sqlalt="alter table `$table` add `pass` varchar(200)";
 				$conn->query($sqlalt);
 			}
 
