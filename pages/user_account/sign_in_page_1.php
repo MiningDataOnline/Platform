@@ -65,13 +65,12 @@ else {
 
 
 <?php
-// user need to be signed out in order to access the sign up form
+// user need to be signed out in order to be able to sign in :)
 
 if($_SESSION["logedin"] == "yes"){
 	$user = $_SESSION["user"];
 ?>
 <div align="center"><font size="3" class ="grey-text" >You are currently signed in as "<?php echo $user?>"!</font></div><br>
-<div align="center"><font size="3" class ="grey-text" >You need to sign out before you can create a new account!</font></div><br>
 <?php
 }
 else {
