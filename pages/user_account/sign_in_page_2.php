@@ -65,9 +65,7 @@ include("$path");
 										$passdb =  $row11["pass"];
 									}
 								}  
-  echo $username;
-	echo $pass;
-	echo $passdb;
+
   
   
               if($_SESSION["logedin"] == "yes"){
