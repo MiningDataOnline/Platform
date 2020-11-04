@@ -49,7 +49,7 @@ $category =  $row["category"];
 			if($_SESSION["logedin"] == "yes"){
 			?>
 			<li><font size="2" color="grey">User: </font><font size="2" color="grey"><?php echo $user?></font></li>
-			<li><a href="/pages/user_account/account.php" target='_parent'><font size="2" color="#5acefa">My Account</font></a></li>
+			<li><a href="/pages/user_account/my_account.php" target='_parent'><font size="2" color="#5acefa">My Account</font></a></li>
 			<li><a href="/pages/user_account/sign_out.php" target='_parent'><font size="2" color="#5acefa">Sign Out</font></a></li>
 			<?php
 			} else {
