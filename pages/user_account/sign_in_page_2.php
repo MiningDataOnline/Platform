@@ -55,13 +55,12 @@ include("$path");
    <center>
 
               <?php
-              // $username = $user1... received from the sign in form. $user on the other hand comes from the session start required above
-              $user1 = mysqli_real_escape_string($conn, $_POST['username']);
+              $username = mysqli_real_escape_string($conn, $_POST['username']);
               $pass = mysqli_real_escape_string($conn, $_POST['pass']);
 
 
 
-              $sql11 = "SELECT failed_attempts, email, failed_recover_attempts, pass FROM users WHERE user='$user1' LIMIT 1";
+              $sql11 = "SELECT failed_attempts, email, failed_recover_attempts, pass FROM users WHERE user='$username' LIMIT 1";
               $result11 = $conn->query($sql11);
               if ($result11->num_rows > 0) {
                 while($row11 = $result11->fetch_assoc()) {
@@ -87,7 +86,7 @@ include("$path");
               <?php
               }
               else if ($failed_attempts > 5) {
-                $sql = "UPDATE users SET failed_attempts = failed_attempts+1 WHERE user='$user1'";
+                $sql = "UPDATE users SET failed_attempts = failed_attempts+1 WHERE user='$username'";
                 mysqli_query($conn, $sql);
               ?>
               <br><br>
@@ -101,7 +100,7 @@ include("$path");
                 else
                 {
               ?>
-              <a href="recover_account.php?user1=<?php echo $user1; ?>"><font size="3" color="#81DAF5">Recover Account</font></a><br><br>
+              <a href="recover_account.php?username=<?php echo $username; ?>"><font size="3" color="#81DAF5">Recover Account</font></a><br><br>
               <font size="3" color="#81DAF5">OR</font><br><br>
               <?php
                 }
@@ -116,8 +115,8 @@ include("$path");
               }
               else if (password_verify($pass, $passdb)) {
                 $_SESSION["logedin"] = "yes";
-                $_SESSION["user"] = "$user1";
-                $sql = "UPDATE users SET failed_attempts = 0 WHERE user='$user1'";
+                $_SESSION["user"] = "$username";
+                $sql = "UPDATE users SET failed_attempts = 0 WHERE user='$username'";
                 mysqli_query($conn, $sql);
               ?>
               <br><br>
