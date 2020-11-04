@@ -75,7 +75,7 @@ include("$path");
               }
               else if (password_verify($pass, $passdb)) {
                 $_SESSION["logedin"] = "yes";
-                $_SESSION["user"] = "$user";
+                $_SESSION["user"] = "$username";
               ?>
               <br><br>
               <font size="3" color="#F0F0F0">You are now signed in!</font><br><br>
