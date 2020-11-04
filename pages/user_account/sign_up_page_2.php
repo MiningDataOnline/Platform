@@ -1,3 +1,10 @@
+
+
+<?php
+// NOTICE: email verification process and ethereum wallet address validation still missing
+?>
+
+
 <?php
 // connect to database db_1
 $path = $_SERVER['DOCUMENT_ROOT'];
