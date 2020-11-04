@@ -75,9 +75,7 @@ include("$path");
               }
               else if (password_verify($pass, $passdb)) {
                 $_SESSION["logedin"] = "yes";
-                $_SESSION["user"] = "$username";
-                $sql = "UPDATE users SET failed_attempts = 0 WHERE user='$username'";
-                mysqli_query($conn, $sql);
+                $_SESSION["user"] = "$user";
               ?>
               <br><br>
               <font size="3" color="#F0F0F0">You are now signed in!</font><br><br>
