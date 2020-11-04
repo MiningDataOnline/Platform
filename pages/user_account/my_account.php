@@ -44,7 +44,7 @@ include("$path");
 
 
 
-<center><font size="8" class ="grey-text" >Sign In</font></center><br><br>
+<center><font size="8" class ="grey-text" >My Account</font></center><br><br>
 
 
 
@@ -54,7 +54,7 @@ include("$path");
 							$result2 = $conn->query($sql2);
 							if ($result2->num_rows > 0) {
 								while($row2 = mysqli_fetch_array($result2)) {
-									$user=$row2['user'];
+									$user=$row2['username'];
 									$email=$row2['email'];
 									$eth_wallet=$row2['eth_wallet'];
 
