@@ -47,38 +47,67 @@ include("$path");
 
 
 <?php
-// check if users table exists... if not give the user the option to create an administrator account by sigining up. The users table is created when admin creates an account
-//  in case users table exists set $users_table=1 otherwise it will sta =0
+// check if users table exists... 
+$config_table=0;
 $query = "SELECT id FROM users";
 $result = mysqli_query($conn, $query);
-if(!empty($result)) {	
-	?>
-	<center><a href="/pages/user_account/sign_up_page_1.php" target='_parent'><font size="5" color="#5acefa">Get Started</font></a></center>
-	<?php
-	
+if(!empty($result)) {
+$users_table=1;
+}
+?>
+
+
+<?php
+// check if table config exits....
+$config_table=0;
+$query = "SELECT id FROM config";
+$result = mysqli_query($conn, $query);
+if(empty($result)) {
+$config_table=1;
+}
+?>
+
+
+<center><a href="/pages/user_account/sign_up_page_1.php" target='_parent'><font size="5" color="#5acefa">Get Started</font></a></center>
 	
 
-		$query = "SELECT id FROM config";
-		$result = mysqli_query($conn, $query);
-		if(empty($result)) {
-			?>
-			<center><a href="/pages/user_account/sign_in_page_1.php" target='_parent'><font size="5" color="#5acefa">Sign In</font></a></center>
-			<?php	
-		}
-		// in case users table exits and the user is admin, do the following
-		else if ($user=='admin') {
-		// check if table config exits.... if not, give admin the link to settings page	
-		$query = "SELECT id FROM config";
-		$result = mysqli_query($conn, $query);
-		if(empty($result)) {
-			?>
-			<center><a href="/pages/settings/settings.php" target='_parent'><font size="5" color="#5acefa">Settings</font></a></center>
-			<?php	
-		}
-	}		
+
+<?php
+if($users_table==0 && $config_table==0) {
+?>
+<center><a href="/pages/user_account/sign_up_page_1.php" target='_parent'><font size="5" color="#5acefa">Get Started</font></a></center>
+<?php	
 }
 ?>	
 
+
+
+<?php
+if($user_table==0 && $config_table==0) {
+?>
+<center><a href="/pages/user_account/sign_up_page_1.php" target='_parent'><font size="5" color="#5acefa">Get Started</font></a></center>
+<?php	
+}
+?>
+
+
+<?php
+if($user_table==1 && $config_table==0 && empty($user)) {
+?>
+<center><a href="/pages/settings/sign_in_page_1.php" target='_parent'><font size="5" color="#5acefa">Sign In</font></a></center>
+<?php	
+}
+?>
+
+
+
+<?php
+if($user_table==1 && $config_table==0 && $user=='admin') {
+?>
+<center><a href="/pages/settings/settings_page_1.php" target='_parent'><font size="5" color="#5acefa">Settings</font></a></center>
+<?php	
+}
+?>
 
 
 
