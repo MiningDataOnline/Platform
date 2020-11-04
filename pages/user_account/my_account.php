@@ -107,6 +107,9 @@ include("$path");
 
 
 
+					<?php
+					}
+					?>
 
 
 <?php
