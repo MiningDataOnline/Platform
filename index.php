@@ -82,7 +82,7 @@ if($users_table==0 && $config_table==0) {
 
 
 <?php
-if($user_table==1 && $config_table==0 && empty($user)) {
+if($user_table==1 && $config_table==0) {
 ?>
 <center><a href="/pages/settings/settings_page_1.php" target='_parent'><font size="5" color="#5acefa">Settings</font></a></center>
 <?php	
