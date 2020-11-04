@@ -26,7 +26,7 @@ if(!empty($result)) {
 			<?php
 			} else {
 			?>
-			<li><a href="/pages/user_account/sign_in.php" target='_parent'><font size="2" color="#5acefa">Sign In</font></a></li>
+			<li><a href="/pages/user_account/sign_in_page_1.php" target='_parent'><font size="2" color="#5acefa">Sign In</font></a></li>
 			<li><a href="/pages/user_account/sign_up_page_1.php" target='_parent'><font size="2" color="#5acefa">Sign Up</font></a></li>
 			<?php
 			}
