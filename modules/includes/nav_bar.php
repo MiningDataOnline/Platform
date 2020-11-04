@@ -24,7 +24,7 @@ if($users_table==1 && $config_table==1) {
 	
 	
 	
-	
+// get the category name for the task bar left side	
 $sql = "SELECT category FROM config";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
