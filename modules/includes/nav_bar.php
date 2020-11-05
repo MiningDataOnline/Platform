@@ -41,7 +41,6 @@ $category =  $row["category"];
 <div class="navbar-fixed">	
 
 	<nav class="#212121 grey darken-4" role="navigation">
-			<div class="nav-wrapper container"><a id="logo-container" href="/index.php" class="brand-logo"><font color="#5acefa"><?php echo $category?></font></a>
 			<ul class="right hide-on-med-and-down">
 
 
