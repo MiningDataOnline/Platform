@@ -35,13 +35,13 @@ $category =  $row["category"];
 ?>
 
 
-<div class="row">
-<div class="col s12 m12">
 
 
-<div class="navbar-fixed">		
+
+<div class="navbar-fixed">	
+			<div class="nav-wrapper container"><a id="logo-container" href="/index.php" class="brand-logo"><font color="#5acefa"><?php echo $category?></font></a>
+
 	<nav class="#212121 grey darken-4" role="navigation">
-		<div class="nav-wrapper container"><a id="logo-container" href="/index.php" class="brand-logo"><font color="#5acefa"><?php echo $category?></font></a>
 			<ul class="right hide-on-med-and-down">
 
 
@@ -72,10 +72,7 @@ $category =  $row["category"];
 	
 	
 	
-	
-</div>									
-</div>		
-	
+
 					
 	
 <?php
