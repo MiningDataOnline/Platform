@@ -48,7 +48,6 @@ $path = $_SERVER['DOCUMENT_ROOT'];
 $path .= "/modules/includes/nav_bar.php";
 include("$path"); 
 ?>
-<br><br><br>
 
 
 <?php
@@ -77,10 +76,10 @@ $config_table=1;
 
 <div class="row">
 <div class="col s12 m4 left">
-  <div class="navbar-fixed">
   <div class="#212121 grey darken-4">
 
-	class="#212121 grey darken-4"  
+  <div class="full-height">
+
 <ul class="side-nav fixed">
     <li><a href="#!">First Sidebar Link</a></li>
     <li><a href="#!">Second Sidebar Link</a></li>
