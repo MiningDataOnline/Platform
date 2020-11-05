@@ -72,7 +72,7 @@ $config_table=1;
 ?>
 
 
-
+<br>
 
 <div class="row">
 	<div class="col s12 m4 left">
