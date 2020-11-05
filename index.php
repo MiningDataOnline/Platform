@@ -76,7 +76,7 @@ $config_table=1;
 
 
 <div class="row">
-<div class="col s12 m4 right">
+<div class="col s12 m4 left">
 	
 
 
