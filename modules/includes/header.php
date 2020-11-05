@@ -44,6 +44,13 @@
 			}	
 			
 
+			.full-height {
+			    height: 100%;
+			    min-height: 1000px !important;
+			}			
+			
+			
+			
 		</style>
 	</head>
 <body>
