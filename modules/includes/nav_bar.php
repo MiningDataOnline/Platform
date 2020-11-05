@@ -49,7 +49,7 @@ $category =  $row["category"];
 		
 		
 			<ul class="left hide-on-med-and-down">
-			<li style="padding-left:2em"><font size="6" color="grey"><?php echo $category?></font></li>
+			<li style="padding-left:4em"><font size="6" color="grey"><?php echo $category?></font></li>
 			</ul>		
 		
 		
@@ -75,12 +75,12 @@ $category =  $row["category"];
 			?>
 			<li><font size="2" color="grey">User: </font><font size="2" color="grey"><?php echo $user?></font></li>
 			<li><a href="/pages/user_account/my_account.php" target='_parent'><font size="2" color="#5acefa">My Account</font></a></li>
-			<li><a href="/pages/user_account/sign_out.php" target='_parent'><font size="2" color="#5acefa">Sign Out</font></a></li>
+			<li style="padding-right:4em"><a href="/pages/user_account/sign_out.php" target='_parent'><font size="2" color="#5acefa">Sign Out</font></a></li>
 			<?php
 			} else {
 			?>
 			<li><a href="/pages/user_account/sign_in_page_1.php" target='_parent'><font size="2" color="#5acefa">Sign In</font></a></li>
-			<li><a href="/pages/user_account/sign_up_page_1.php" target='_parent'><font size="2" color="#5acefa">Sign Up</font></a></li>
+			<li style="padding-right:4em"><a href="/pages/user_account/sign_up_page_1.php" target='_parent'><font size="2" color="#5acefa">Sign Up</font></a></li>
 			<?php
 			}
 			?>
