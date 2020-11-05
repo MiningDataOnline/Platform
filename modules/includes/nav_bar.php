@@ -49,11 +49,7 @@ $category =  $row["category"];
 		
 		
 			<ul class="left hide-on-med-and-down">
-
-
-			<?php
-			// 
-			<li><font size="2" color="grey">User: </font><font size="4" color="grey"><?php echo $category?></font></li>
+			<li><font size="4" color="grey">User: </font><font size="4" color="grey"><?php echo $category?></font></li>
 			</ul>		
 		
 		
