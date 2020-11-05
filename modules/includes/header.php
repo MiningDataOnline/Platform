@@ -45,8 +45,8 @@
 			
 
 			.full-height {
-			    height: 100%;
-			    min-height: 1000px !important;
+			    height: 90%;
+			    min-height: 800px !important;
 			}			
 			
 			
