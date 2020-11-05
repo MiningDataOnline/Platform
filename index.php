@@ -77,12 +77,17 @@ $config_table=1;
 
 <div class="row">
 <div class="col s12 m4 left">
-  <div class="#212121 grey darken-4">
-  <div class="full-height">
+  <div class="navbar-fixed">
 
-test
-</div>
-</div>
+	  
+<ul class="side-nav fixed">
+    <li><a href="#!">First Sidebar Link</a></li>
+    <li><a href="#!">Second Sidebar Link</a></li>
+</ul>
+	  
+	  
+	  
+  </div>
 </div>
 	
 	
