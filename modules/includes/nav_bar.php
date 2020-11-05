@@ -44,7 +44,7 @@ $category =  $row["category"];
 			<div class="nav-wrapper container"><a id="logo-container" href="/index.php" class="brand-logo"><font color="#5acefa"><?php echo $category?></font></a>
 	<br><br><br>
 	 <!--Embed logo stored in dropbox-->
-	 <center><img src="https://www.dropbox.com/s/ipzgo08y589xvsu/Screenshot%20from%202020-10-29%2000_05_07%281%29.png?raw=1" height="30%" width="30%"></center>
+	 <center><img src="https://www.dropbox.com/s/ipzgo08y589xvsu/Screenshot%20from%202020-10-29%2000_05_07%281%29.png?raw=1"></center>
 
 			<ul class="right hide-on-med-and-down">
 
