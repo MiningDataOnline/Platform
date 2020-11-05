@@ -76,70 +76,17 @@ $config_table=1;
 
 
 <div class="row">
-
-
-
-
-
-
-
-
-
-<div class="col s12 m6 right">
+<div class="col s12 m4 right">
 	
-
-
-<?php
-if($users_table==0 && $config_table==0) {
-?>
-<center><a href="/pages/user_account/sign_up_page_1.php" target='_parent'><font size="5" color="#5acefa">Get Started</font></a></center>
-<?php	
-}
-?>	
-
-
-
-<?php
-if($users_table==1 && $config_table==0 && empty($user)) {
-?>
-<center><a href="/pages/user_account/sign_in_page_1.php" target='_parent'><font size="5" color="#5acefa">Sign In</font></a></center>
-<?php	
-}
-?>
-
-
-
-<?php
-if($users_table==1 && $config_table==0 && $user=='admin') {
-?>
-<center><a href="/pages/settings/settings_page_1.php" target='_parent'><font size="5" color="#5acefa">Settings</font></a></center>
-<?php	
-}
-?>
-
-
-
-<br><br><br>
- <!--Embed logo stored in dropbox-->
- <center><img src="https://www.dropbox.com/s/ipzgo08y589xvsu/Screenshot%20from%202020-10-29%2000_05_07%281%29.png?raw=1" height="30%" width="30%"></center>
 
 
 
 
 </div>
-
 	
 	
+<div class="col s12 m8 right">
 	
-	
-	
-
-
-
-<div class="col s12 m6 right">
-	
-
-
 <?php
 if($users_table==0 && $config_table==0) {
 ?>
@@ -147,8 +94,6 @@ if($users_table==0 && $config_table==0) {
 <?php	
 }
 ?>	
-
-
 
 <?php
 if($users_table==1 && $config_table==0 && empty($user)) {
@@ -158,8 +103,6 @@ if($users_table==1 && $config_table==0 && empty($user)) {
 }
 ?>
 
-
-
 <?php
 if($users_table==1 && $config_table==0 && $user=='admin') {
 ?>
@@ -167,25 +110,15 @@ if($users_table==1 && $config_table==0 && $user=='admin') {
 <?php	
 }
 ?>
-
-
-
+	
 <br><br><br>
  <!--Embed logo stored in dropbox-->
  <center><img src="https://www.dropbox.com/s/ipzgo08y589xvsu/Screenshot%20from%202020-10-29%2000_05_07%281%29.png?raw=1" height="30%" width="30%"></center>
-
-
 
 
 </div>	
-	
-	
-	
-	
-	
-	
-	
 </div>
+
 
 <?php
 // include footer
