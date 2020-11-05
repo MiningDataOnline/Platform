@@ -49,28 +49,15 @@ $category =  $row["category"];
 		
 		
 			<ul class="left hide-on-med-and-down">
-			<li style="padding-left:4em"><font size="6" color="grey"><?php echo $category?></font></li>
+			<li style="padding-left:8em"><font size="6" color="grey"><?php echo $category?></font></li>
 			</ul>		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 			<ul class="right hide-on-med-and-down">
-
-
 			<?php
 			// 
 			// if user is logged in show username, a link to "my account" and the option to sign out.
 			// if user is not logged in, show a link to the "sign in" and the "sign up" form
 	
-
 			if($_SESSION["logedin"] == "yes"){
 			?>
 			<li><font size="2" color="grey">User: </font><font size="2" color="grey"><?php echo $user?></font></li>
