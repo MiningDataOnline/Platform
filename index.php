@@ -75,12 +75,20 @@ $config_table=1;
 <br>
 
 <div class="row">
-	<div class="col s12 m4 left">
+	<div class="col s12 m3 left">
 		<div class="#212121 grey darken-4">
 			<div class="full-height">
 
 				
-				
+				<?php
+				// check if table config exits....
+				$config_table=0;
+				$query = "SELECT id FROM config";
+				$result = mysqli_query($conn, $query);
+				if(!empty($result)) {
+				$config_table=1;
+				}
+				?>				
 
 
 			</div>  
@@ -88,7 +96,7 @@ $config_table=1;
 	</div>
 	
 
-	<div class="col s12 m8 right">
+	<div class="col s12 m9 right">
 
 	<?php
 	if($users_table==0 && $config_table==0) {
