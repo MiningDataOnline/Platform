@@ -36,7 +36,7 @@ $category =  $row["category"];
 
 
 <div class="row">
-<div class="col s12 m4 left">
+<div class="col s12 m12 center">
 
 
 <div class="navbar-fixed">		
