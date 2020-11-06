@@ -51,7 +51,7 @@ if ($result55->num_rows > 0) {
 	$id = $row55["ID"];
 	$output1 = '/project_pages/ownership/project_ownership.php?id=';
 	$output2 = $output1 . $id;
-
+echo $id;
     
 	    
 	    
