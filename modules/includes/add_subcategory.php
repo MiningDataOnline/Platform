@@ -17,17 +17,18 @@ mysqli_query($conn, $sql);
 <table class="table"  >
 <tbody>
 <tr>
-<th scope="row"></th>
 <td>
 <center><font size="3" color="#D8D8D8" >Add Subcategory:</font></center>
 </td>
 <td>
 <input style="background:#DEFFFF;color:#000000;" class="form-control name_list" name="subcategory_name" size="10"  maxlength="50" value="" placeholder="Enter Project Name" required/><br>
 </td>
+ <td>
+<center><input type="submit" value="Add" name="add_subcategory"></center><br>  
+</td>
 </tr>
 </tbody>
 </table>
-<center><input type="submit" value="Add" name="add_subcategory"></center><br>  
 </div>
 </form> 
 
