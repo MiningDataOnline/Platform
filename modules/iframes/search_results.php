@@ -100,7 +100,7 @@ if ($result55->num_rows > 0) {
 
       //Data type: int, varchar, text
       $variable_data_type='varchar';	
-      $variable_max_lenght=100;	
+      $variable_max_lenght=50;	
 
       $back_page='/project_pages/search/searchresults_show_all.php?'.$input_id_name.'='.$id;		
       $path = $_SERVER['DOCUMENT_ROOT'];
