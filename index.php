@@ -80,6 +80,27 @@ $config_table=1;
 			<div class="full-height">
 
 				
+
+
+<?php
+// create subcategory table
+$path = $_SERVER['DOCUMENT_ROOT'];
+$path .= "/modules/requires/create_subcategories_table.php";
+require_once("$path");
+?>
+
+
+
+
+<?php
+// include add subcategory option
+$path = $_SERVER['DOCUMENT_ROOT'];
+$path .= "/modules/includes/add_subcategory_form.php";
+include("$path"); 
+?>				
+				
+				
+				
  <iframe src="/modules/iframes/search_results.php"></iframe> 				
 
 
