@@ -44,7 +44,7 @@ include("$path");
 // search and show all subcategories 
 // editor, auditor and admin get the variable with the option to change and verrify them
 
-$sql55 = "SELECT ID, subcategory_name FROM subcategories";
+$sql55 = "SELECT * FROM subcategories";
 $result55 = $conn->query($sql55);
 if ($result55->num_rows > 0) {
     while($row55 = $result55->fetch_assoc()) {
@@ -63,12 +63,12 @@ if ($result55->num_rows > 0) {
 	if ($name_activate == 3 || $user == 'admin'){
 	?>
       	<br><br>					
-            <center><a  class ="deep-orange-text" href="<?php echo $output2;?>"><font size="3"><?php echo $company_name; ?></font></a></center><br>		
+            <center><a  class ="deep-orange-text" href="<?php echo $output2;?>"><font size="3"><?php echo $subcategory_name; ?></font></a></center><br>		
      	 <?php
             }
       	else if($name_activate == 2)
       	{?>									
-            <center><font size="3" color="grey"><?php echo $company_name; ?></font></center><br>	
+            <center><font size="3" color="grey"><?php echo $subcategory_name; ?></font></center><br>	
       	<?php
       	} 
       	else 
