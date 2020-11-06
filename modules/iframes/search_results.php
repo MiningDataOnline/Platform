@@ -44,7 +44,7 @@ include("$path");
 // search and show all subcategories 
 // editor, auditor and admin get the variable with the option to change and verrify them
 
-$sql55 = "SELECT ID FROM subcategories";
+$sql55 = "SELECT ID, subcategory_name FROM subcategories";
 $result55 = $conn->query($sql55);
 if ($result55->num_rows > 0) {
     while($row55 = $result55->fetch_assoc()) {
