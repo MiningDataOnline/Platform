@@ -95,7 +95,7 @@ require_once("$path");
 <?php
 // include add subcategory option
 $path = $_SERVER['DOCUMENT_ROOT'];
-$path .= "/modules/includes/add_subcategory_form.php";
+$path .= "/modules/includes/add_subcategory.php";
 include("$path"); 
 ?>				
 				
