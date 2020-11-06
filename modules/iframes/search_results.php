@@ -49,7 +49,7 @@ $result55 = $conn->query($sql55);
 if ($result55->num_rows > 0) {
     while($row55 = $result55->fetch_assoc()) {
 	$id = $row55["ID"];
-	$company_name = $row55["company_name"];
+	$subcategory_name = $row55["subcategory_name"];
 	$output1 = '/project_pages/ownership/project_ownership.php?id=';
 	$output2 = $output1 . $id;
 	?>		   
