@@ -91,7 +91,7 @@ $path = $_SERVER['DOCUMENT_ROOT'];
 $path .= "/modules/variables_varchar.php";
 require("$path");
 $name=$variable_value;
-$name_activate=$variable_value;
+$name_activate=$variable_activate_value;
 $name_activate_source=$variable_source_value;
 ?>		   
 	    
