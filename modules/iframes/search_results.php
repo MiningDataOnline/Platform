@@ -47,7 +47,7 @@ include("$path");
 <?php
 // create subcategory table
 $path = $_SERVER['DOCUMENT_ROOT'];
-$path .= "/modules/requires/create_subcategory_table.php";
+$path .= "/modules/requires/create_subcategories_table.php";
 require_once("$path");
 ?>
 
@@ -64,7 +64,7 @@ require_once("$path");
 // search and show all subcategories 
 // editor, auditor and admin get the variable with the option to change and verrify them
 
-$sql55 = "SELECT id FROM subcategory";
+$sql55 = "SELECT id FROM subcategories";
 $result55 = $conn->query($sql55);
 if ($result55->num_rows > 0) {
     while($row55 = $result55->fetch_assoc()) {
@@ -76,7 +76,7 @@ if ($result55->num_rows > 0) {
       // name
       $variable='subcategory_name';
       // table
-      $table='project';
+      $table='subcategories';
       //name of ID columm
       $id_column_name='id';
       //Name of input-ID
