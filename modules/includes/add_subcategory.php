@@ -4,8 +4,8 @@
 if (isset($_POST["submit44"])) {
 $editdate = date("ymd"); 
 $nowDate = gmdate("Ym"); 
-$subcategory_name = mysqli_real_escape_string($conn, $_POST['$subcategory_name']);
-	echo $subcategory_name;
+$subcategory_name = mysqli_real_escape_string($conn, $_POST['subcategory_name']);
+echo $subcategory_name;
 $sql = "INSERT INTO subcategories (subcategory_name, subcategory_name_editor, subcategory_name_editdate,  subcategory_name_bill_month_year) VALUES('$subcategory_name', '$user', '$editdate', '$nowDate')";  
 mysqli_query($conn, $sql); 
 }
