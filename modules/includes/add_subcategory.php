@@ -19,10 +19,10 @@ mysqli_query($conn, $sql);
 <tr>
 <th scope="row"></th>
 <td>
-<center><font size="5" color="#D8D8D8" >Add Subcategory:</font></center>
+<center><font size="3" color="#D8D8D8" >Add Subcategory:</font></center>
 </td>
 <td>
-<input style="background:#DEFFFF;color:#000000;" class="form-control name_list" name="subcategory_name" size="40"  maxlength="50" value="" placeholder="Enter Project Name" required/><br>
+<input style="background:#DEFFFF;color:#000000;" class="form-control name_list" name="subcategory_name" size="10"  maxlength="50" value="" placeholder="Enter Project Name" required/><br>
 </td>
 </tr>
 </tbody>
