@@ -101,7 +101,7 @@ include("$path");
 				
 				
 				
- <iframe src="/modules/iframes/search_results.php"  height="50%" ></iframe> 				
+ <iframe src="/modules/iframes/search_results.php"  height="200px" ></iframe> 				
 
 
 			</div>  
