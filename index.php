@@ -80,15 +80,7 @@ $config_table=1;
 			<div class="full-height">
 
 				
-				<?php
-				// check if table config exits....
-				$config_table=0;
-				$query = "SELECT id FROM config";
-				$result = mysqli_query($conn, $query);
-				if(!empty($result)) {
-				$config_table=1;
-				}
-				?>				
+ <iframe src="/modules/iframes/search_results.php"></iframe> 				
 
 
 			</div>  
