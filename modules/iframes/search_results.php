@@ -53,46 +53,7 @@ if ($result55->num_rows > 0) {
 	$output2 = $output1 . $id;
 echo $id;
     
-	    
-	    
-
-
-// name
-$variable='subcategory_name';
-// table
-$table='subcategories';
-//name of ID columm
-$id_column_name='ID';
-//Name of input-ID
-$input_id=$id;
-//Name of input-ID
-$input_id_name='id';
-//show variable for admin + contributers?
-$show_intern='yes';
-//show variable for public view?
-$show_public='no';	
-//show variable input field?
-$show_input='yes';			
-//show unit input field?
-$show_input_unit='no';
-
-$show_input_source='no';	
-$show_source_information_words='no';
-
-// wenn nur admin verifizieren darf
-$admin_audit_only='yes';																																				   
-
-//Data type: int, varchar, text
-$variable_data_type='varchar';	
-$variable_max_lenght=50;	
-
-$back_page='/project_pages/search/searchresults_show_all.php?'.$input_id_name.'='.$id;		
-$path = $_SERVER['DOCUMENT_ROOT'];
-$path .= "/modules/variables_varchar.php";
-require("$path");
-$name=$variable_value;
-$name_activate=$variable_activate_value;
-$name_activate_source=$variable_source_value;
+	
 ?>		   
 	    
 	    
