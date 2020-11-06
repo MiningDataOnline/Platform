@@ -94,7 +94,7 @@ mysqli_query($conn, $sql);
 </tr>
 </tbody>
 </table>
-<center><input type="submit" value="add_subcategory" name="submit"></center><br>  
+<center><input type="submit" value="add_subcategory" name="add_subcategory"></center><br>  
 </div>
 </form> 
 
