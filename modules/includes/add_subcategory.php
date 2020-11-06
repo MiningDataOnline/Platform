@@ -27,7 +27,7 @@ mysqli_query($conn, $sql);
 </tr>
 </tbody>
 </table>
-<center><input type="submit" value="submit44" name="submit44"></center><br>  
+<center><input type="submit" value="Add" name="submit44"></center><br>  
 </div>
 </form> 
 
