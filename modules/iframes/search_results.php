@@ -37,7 +37,7 @@ include("$path");
 ?>
 
 
-
+	<div class="#212121 grey darken-4">
 
 
 <?php
@@ -55,7 +55,6 @@ echo $id;
     
 	
 ?>		   
-	    
 	    
 	    
 	    
@@ -89,7 +88,7 @@ echo "0 results";
 
 
 
-
+</div>	
 
 
 
