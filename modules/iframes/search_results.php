@@ -44,11 +44,11 @@ include("$path");
 // search and show all subcategories 
 // editor, auditor and admin get the variable with the option to change and verrify them
 
-$sql55 = "SELECT id FROM subcategories";
+$sql55 = "SELECT ID FROM subcategories";
 $result55 = $conn->query($sql55);
 if ($result55->num_rows > 0) {
     while($row55 = $result55->fetch_assoc()) {
-	$id = $row55["id"];
+	$id = $row55["ID"];
 	$output1 = '/project_pages/ownership/project_ownership.php?id=';
 	$output2 = $output1 . $id;
 
@@ -62,7 +62,7 @@ $variable='subcategory_name';
 // table
 $table='subcategories';
 //name of ID columm
-$id_column_name='id';
+$id_column_name='ID';
 //Name of input-ID
 $input_id=$id;
 //Name of input-ID
