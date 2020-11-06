@@ -66,8 +66,8 @@ require_once("$path");
 
 
 <?php
-$add_subcategory = mysqli_real_escape_string($conn, $_POST['add_subcategory']);
-if (!empty($add_subcategory)){
+$submit = mysqli_real_escape_string($conn, $_POST['submit']);
+if (!empty($submit)){
 	
 $editdate = date("ymd"); 
 $nowDate = gmdate("Ym"); 
@@ -94,7 +94,7 @@ mysqli_query($conn, $sql);
 </tr>
 </tbody>
 </table>
-<center><input type="submit" value="add_subcategory" name="add_subcategory"></center><br>  
+<center><input type="submit" value="submit" name="submit"></center><br>  
 </div>
 </form> 
 
