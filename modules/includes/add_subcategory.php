@@ -17,7 +17,7 @@ mysqli_query($conn, $sql);
 <tbody>
 <tr>
 <td>
-<center><font size="3" color="#D8D8D8" >Add Subcategory:</font></center>
+<center><font size="3" color="#D8D8D8" >Add Book:</font></center>
 </td>
 <td>
 <input style="background:#DEFFFF;color:#000000;" class="form-control name_list" name="subcategory_name" size="10"  maxlength="50" value="" placeholder="Enter Project Name" required/><br>
