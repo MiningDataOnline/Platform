@@ -1,7 +1,7 @@
 
  
 <?php
-if (isset($_POST["submit44"])) {
+if (isset($_POST["add_subcategory"])) {
 $editdate = date("ymd"); 
 $nowDate = gmdate("Ym"); 
 $subcategory_name = mysqli_real_escape_string($conn, $_POST['subcategory_name']);
@@ -27,7 +27,7 @@ mysqli_query($conn, $sql);
 </tr>
 </tbody>
 </table>
-<center><input type="submit" value="Add" name="submit44"></center><br>  
+<center><input type="submit" value="Add" name="add_subcategory"></center><br>  
 </div>
 </form> 
 
