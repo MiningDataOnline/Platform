@@ -259,7 +259,7 @@ $i = 0;
 
 				
 			<?php
-			// connect to database db_1
+			// create users table
 			$path = $_SERVER['DOCUMENT_ROOT'];
 			$path .= "/modules/requires/create_users_table.php";
 			require_once("$path");
