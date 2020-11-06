@@ -49,33 +49,30 @@ $result55 = $conn->query($sql55);
 if ($result55->num_rows > 0) {
     while($row55 = $result55->fetch_assoc()) {
 	$id = $row55["ID"];
+	$company_name = $row55["company_name"];
 	$output1 = '/project_pages/ownership/project_ownership.php?id=';
 	$output2 = $output1 . $id;
-echo $id;
-    
-	
-?>		   
+	?>		   
 	    
 	    
 	    
 	    
 	    
 	    
-      <?php    
-      
+      	<?php    
 	if ($name_activate == 3 || $user == 'admin'){
 	?>
-            <br><br>					
-            <center><a  class ="deep-orange-text" href="<?php echo $output2;?>"><font size="3"><?php echo $name; ?></font></a></center><br>		
-      <?php
+      	<br><br>					
+            <center><a  class ="deep-orange-text" href="<?php echo $output2;?>"><font size="3"><?php echo $company_name; ?></font></a></center><br>		
+     	 <?php
             }
-      else if($name_activate == 2)
-      {?>									
-            <center><font size="3" color="grey"><?php echo $name; ?></font></center><br>	
-      <?php
-      } 
-      else 
-      {?>									
+      	else if($name_activate == 2)
+      	{?>									
+            <center><font size="3" color="grey"><?php echo $company_name; ?></font></center><br>	
+      	<?php
+      	} 
+      	else 
+      	{?>									
 
       <?php
       } 
