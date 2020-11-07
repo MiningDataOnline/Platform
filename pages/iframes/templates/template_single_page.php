@@ -101,7 +101,7 @@ $subcategory_name =  $row["subcategory_name"];
 				$back_page='/pages/iframes/template_single_page.php?'.$input_id_name.'='.$input_id;		
 				$path = $_SERVER['DOCUMENT_ROOT'];
 				$path .= "/modules/variables_varchar.php";
-				require("$path");
+				include("$path");
 				$paragraph_1=$variable_value;
 				$paragraph_1_source=$variable_source_value;
         ?>																	
