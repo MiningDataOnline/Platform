@@ -82,30 +82,30 @@ $config_table=1;
 				
 
 
-<?php
-// create subcategory table
-$path = $_SERVER['DOCUMENT_ROOT'];
-$path .= "/modules/requires/create_subcategories_table.php";
-require_once("$path");
-?>
+			<?php
+			// create subcategory table
+			$path = $_SERVER['DOCUMENT_ROOT'];
+			$path .= "/modules/requires/create_subcategories_table.php";
+			require_once("$path");
+			?>
 
 
 
 
-<?php
-// include add subcategory option
-$path = $_SERVER['DOCUMENT_ROOT'];
-$path .= "/modules/includes/add_subcategory.php";
-include("$path"); 
-?>				
+			<?php
+			// include "add subcategory" option
+			$path = $_SERVER['DOCUMENT_ROOT'];
+			$path .= "/modules/includes/add_subcategory.php";
+			include("$path"); 
+			?>				
 
-				
-				
-<br><br>	
-				
-				
-				
- <center><iframe src="/modules/iframes/search_results.php"  height="500px"  width="90%" style="border:none;" allowtransparency="true" ></iframe></center> 				
+
+
+			<br><br>	
+
+
+
+			<center><iframe src="/modules/iframes/search_results.php"  height="500px"  width="90%" style="border:none;" allowtransparency="true" ></iframe></center> 				
 
 
 			</div>  
