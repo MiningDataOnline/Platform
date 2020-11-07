@@ -70,6 +70,7 @@ $subcategory_name =  $row["subcategory_name"];
 
 
 <div class="row">
+<div class="col s12 m12 right">
 <br>
 
 
@@ -152,6 +153,7 @@ $subcategory_name =  $row["subcategory_name"];
 										
 																
 				
+</div>
 </div>
 
 
