@@ -37,7 +37,7 @@ include("$path");
 ?>
 
 
-	<div class="#212121 grey darken-4">
+<div class="#212121 grey darken-4">
 
 
 <center><font size="5" color="#D8D8D8" >Books</font></center>			
@@ -53,6 +53,7 @@ if ($result55->num_rows > 0) {
 while($row55 = $result55->fetch_assoc()) {
 $template = $row55["template"];
 <?php
+} 
 } 
 ?>	
 		
