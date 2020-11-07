@@ -90,7 +90,7 @@ $subcategory_name =  $row["subcategory_name"];
 
 				if ($show_public=='yes' || $show_intern=='yes' && ($company_editor == 1 || $company_auditor == 1  ||  $user == 'administrador')){
 				?>				  	  
-				<font size="3" color="<?php echo $company_color?>">Owner Name:</font>	
+				<font size="3" color="grey">Book:</font>	
 				<?php 				
 				} 	
 
