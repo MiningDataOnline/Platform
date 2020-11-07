@@ -109,7 +109,7 @@ $subcategory_name =  $row["subcategory_name"];
 
        				 <?php		
 				// variable name
-				$variable='subcategory_name';
+				$variable='paragraph_1';
 				// table
 				$table='subcategories';
 				//name of ID columm
@@ -140,44 +140,7 @@ $subcategory_name =  $row["subcategory_name"];
 	
 
 
-
-
-
-
-
-
-															
-				&nbsp;&nbsp;
-  			      <?php
-				// variable name
-				$variable='paragraph_1';
-				// table
-				$table='subcategories';
-				//name of ID columm
-				$id_column_name='ID';
-				//Name of input-ID
-				$input_id=$subcategory_id;
-				//Name of input-ID
-				$input_id_name='subcategory_id';
-				//show variable for admin + contributers?
-				$show_intern='yes';
-				//show variable for public view?
-				$show_public='yes';	
-				//show variable input field?
-				$show_input='yes';			
-				//show unit input field?
-				$show_input_unit='no';
-				//Data type: int, varchar, text
-					 $variable_data_type='varchar';	
-					$variable_max_lenght=5000;						
-				$back_page='/pages/iframes/templates/template_single_page.php?'.$input_id_name.'='.$input_id;		
-				$path = $_SERVER['DOCUMENT_ROOT'];
-				$path .= "/modules/variable_varchar.php";
-				include("$path");
-				$paragraph_1=$variable_value;
-				$paragraph_1_source=$variable_source_value;
-   				     ?>																	
-																
+										
 																
 				
 
