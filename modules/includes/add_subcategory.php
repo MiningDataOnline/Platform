@@ -1,5 +1,5 @@
 <?php
-if ($user='admin') {
+if ($user=='admin') {
 ?>
 
 
