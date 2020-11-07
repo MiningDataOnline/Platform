@@ -69,7 +69,7 @@ $subcategory_name =  $row["subcategory_name"];
 
 
 
-<div>
+<div class="row">
 <br>
 
 
