@@ -55,7 +55,7 @@ $sql = "SELECT category_name FROM subcategories WHERE ID='$subcategory_id'";
 $result4 = $conn->query($sql);
 if ($result4->num_rows > 0) {
 while($row = $result4->fetch_assoc()) {
-$category_name =  $row["category_name"];
+$subcategory_name =  $row["subcategory_name"];
 }
 }
 ?>
