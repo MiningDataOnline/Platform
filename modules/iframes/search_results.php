@@ -55,8 +55,7 @@ if ($result55->num_rows > 0) {
     while($row55 = $result55->fetch_assoc()) {
 	$id = $row55["ID"];
 	$subcategory_name = $row55["subcategory_name"];
-	$output1 = '/project_pages/ownership/project_ownership.php?id=';
-	$output2 = $output1 . $id;
+	$link = '/pages/iframes/'.$template.'.php?subcategory_id='.$id;
 	?>		   
 	    
 	    
@@ -66,7 +65,7 @@ if ($result55->num_rows > 0) {
 	if ($name_activate == 3 || $user == 'admin'){
 	?>
       	<br><br>					
-            <center><a  class ="deep-orange-text" href="<?php echo $output2;?>"><font size="3"><?php echo $subcategory_name; ?></font></a></center><br>		
+            <center><a  class ="deep-orange-text" href="<?php echo $link;?>"><font size="3"><?php echo $subcategory_name; ?></font></a></center><br>		
      	 <?php
             }
       	else if($name_activate == 2)
