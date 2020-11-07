@@ -71,7 +71,7 @@ include("$path");
 	<?php
 	if($users_table==1 && $config_table==0 && empty($user)) {
 	?>
-	<center><a href="/pages/user_account/sign_in_page_1.php" target='_parent'><font size="5" color="#5acefa">Sign In</font></a></center>
+	<center><a href="/pages/user_account/sign_in_page_1.php" target='pages_iframe'><font size="5" color="#5acefa">Sign In</font></a></center>
 	<?php	
 	}
 	?>
@@ -79,7 +79,7 @@ include("$path");
 	<?php
 	if($users_table==1 && $config_table==0 && $user=='admin') {
 	?>
-	<center><a href="/pages/settings/settings_page_1.php" target='_parent'><font size="5" color="#5acefa">Settings</font></a></center>
+	<center><a href="/pages/settings/settings_page_1.php" target='pages_iframe'><font size="5" color="#5acefa">Settings</font></a></center>
 	<?php	
 	}
 	?>
