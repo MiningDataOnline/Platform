@@ -40,10 +40,10 @@ include("$path");
 
 
 <?php
-$subcategory_id = clear($_GET['subcategory_id']);
-if (empty($company_id))
+$subcategory_id = mysqli_real_escape_string($conn, $_GET['subcategory_id']);
+if (empty($subcategory_id))
 {
-$subcategory_id = clear($_POST['subcategory_id']);
+$subcategory_id = mysqli_real_escape_string($conn, $_POST['subcategory_id']);
 }
 ?>
 
