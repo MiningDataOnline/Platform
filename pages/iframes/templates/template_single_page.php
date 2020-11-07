@@ -80,7 +80,7 @@ $subcategory_name =  $row["subcategory_name"];
 				// variable name
 				$variable='paragraph_1';
 				// table
-				$table='template_single_page';
+				$table='subcategories';
 				//name of ID columm
 				$id_column_name='ID';
 				//Name of input-ID
