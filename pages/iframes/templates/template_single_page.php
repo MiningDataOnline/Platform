@@ -98,7 +98,7 @@ $subcategory_name =  $row["subcategory_name"];
 				//Data type: int, varchar, text
 					 $variable_data_type='varchar';	
 					$variable_max_lenght=5000;						
-				$back_page='/pages/iframes/template_single_page.php?'.$input_id_name.'='.$input_id;		
+				$back_page='/pages/iframes/templates/template_single_page.php?'.$input_id_name.'='.$input_id;		
 				$path = $_SERVER['DOCUMENT_ROOT'];
 				$path .= "/modules/variables_varchar.php";
 				include("$path");
