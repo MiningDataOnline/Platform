@@ -52,7 +52,7 @@ echo $subcategory_id;
 
 <?php
 // get subcategory name and show it
-$sql = "SELECT subcategory_name FROM subcategories WHERE ID='$subcategory_id'";
+$sql = "SELECT subcategory_name FROM subcategories WHERE ID=$subcategory_id";
 $result4 = $conn->query($sql);
 if ($result4->num_rows > 0) {
 while($row = $result4->fetch_assoc()) {
