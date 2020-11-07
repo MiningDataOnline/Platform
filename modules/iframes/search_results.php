@@ -53,10 +53,10 @@ $sql55 = "SELECT * FROM subcategories";
 $result55 = $conn->query($sql55);
 if ($result55->num_rows > 0) {
     while($row55 = $result55->fetch_assoc()) {
-	$ID = $row55["ID"];
+	$id_x = $row55["ID"];
 	$subcategory_name = $row55["subcategory_name"];
 	$output1 = '/project_pages/ownership/project_ownership.php?id=';
-	$output2 = $output1 . $ID;
+	$output2 = $output1 . $id_x;
 	?>		   
 	    
 	    
@@ -68,7 +68,7 @@ if ($result55->num_rows > 0) {
 				//name of ID columm
 				$id_column_name='ID';
 				//Name of input-ID
-				$input_id=$ID;
+				$input_id=$id_x;
 				//Name of input-ID
 				$input_id_name='ID';
 				//show variable for admin + contributers?
@@ -90,7 +90,7 @@ if ($result55->num_rows > 0) {
 				$variable_data_type='varchar';	
 				$variable_max_lenght=100;	
 		
-				$back_page='/modules/iframes/search_results.php?'.$input_id_name.'='.$ID;		
+				$back_page='/modules/iframes/search_results.php?'.$input_id_name.'='.$id_x;		
 				$path = $_SERVER['DOCUMENT_ROOT'];
 				$path .= "/modules/variables_varchar.php";
 				require("$path");
