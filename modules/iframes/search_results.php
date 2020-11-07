@@ -40,6 +40,11 @@ include("$path");
 	<div class="#212121 grey darken-4">
 
 
+<center><font size="5" color="#D8D8D8" >Books</font></center>			
+		
+		
+		
+		
 <?php
 // search and show all subcategories 
 // editor, auditor and admin get the variable with the option to change and verrify them
