@@ -1,3 +1,8 @@
+<?php
+if ($user='admin') {
+?>
+
+
 
  
 <?php
@@ -31,3 +36,9 @@ mysqli_query($conn, $sql);
 </div>
 </form> 
 
+
+
+ 
+<?php
+}
+?>
