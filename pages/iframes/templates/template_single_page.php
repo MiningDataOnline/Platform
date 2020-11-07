@@ -45,7 +45,6 @@ if (empty($subcategory_id))
 {
 $subcategory_id = mysqli_real_escape_string($conn, $_POST['subcategory_id']);
 }
-echo $subcategory_id;
 ?>
 
 
