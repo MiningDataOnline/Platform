@@ -106,7 +106,7 @@ include("$path");
 <center><font size="5" color="#D8D8D8" >Books</font></center>			
 				
 				
- <iframe src="/modules/iframes/search_results.php"  height="500px"  width="90%" style="background: #212121;" ></iframe> 				
+ <center><iframe src="/modules/iframes/search_results.php"  height="500px"  width="90%" style="background: #212121;" ></iframe></center> 				
 
 
 			</div>  
