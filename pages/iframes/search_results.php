@@ -71,7 +71,7 @@ if ($result55->num_rows > 0) {
     while($row55 = $result55->fetch_assoc()) {
 	$id = $row55["ID"];
 	$subcategory_name = $row55["subcategory_name"];
-	$link = '/pages/iframes/'.$template.'.php?subcategory_id='.$id;
+	$link = '/pages/iframes/templates/'.$template.'.php?subcategory_id='.$id;
 	?>		   
 	    
 	    
