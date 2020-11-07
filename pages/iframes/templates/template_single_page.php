@@ -82,7 +82,7 @@ $subcategory_name =  $row["subcategory_name"];
 				// table
 				$table='template_single_page';
 				//name of ID columm
-				$id_column_name='id';
+				$id_column_name='ID';
 				//Name of input-ID
 				$input_id=$subcategory_id;
 				//Name of input-ID
@@ -100,7 +100,7 @@ $subcategory_name =  $row["subcategory_name"];
 					$variable_max_lenght=5000;						
 				$back_page='/pages/iframes/templates/template_single_page.php?'.$input_id_name.'='.$input_id;		
 				$path = $_SERVER['DOCUMENT_ROOT'];
-				$path .= "/modules/variables_varchar.php";
+				$path .= "/modules/variable_varchar.php";
 				include("$path");
 				$paragraph_1=$variable_value;
 				$paragraph_1_source=$variable_source_value;
