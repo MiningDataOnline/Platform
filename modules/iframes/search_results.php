@@ -53,14 +53,51 @@ $sql55 = "SELECT * FROM subcategories";
 $result55 = $conn->query($sql55);
 if ($result55->num_rows > 0) {
     while($row55 = $result55->fetch_assoc()) {
-	$id = $row55["ID"];
+	$ID = $row55["ID"];
 	$subcategory_name = $row55["subcategory_name"];
 	$output1 = '/project_pages/ownership/project_ownership.php?id=';
-	$output2 = $output1 . $id;
+	$output2 = $output1 . $ID;
 	?>		   
 	    
 	    
-	    
+				<?php
+				// variable name
+				$variable='subcategory_name';
+				// table
+				$table='subcategories';
+				//name of ID columm
+				$id_column_name='ID';
+				//Name of input-ID
+				$input_id=$ID;
+				//Name of input-ID
+				$input_id_name='ID';
+				//show variable for admin + contributers?
+				$show_intern='yes';
+				//show variable for public view?
+				$show_public='no';	
+				//show variable input field?
+				$show_input='yes';			
+				//show unit input field?
+				$show_input_unit='no';
+	
+				$show_input_source='no';	
+				$show_source_information_words='no';
+			
+				// wenn nur admin verifizieren darf
+				$admin_audit_only='yes';																																				   
+			
+				//Data type: int, varchar, text
+				$variable_data_type='varchar';	
+				$variable_max_lenght=100;	
+		
+				$back_page='/modules/iframes/search_results.php?'.$input_id_name.'='.$ID;		
+				$path = $_SERVER['DOCUMENT_ROOT'];
+				$path .= "/modules/variables_varchar.php";
+				require("$path");
+				$subcategory_name=$variable_value;
+				$subcategory_name_activate=$variable_value;
+				$subcategory_name_activate_source=$variable_source_value;
+				?>	    
 	    
 	    
 	    
