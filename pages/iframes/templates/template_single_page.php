@@ -142,7 +142,7 @@ $subcategory_name =  $row["subcategory_name"];
 	
 				if ($show_public=='yes' || $show_intern=='yes' && ($company_editor == 1 || $company_auditor == 1  ||  $user == 'administrador')){
 				?>				  	  
-				<font size="3" color="grey">$variable</font>	
+				<font size="3" color="grey"><?php echo $variable; ?></font>	
 				<?php 				
 				} 	
 	
