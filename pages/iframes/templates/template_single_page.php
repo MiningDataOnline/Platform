@@ -60,7 +60,7 @@ $subcategory_name =  $row["subcategory_name"];
 }
 }
 ?>
-<center><font size="8"  class ="deep-orange-text" ><?php echo $name; ?></font></center><br><br>
+<center><font size="8"  class ="deep-orange-text" ><?php echo $subcategory_name; ?></font></center><br><br>
 
 
 
