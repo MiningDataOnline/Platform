@@ -81,7 +81,7 @@ if ($result55->num_rows > 0) {
 	if ($name_activate == 3 || $user == 'admin'){
 	?>
       	<br><br>					
-            <center><a  class ="deep-orange-text" href="<?php echo $link;?>"><font size="3"><?php echo $subcategory_name; ?></font></a></center><br>		
+            <center><a  class ="deep-orange-text" href="<?php echo $link;?>" target='pages_iframe'><font size="3"><?php echo $subcategory_name; ?></font></a></center><br>		
      	 <?php
             }
       	else if($name_activate == 2)
