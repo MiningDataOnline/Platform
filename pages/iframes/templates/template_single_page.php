@@ -138,7 +138,14 @@ $subcategory_name =  $row["subcategory_name"];
 				$show_input_unit='no';
 				//Data type: int, varchar, text
 				$variable_data_type='varchar';	
-				$variable_max_lenght=5000;						
+				$variable_max_lenght=5000;
+	
+				if ($show_public=='yes' || $show_intern=='yes' && ($company_editor == 1 || $company_auditor == 1  ||  $user == 'administrador')){
+				?>				  	  
+				<font size="3" color="grey">$variable</font>	
+				<?php 				
+				} 	
+	
 				$back_page='/pages/iframes/templates/template_single_page.php?'.$input_id_name.'='.$input_id;		
 				$path = $_SERVER['DOCUMENT_ROOT'];
 				$path .= "/modules/variable_varchar.php";
