@@ -95,13 +95,8 @@ include("$path");
 	<div class="col s12 m9 right">
 
 
+			<center><iframe src="/pages/iframes/start_page.php" height="500px" width="90%" style="border:none;" allowtransparency="true" ></iframe></center> 
 
-			<?php
-			// include "add subcategory" option
-			$path = $_SERVER['DOCUMENT_ROOT'];
-			$path .= "/pages/iframes/start_page.php";
-			include("$path"); 
-			?>
 		
 		
 
