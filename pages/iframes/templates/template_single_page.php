@@ -107,8 +107,7 @@ $subcategory_name =  $row["subcategory_name"];
 
 
 
-
-        <?php
+       				 <?php		
 				// variable name
 				$variable='subcategory_name';
 				// table
@@ -136,7 +135,7 @@ $subcategory_name =  $row["subcategory_name"];
 				include("$path");
 				$paragraph_1=$variable_value;
 				$paragraph_1_source=$variable_source_value;
-        ?>																	
+     				   ?>																	
 																
 	
 
@@ -148,8 +147,8 @@ $subcategory_name =  $row["subcategory_name"];
 
 
 															
-	
-        <?php
+				&nbsp;&nbsp;
+  			      <?php
 				// variable name
 				$variable='paragraph_1';
 				// table
@@ -177,7 +176,7 @@ $subcategory_name =  $row["subcategory_name"];
 				include("$path");
 				$paragraph_1=$variable_value;
 				$paragraph_1_source=$variable_source_value;
-        ?>																	
+   				     ?>																	
 																
 																
 				
