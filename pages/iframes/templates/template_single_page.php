@@ -151,7 +151,7 @@ $subcategory_name =  $row["subcategory_name"];
 
 								<tr >
 									<td style="border-top: 1px solid #ddd;" valign="center">
-										<font size="3" class ="deep-orange-text">Line 1:</font><br>
+										<font size="3" class ="grey-text">Line 1:</font><br>
 									</td>
 
 									<td style="border-top:1px solid #ddd;height:70px" valign="center">
@@ -160,7 +160,7 @@ $subcategory_name =  $row["subcategory_name"];
 
        				 <?php
 				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
-				$variable_designation='Line 1';
+				$variable_designation='';
 				// variable name
 				$variable='line_1';
 				// table
@@ -208,7 +208,7 @@ $subcategory_name =  $row["subcategory_name"];
 
 								<tr>
 									<td style="border-top: 1px solid #ddd;height:70px" valign="center">
-										<font size="3" class ="deep-orange-text">Line 2:</font>
+										<font size="3" class ="grey-text">Line 2:</font>
 
 									</td>
 									<td style="border-top: 1px solid #ddd;" valign="center">
@@ -217,7 +217,7 @@ $subcategory_name =  $row["subcategory_name"];
 
        				 <?php
 				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
-				$variable_designation='Line 2';
+				$variable_designation='';
 				// variable name
 				$variable='line_2';
 				// table
@@ -262,14 +262,14 @@ $subcategory_name =  $row["subcategory_name"];
 
 								<tr>
 									<td style="border-top: 1px solid #ddd;height:70px" valign="center">
-										<font size="3" class ="deep-orange-text">Line 3:</font>
+										<font size="3" class ="grey-text">Line 3:</font>
 									</td>
 
 									<td style="border-top: 1px solid #ddd;" valign="center">
 
        				 <?php
 				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
-				$variable_designation='Line 3';
+				$variable_designation='';
 				// variable name
 				$variable='line_3';
 				// table
@@ -313,7 +313,7 @@ $subcategory_name =  $row["subcategory_name"];
 
 								<tr>
 									<td style="border-top: 1px solid #ddd;height:70px" valign="center">
-										<font size="3" class ="deep-orange-text">Line 4:</font>
+										<font size="3" class ="grey-text">Line 4:</font>
 									</td>
 
 									<td style="border-top: 1px solid #ddd;" valign="center">
@@ -321,7 +321,7 @@ $subcategory_name =  $row["subcategory_name"];
 
        				 <?php
 				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
-				$variable_designation='Line 4';
+				$variable_designation='';
 				// variable name
 				$variable='line_4';
 				// table
@@ -364,7 +364,7 @@ $subcategory_name =  $row["subcategory_name"];
 
 								<tr>
 									<td style="border-top: 1px solid #ddd;height:70px" valign="center">
-										<font size="3" class ="deep-orange-text">Line 5:</font>
+										<font size="3" class ="grey-text">Line 5:</font>
 									</td>
 
 									<td style="border-top: 1px solid #ddd;" valign="center">
@@ -376,7 +376,7 @@ $subcategory_name =  $row["subcategory_name"];
 
        				 <?php
 				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
-				$variable_designation='Line 5';
+				$variable_designation='';
 				// variable name
 				$variable='line_5';
 				// table
