@@ -105,7 +105,7 @@ include("$path");
 				
 				
 				
- <center><iframe src="/modules/iframes/search_results.php"  height="500px"  width="90%" style="background: #212121;border:none;"></iframe></center> 				
+ <center><iframe src="/modules/iframes/search_results.php"  height="500px"  width="90%" style="border:none;" allowtransparency="true" ></iframe></center> 				
 
 
 			</div>  
