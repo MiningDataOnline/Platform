@@ -95,7 +95,7 @@ include("$path");
 	<div class="col s12 m9 right">
 
 
-			<center><iframe src="/pages/iframes/start_page.php" height="800px" width="100%"  allowtransparency="true" ></iframe></center> 
+			<center><iframe src="/pages/iframes/start_page.php" height="800px" width="95%"  allowtransparency="true" ></iframe></center> 
 
 		
 		
