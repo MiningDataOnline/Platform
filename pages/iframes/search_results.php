@@ -43,6 +43,22 @@ include("$path");
 <center><font size="5" color="#D8D8D8" >Books</font></center>			
 		
 		
+
+		
+<?php
+// check witch page template to use
+$sql55 = "SELECT template FROM config";
+$result55 = $conn->query($sql55);
+if ($result55->num_rows > 0) {
+while($row55 = $result55->fetch_assoc()) {
+$template = $row55["template"];
+<?php
+} 
+?>	
+		
+		
+		
+		
 		
 		
 <?php
