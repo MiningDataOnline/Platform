@@ -89,7 +89,7 @@ $config_table=1;
 			require_once("$path");
 			?>
 
-
+			<center><font size="5" color="#D8D8D8" >Books</font></center>	
 
 
 			<?php
