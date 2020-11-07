@@ -50,26 +50,6 @@ include("$path");
 ?>
 
 
-<?php
-// check if users table exists... 
-$users_table=0;
-$query = "SELECT id FROM users";
-$result = mysqli_query($conn, $query);
-if(!empty($result)) {
-$users_table=1;
-}
-?>
-
-
-<?php
-// check if table config exits....
-$config_table=0;
-$query = "SELECT id FROM config";
-$result = mysqli_query($conn, $query);
-if(!empty($result)) {
-$config_table=1;
-}
-?>
 
 
 <br>
@@ -114,6 +94,29 @@ $config_table=1;
 
 	<div class="col s12 m9 right">
 
+
+	<?php
+	// check if users table exists... 
+	$users_table=0;
+	$query = "SELECT id FROM users";
+	$result = mysqli_query($conn, $query);
+	if(!empty($result)) {
+	$users_table=1;
+	}
+	?>
+
+
+	<?php
+	// check if table config exits....
+	$config_table=0;
+	$query = "SELECT id FROM config";
+	$result = mysqli_query($conn, $query);
+	if(!empty($result)) {
+	$config_table=1;
+	}
+	?>
+	
+		
 	<?php
 	if($users_table==0 && $config_table==0) {
 	?>
