@@ -98,7 +98,8 @@ $subcategory_name =  $row["subcategory_name"];
 				//Data type: int, varchar, text
 				$variable_data_type='varchar';	
 				$variable_max_lenght=50;
-
+				//output font color
+				$font_color='';
 				if ($show_public=='yes' || $show_intern=='yes' && ($company_editor == 1 || $company_auditor == 1  ||  $user == 'administrador')){
 				?>				  	  
 				<font size="3" color="grey"><?php echo $variable_designation; ?></font>	
@@ -420,6 +421,8 @@ if ($user=='admin' || (!empty($label_5_value) || !empty($label_4_value) || !empt
 				//Data type: int, varchar, text
 				$variable_data_type='varchar';	
 				$variable_max_lenght=200;
+				//output font color
+				$font_color='grey';
 	
 				if ($show_public=='yes' || $show_intern=='yes' && ($company_editor == 1 || $company_auditor == 1  ||  $user == 'administrador')){
 				?>				  	  
