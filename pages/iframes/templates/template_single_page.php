@@ -155,8 +155,8 @@ $subcategory_name =  $row["subcategory_name"];
 				$path = $_SERVER['DOCUMENT_ROOT'];
 				$path .= "/modules/variable_varchar.php";
 				include("$path");
-				$line_1_label_value=$variable_value;
-				$line_1_label_source_value=$variable_source_value;
+				$label_1_value=$variable_value;
+				$label_1_source_value=$variable_source_value;
      				?>																	
 	
 
@@ -168,7 +168,7 @@ $subcategory_name =  $row["subcategory_name"];
 
        				 <?php
 				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
-				$variable_designation='Line 2:';
+				$variable_designation='Label 2:';
 				// variable name
 				$variable='label_2';
 				// table
@@ -201,8 +201,8 @@ $subcategory_name =  $row["subcategory_name"];
 				$path = $_SERVER['DOCUMENT_ROOT'];
 				$path .= "/modules/variable_varchar.php";
 				include("$path");
-				$line_2_label_value=$variable_value;
-				$line_2_label_source_value=$variable_source_value;
+				$label_2_value=$variable_value;
+				$label_2_source_value=$variable_source_value;
      				?>																	
 	
 
@@ -215,7 +215,7 @@ $subcategory_name =  $row["subcategory_name"];
 
        				 <?php
 				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
-				$variable_designation='Line 3:';
+				$variable_designation='Label 3:';
 				// variable name
 				$variable='label_3';
 				// table
@@ -248,8 +248,8 @@ $subcategory_name =  $row["subcategory_name"];
 				$path = $_SERVER['DOCUMENT_ROOT'];
 				$path .= "/modules/variable_varchar.php";
 				include("$path");
-				$line_3_label_value=$variable_value;
-				$line_3_label_source_value=$variable_source_value;
+				$label_3_value=$variable_value;
+				$label_3_source_value=$variable_source_value;
      				?>																	
 	
 
@@ -262,7 +262,7 @@ $subcategory_name =  $row["subcategory_name"];
 
        				 <?php
 				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
-				$variable_designation='Line 4:';
+				$variable_designation='Label 4:';
 				// variable name
 				$variable='label_4';
 				// table
@@ -295,8 +295,8 @@ $subcategory_name =  $row["subcategory_name"];
 				$path = $_SERVER['DOCUMENT_ROOT'];
 				$path .= "/modules/variable_varchar.php";
 				include("$path");
-				$line_4_label_value=$variable_value;
-				$line_4_label_source_value=$variable_source_value;
+				$label_4_value=$variable_value;
+				$label_4_label_source_value=$variable_source_value;
      				?>																	
 	
 
@@ -309,7 +309,7 @@ $subcategory_name =  $row["subcategory_name"];
 
        				 <?php
 				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
-				$variable_designation='Line 5:';
+				$variable_designation='Label 5:';
 				// variable name
 				$variable='label_5';
 				// table
@@ -342,8 +342,8 @@ $subcategory_name =  $row["subcategory_name"];
 				$path = $_SERVER['DOCUMENT_ROOT'];
 				$path .= "/modules/variable_varchar.php";
 				include("$path");
-				$line_5_label_value=$variable_value;
-				$line_5_label_source_value=$variable_source_value;
+				$label_5_value=$variable_value;
+				$label_5_label_source_value=$variable_source_value;
      				?>																	
 	
 
@@ -359,7 +359,7 @@ $subcategory_name =  $row["subcategory_name"];
 	
 		
 <?php
-if ($user=='admin' || (!empty($line_5_designation_value) || !empty($line_4_designation_value) || !empty($line_3_designation_value) || !empty($line_2_designation_value) || !empty($line_1_designation_value))){
+if ($user=='admin' || (!empty($label_5_value) || !empty($label_4_value) || !empty($label_3_value) || !empty($label_2_value) || !empty($label_1_value))){
 ?>	
 	
 	
