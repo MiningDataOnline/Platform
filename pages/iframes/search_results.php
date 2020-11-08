@@ -70,7 +70,8 @@ $result55 = $conn->query($sql55);
 if ($result55->num_rows > 0) {
     while($row55 = $result55->fetch_assoc()) {
 	$subcategory_id = $row55["ID"];
-	$link = '/pages/iframes/templates/'.$template.'.php?subcategory_id='.$id;
+	$subcategory_name_activate = $row55["subcategory_name_activate"];
+	$link = '/pages/iframes/templates/'.$template.'.php?subcategory_id='.$subcategory_id;
 	?>		   
 	    
 
@@ -81,7 +82,7 @@ if ($result55->num_rows > 0) {
 	    
 	    
       	<?php    
-	if ($name_activate == 3 || $user == 'admin'){
+	if ($subcategory_name_activate == 3 || $user == 'admin'){
 	?>
       	<br><br>
 	
@@ -136,7 +137,7 @@ if ($result55->num_rows > 0) {
 	
 	<?php
             }
-      	else if($name_activate == 2)
+      	else if($subcategory_name_activate == 2)
       	{?>	
 	
 	
