@@ -76,7 +76,7 @@ $subcategory_name =  $row["subcategory_name"];
 
         			<?php
 				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
-				$variable_designation='Subcategory';
+				$variable_designation='Sheft: ';
 				// variable name
 				$variable='subcategory_name';
 				// table
