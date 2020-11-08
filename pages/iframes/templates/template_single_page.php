@@ -393,6 +393,8 @@ $subcategory_name =  $row["subcategory_name"];
 
 
 					<center>
+					<form action="/pages/iframes/templates/template_single_page_pages.php" method="post" style="background-color: white; overflow: auto; width: 95%; border: solid 2px silver;border-radius: 10px;"> 
+
 								<table>
 									<col width="30%" /> 
 									<col width="50%" />
@@ -423,7 +425,9 @@ $subcategory_name =  $row["subcategory_name"];
 										<input type="submit" value="Go" name="choose_page">
 										</td>  
 									</tr>	  
-								</table>												
+								</table>
+						</form>
+						
 				</center>
 
 	
