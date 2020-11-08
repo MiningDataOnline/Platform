@@ -40,7 +40,7 @@ include("$path");
 <div class="#212121 grey darken-4">
 
 
-<center><font size="5" color="#D8D8D8" >Books</font></center>			
+<center><font size="5" color="#D8D8D8" >All Books</font></center>			
 		
 		
 
