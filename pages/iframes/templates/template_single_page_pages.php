@@ -51,6 +51,14 @@ $row_id_x = mysqli_real_escape_string($conn, $_POST['row_id_x']);
 
 
 
+<?php
+$subcategory_id = mysqli_real_escape_string($conn, $_GET['subcategory_id']);
+if (empty($subcategory_id))
+{
+$subcategory_id = mysqli_real_escape_string($conn, $_POST['subcategory_id']);
+}
+?>
+
 
 
 
@@ -67,12 +75,23 @@ $page_name =  $row["page_name"];
 
 
 
+
+
+
+
+
+
+
+
+
 <div class="row">
 <div class="col s12 m12 right">
 <br>
 
 
 
+
+<a href="/pages/iframes/templates/template_single_page.php?subcategory_id=<?php echo $subcategory_id; ?>">Go Back</a>
 
 
 
