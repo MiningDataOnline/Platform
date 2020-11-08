@@ -12,6 +12,18 @@
 				$result = mysqli_query($conn, $query);
 			}
 
+
+
+			// add subcategory_name column
+			$query = mysqli_query("SHOW COLUMNS FROM `$table` LIKE 'subcategory_id'");
+			$result = mysqli_query($conn, $query);
+			if(empty($result)) {
+				$sqlalt="alter table `$table` add `subcategory_id` int(11)";
+				$conn->query($sqlalt);
+}
+
+
+
 			// add subcategory_name column
 			$query = mysqli_query("SHOW COLUMNS FROM `$table` LIKE 'page_label'");
 			$result = mysqli_query($conn, $query);
