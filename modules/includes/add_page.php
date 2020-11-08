@@ -25,16 +25,16 @@ if ($user == 'admin') {
 
 
 
-					<center><div><button id="button01" >Add Page</button></div></center>
+					<center><div><button id="button01" >Add New Page</button></div></center>
 					<div id="options01" align="center">
 								<form action="template_single_page.php" method="post" style="overflow: auto; width: 95%; border: solid 2px silver;border-radius: 10px;"> 
 
 							<div class="form-group"><br>
-								<center><font size="3" color="black">Page Label:&nbsp;</font> 
+								<center><font size="3" color="grey">Page Label:&nbsp;</font> 
 								<input style="background:#DEFFFF;color:#000000;" name="new_page_label" size="20"  maxlength="15" value="" required/></center><br>
 								<input type="hidden" name="subcategory_id" value="<?php echo $subcategory_id; ?>">
 								<br>
-								<center><input type="submit" value="Add" name="add_new_page"></center><br>
+								<center><input type="submit" value="Add Page" name="add_new_page"></center><br>
 
 							</div>
 					</form>
