@@ -84,8 +84,7 @@ if ($user=='admin') {
 					<td valign="middle"  style="padding-bottom: 2em;">
             
 						<select name="template"    class="browser-default"> 
-							<option value="template_single_page">template_single_page</option> 
-							<option value="template_multiple_pages">template_multiple_pages</option> 
+							<option value="template_single_page">Template 1</option> 
 						</select> 
    
 
