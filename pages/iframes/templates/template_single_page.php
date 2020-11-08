@@ -124,7 +124,7 @@ $subcategory_name =  $row["subcategory_name"];
 				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
 				$variable_designation='Line 1:';
 				// variable name
-				$variable='line_1_designation';
+				$variable='line_1_label';
 				// table
 				$table='subcategories';
 				//name of ID columm
@@ -155,8 +155,8 @@ $subcategory_name =  $row["subcategory_name"];
 				$path = $_SERVER['DOCUMENT_ROOT'];
 				$path .= "/modules/variable_varchar.php";
 				include("$path");
-				$line_1_designation_value=$variable_value;
-				$line_1_designation_source_value=$variable_source_value;
+				$line_1_label_value=$variable_value;
+				$line_1_label_source_value=$variable_source_value;
      				?>																	
 	
 
