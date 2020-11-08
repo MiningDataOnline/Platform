@@ -404,7 +404,7 @@ $subcategory_name =  $row["subcategory_name"];
 										<td>
 											<select  class="browser-default" name="row_id_x" size="1">	
 											<?php
-											$sql = "SELECT * FROM page_label WHERE subcategory_id=$subcategory_id ORDER BY ID ASC";
+											$sql = "SELECT * FROM pages WHERE subcategory_id=$subcategory_id ORDER BY ID ASC";
 											  $result = $conn->query($sql);
 											  if ($result->num_rows > 0) {													
 												  while($row = mysqli_fetch_array($result)) {	
