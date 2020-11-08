@@ -14,7 +14,7 @@ if ($user == 'admin') {
 					$editdate = date("ymd"); 
 					$bill_month_year = gmdate("Ym"); 
 					$sql = "INSERT INTO pages (subcategory_id, page_label, page_label_editor,  page_label_editdate,  page_label_bill_month_year,  page_label_activate)
-					VALUES ('$subcategory_id', '$new_page_label', '$user',  '$editdate',  '$bill_month_year',  '2')";
+					VALUES ('$subcategory_id', '$new_page_label', '$user',  '$editdate',  '$bill_month_year',  '3')";
 					if (mysqli_query($conn, $sql)) {
 					echo "Statements Added!";
 					} else {
