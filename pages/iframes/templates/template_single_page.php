@@ -47,15 +47,15 @@ $subcategory_id = mysqli_real_escape_string($conn, $_POST['subcategory_id']);
 }
 ?>
 
-
-
 <?php
-$row_id_x = clear($_GET['row_id_x']);
+$row_id_x = mysqli_real_escape_string($conn, $_GET['row_id_x']);
 if (empty($row_id_x))
 {
-$row_id_x = clear($_POST['row_id_x']);
-}	
+$row_id_x = mysqli_real_escape_string($conn, $_POST['row_id_x']);
+}
 ?>
+
+
 
 
 
@@ -388,6 +388,45 @@ $subcategory_name =  $row["subcategory_name"];
 
 
 
+
+								<table>
+									<col width="30%" /> 
+									<col width="50%" />
+									<col width="20%" />
+									<tr>
+										<td style='text-align:right;vertical-align:middle'>
+										<font size="5" class ="lime-text">Financial Statement:</font>&nbsp;&nbsp;
+										</td>
+										<td>
+											<select  class="browser-default" name="row_id_x" size="1">	
+											<?php
+											$sql = "SELECT * FROM pages WHERE subcategory_id=$subcategory_id ORDER BY ID ASC";
+											  $result = $conn->query($sql);
+											  if ($result->num_rows > 0) {													
+												  while($row = mysqli_fetch_array($result)) {	
+													  $row_id=$row['ID'];	
+													  $page_activate =  $row["page_activate"];
+													  $page_name =  $row["page_name"];
+												}
+											}
+											?>													
+											<option value="<?php echo $row_id; ?>"><?php echo $page_name; ?></option>														  
+											</select>
+											<input type="hidden" name="subcategory_id" value="<?php echo $subcategory_id; ?>">
+										</td>
+										<td>
+										<input type="submit" value="Go" name="choose_page">
+										</td>  
+									</tr>	  
+								</table>												
+
+	
+	
+	
+	
+				</center>
+
+	
 
 	
 	
