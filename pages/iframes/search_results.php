@@ -119,7 +119,7 @@ if ($result55->num_rows > 0) {
 				<?php 				
 				} 	
 
-				$back_page='/pages/iframes/templates/template_single_page.php?'.$input_id_name.'='.$input_id;		
+				$back_page='/pages/iframes/search_results.php?'.$input_id_name.'='.$input_id;		
 				$path = $_SERVER['DOCUMENT_ROOT'];
 				$path .= "/modules/variable_varchar.php";
 				include("$path");
@@ -175,7 +175,7 @@ if ($result55->num_rows > 0) {
 				<?php 				
 				} 	
 
-				$back_page='/pages/iframes/templates/template_single_page.php?'.$input_id_name.'='.$input_id;		
+				$back_page='/pages/iframes/search_results.php?'.$input_id_name.'='.$input_id;		
 				$path = $_SERVER['DOCUMENT_ROOT'];
 				$path .= "/modules/variable_varchar.php";
 				include("$path");
