@@ -375,7 +375,7 @@ if ($user=='admin' || (!empty($line_5_designation_value) || !empty($line_4_desig
 
 								<tr >
 									<td style="border-top: 1px solid #ddd;" valign="center">
-										<font size="3" class ="grey-text">Line 1:</font><br>
+										<font size="3" class ="grey-text"><?php echo $line_1_designation_value; ?></font><br>
 									</td>
 
 									<td style="border-top:1px solid #ddd;height:70px" valign="center">
@@ -432,7 +432,7 @@ if ($user=='admin' || (!empty($line_5_designation_value) || !empty($line_4_desig
 
 								<tr>
 									<td style="border-top: 1px solid #ddd;height:70px" valign="center">
-										<font size="3" class ="grey-text">Line 2:</font>
+										<font size="3" class ="grey-text">$line_2_designation_value</font>
 
 									</td>
 									<td style="border-top: 1px solid #ddd;" valign="center">
@@ -486,7 +486,7 @@ if ($user=='admin' || (!empty($line_5_designation_value) || !empty($line_4_desig
 
 								<tr>
 									<td style="border-top: 1px solid #ddd;height:70px" valign="center">
-										<font size="3" class ="grey-text">Line 3:</font>
+										<font size="3" class ="grey-text">$line_3_designation_value</font>
 									</td>
 
 									<td style="border-top: 1px solid #ddd;" valign="center">
@@ -537,7 +537,7 @@ if ($user=='admin' || (!empty($line_5_designation_value) || !empty($line_4_desig
 
 								<tr>
 									<td style="border-top: 1px solid #ddd;height:70px" valign="center">
-										<font size="3" class ="grey-text">Line 4:</font>
+										<font size="3" class ="grey-text">$line_4_designation_value</font>
 									</td>
 
 									<td style="border-top: 1px solid #ddd;" valign="center">
@@ -588,7 +588,7 @@ if ($user=='admin' || (!empty($line_5_designation_value) || !empty($line_4_desig
 
 								<tr>
 									<td style="border-top: 1px solid #ddd;height:70px" valign="center">
-										<font size="3" class ="grey-text">Line 5:</font>
+										<font size="3" class ="grey-text">$line_5_designation_value</font>
 									</td>
 
 									<td style="border-top: 1px solid #ddd;" valign="center">
