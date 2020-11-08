@@ -977,7 +977,7 @@ if ($user=='admin' || (!empty($label_5_value) || !empty($label_4_value) || !empt
 				$image_1_dropbox_link_name_value = str_replace("dl=0","raw=1","$image_1_dropbox_link_name_value");
         			?>																	
 	
-				<center><img src="<?php echo $image_1_dropbox_link_name_value; ?>" height="90%" width="90%"></center>
+				<center><img src="<?php echo $image_1_dropbox_link_name_value; ?>" height="80%" width="80%"></center>
 
 			</div>
 		</div>		
