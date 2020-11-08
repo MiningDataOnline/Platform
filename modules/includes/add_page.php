@@ -5,6 +5,7 @@ if ($user == 'admin') {
 
 					<?php
 					if (isset($_POST["add_new_page"])) {
+						
 					$new_page_label = mysqli_real_escape_string($conn, $_GET['new_page_label']);
 					if (empty($new_page_label))
 					{
@@ -28,7 +29,8 @@ if ($user == 'admin') {
 					<div id="options01" align="center">
 						<form action="template_single_page.php" method="post" style="background-color: white; overflow: auto; width: 95%; border: solid 2px silver;border-radius: 10px;"> 
 							<div class="form-group"><br>
-								<center><font size="3" color="black">Page Label:&nbsp;</font> <input style="background:#DEFFFF;color:#000000;" name="period_end" size="20"  maxlength="15" value="" required/></center><br>
+								<center><font size="3" color="black">Page Label:&nbsp;</font> 
+								<input style="background:#DEFFFF;color:#000000;" name="new_page_label" size="20"  maxlength="15" value="" required/></center><br>
 								<input type="hidden" name="subcategory_id" value="<?php echo $subcategory_id; ?>">
 								<br>
 								<center><input type="submit" value="Add" name="add_new_page"></center><br>
