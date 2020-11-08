@@ -18,11 +18,10 @@ $user = $_SESSION["user"];
 
 
 <?php
-/*
 // find out wich permissions the user has, in case the user is signed in
 $path = $_SERVER['DOCUMENT_ROOT'];
-$path .= "/code/config/user_permissions.php";
-require("$path");*/
+$path .= "/modules/requires/user_permissions.php";
+require("$path");
 ?>
 	
 	
