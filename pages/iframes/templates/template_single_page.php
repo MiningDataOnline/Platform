@@ -974,9 +974,10 @@ if ($user=='admin' || (!empty($label_5_value) || !empty($label_4_value) || !empt
 				include("$path");
 				$image_1_dropbox_link_name_value=$variable_value;
 				$image_1_dropbox_link_name_source_value=$variable_source_value;
+				$image_1_dropbox_link_name_value = str_replace("dl=0","raw=1","$image_1_dropbox_link_name_value");
         			?>																	
 	
-	<center><img src="<?php echo $variable_designation; ?>" height="30%" width="30%"></center>
+				<center><img src="<?php echo $image_1_dropbox_link_name_value; ?>" height="30%" width="30%"></center>
 
 			</div>
 		</div>		
