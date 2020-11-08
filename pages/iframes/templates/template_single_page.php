@@ -123,7 +123,7 @@ $subcategory_name =  $row["subcategory_name"];
 
        				 <?php
 				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
-				$variable_designation='Paragraph 1';
+				$variable_designation='Data 1';
 				// variable name
 				$variable='paragraph_1';
 				// table
@@ -179,7 +179,7 @@ $subcategory_name =  $row["subcategory_name"];
 
        				 <?php
 				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
-				$variable_designation='Paragraph 2';
+				$variable_designation='Data 2';
 				// variable name
 				$variable='paragraph_2';
 				// table
@@ -222,7 +222,7 @@ $subcategory_name =  $row["subcategory_name"];
 
        				 <?php
 				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
-				$variable_designation='Paragraph 3';
+				$variable_designation='Data 3';
 				// variable name
 				$variable='paragraph_3';
 				// table
@@ -270,7 +270,7 @@ $subcategory_name =  $row["subcategory_name"];
 
        				 <?php
 				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
-				$variable_designation='Paragraph 4';
+				$variable_designation='Data 4';
 				// variable name
 				$variable='paragraph_4';
 				// table
