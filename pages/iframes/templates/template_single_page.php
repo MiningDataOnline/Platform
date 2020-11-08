@@ -379,16 +379,20 @@ $subcategory_name =  $row["subcategory_name"];
 			$path = $_SERVER['DOCUMENT_ROOT'];
 			$path .= "/modules/requires/create_pages_table.php";
 			require_once("$path");
-?>
+			?>
+	
+	
+			<?php
+			// include "add page" option... 
+			$path = $_SERVER['DOCUMENT_ROOT'];
+			$path .= "/modules/includes/add_page.php";
+			include("$path"); 
+			?>		
+	
+	
 
-	
-	
 
 					<center>
-
-
-
-
 								<table>
 									<col width="30%" /> 
 									<col width="50%" />
@@ -419,15 +423,10 @@ $subcategory_name =  $row["subcategory_name"];
 										</td>  
 									</tr>	  
 								</table>												
-
-	
-	
-	
-	
 				</center>
 
 	
-
+	
 	
 	
 	
