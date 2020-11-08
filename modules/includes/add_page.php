@@ -35,6 +35,24 @@ if ($user == 'admin') {
 							</div>
 						</form>
 					</div>
+
+
+
+
+		<script>
+
+			$(document).ready(function(){
+				$("#options01").hide();
+				$("#button01").click(function(){
+					$("#options01").toggle(1000);
+				});
+			});
+
+
+
+		</script>
+
+
 <?php
 }
 ?>
