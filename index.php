@@ -82,10 +82,19 @@ include("$path");
 
 			<br><br>	
 
+	<?php
+	// check if table config exits....
+	$config_table=0;
+	$query = "SELECT id FROM config";
+	$result = mysqli_query($conn, $query);
+	if(!empty($result)) {
+	?>
 
 
 			<center><iframe src="/pages/iframes/search_results.php"  height="500px"  width="100%" style="border:none;" allowtransparency="true" ></iframe></center> 				
-
+	<?php
+	}
+	?>
 
 			</div>  
 		</div>
