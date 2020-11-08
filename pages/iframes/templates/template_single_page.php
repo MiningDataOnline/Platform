@@ -122,9 +122,9 @@ $subcategory_name =  $row["subcategory_name"];
 
        				 <?php
 				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
-				$variable_designation='Line 1:';
+				$variable_designation='Label 1:';
 				// variable name
-				$variable='line_1_label';
+				$variable='label_1';
 				// table
 				$table='subcategories';
 				//name of ID columm
@@ -170,7 +170,7 @@ $subcategory_name =  $row["subcategory_name"];
 				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
 				$variable_designation='Line 2:';
 				// variable name
-				$variable='line_2_label';
+				$variable='label_2';
 				// table
 				$table='subcategories';
 				//name of ID columm
@@ -217,7 +217,7 @@ $subcategory_name =  $row["subcategory_name"];
 				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
 				$variable_designation='Line 3:';
 				// variable name
-				$variable='line_3_label';
+				$variable='label_3';
 				// table
 				$table='subcategories';
 				//name of ID columm
@@ -264,7 +264,7 @@ $subcategory_name =  $row["subcategory_name"];
 				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
 				$variable_designation='Line 4:';
 				// variable name
-				$variable='line_4_label';
+				$variable='label_4';
 				// table
 				$table='subcategories';
 				//name of ID columm
@@ -311,7 +311,7 @@ $subcategory_name =  $row["subcategory_name"];
 				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
 				$variable_designation='Line 5:';
 				// variable name
-				$variable='line_5_label';
+				$variable='label_5';
 				// table
 				$table='subcategories';
 				//name of ID columm
