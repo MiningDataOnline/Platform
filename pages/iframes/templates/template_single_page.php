@@ -122,7 +122,7 @@ $subcategory_name =  $row["subcategory_name"];
 
        				 <?php
 				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
-				$variable_designation='';
+				$variable_designation='Line 1:';
 				// variable name
 				$variable='line_1_designation';
 				// table
@@ -166,7 +166,7 @@ $subcategory_name =  $row["subcategory_name"];
 
        				 <?php
 				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
-				$variable_designation='';
+				$variable_designation='Line 2:';
 				// variable name
 				$variable='line_2_designation';
 				// table
@@ -211,7 +211,7 @@ $subcategory_name =  $row["subcategory_name"];
 
        				 <?php
 				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
-				$variable_designation='';
+				$variable_designation='Line 3';
 				// variable name
 				$variable='line_3_designation';
 				// table
@@ -257,7 +257,7 @@ $subcategory_name =  $row["subcategory_name"];
 
        				 <?php
 				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
-				$variable_designation='';
+				$variable_designation='Line 4';
 				// variable name
 				$variable='line_4_designation';
 				// table
@@ -302,7 +302,7 @@ $subcategory_name =  $row["subcategory_name"];
 
        				 <?php
 				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
-				$variable_designation='';
+				$variable_designation='Line 5';
 				// variable name
 				$variable='line_5_designation';
 				// table
