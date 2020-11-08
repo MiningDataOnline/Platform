@@ -394,23 +394,22 @@ $subcategory_name =  $row["subcategory_name"];
 										<td>
 											<select  class="browser-default" name="row_id_x" size="1">	
 											<?php
-											$sql = "SELECT * FROM pages WHERE subcategory_id=$subcategory_id ORDER BY year DESC  LIMIT 1";
+											$sql = "SELECT * FROM pages WHERE subcategory_id=$subcategory_id ORDER BY ID ASC";
 											  $result = $conn->query($sql);
 											  if ($result->num_rows > 0) {													
 												  while($row = mysqli_fetch_array($result)) {	
-													  $row_id_x=$row['ID'];	
-													  $period_end_activate =  $row["period_end_activate"];
-													  $period_end =  $row["period_end"];
-													  $financials =  $row["financials"];
+													  $row_id=$row['ID'];	
+													  $page_activate =  $row["page_activate"];
+													  $page_name =  $row["page_name"];
 												}
 											}
 											?>													
-											<option value="<?php echo $row_id_x; ?>"  selected>Selected: for the <?php echo $financials; ?> ended <?php echo $period_end; ?></option>														  
+											<option value="<?php echo $row_id; ?>"><?php echo $page_name; ?></option>														  
 											</select>
-											<input type="hidden" name="company_id" value="<?php echo $company_id; ?>">
+											<input type="hidden" name="subcategory_id" value="<?php echo $subcategory_id; ?>">
 										</td>
 										<td>
-										<input type="submit" value="Go" name="choose_fs">
+										<input type="submit" value="Go" name="choose_page">
 										</td>  
 									</tr>	  
 								</table>												
