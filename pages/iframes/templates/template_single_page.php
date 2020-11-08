@@ -410,10 +410,12 @@ $subcategory_name =  $row["subcategory_name"];
 												  while($row = mysqli_fetch_array($result)) {	
 													  $row_id=$row['ID'];	
 													  $page_label =  $row["page_label"];
+											?>													
+											<option value="<?php echo $row_id; ?>"><?php echo $page_label; ?></option>														  		  
+											<?php	  
 												}
 											}
 											?>													
-											<option value="<?php echo $row_id; ?>"><?php echo $page_label; ?></option>														  
 											</select>
 											<input type="hidden" name="subcategory_id" value="<?php echo $subcategory_id; ?>">
 										</td>
