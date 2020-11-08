@@ -155,6 +155,8 @@ $subcategory_name =  $row["subcategory_name"];
 				$path = $_SERVER['DOCUMENT_ROOT'];
 				$path .= "/modules/variable_varchar.php";
 				include("$path");
+				$line_1_designation_value=$variable_value;
+				$line_1_designation_source_value=$variable_source_value;
      				?>																	
 	
 
@@ -197,6 +199,8 @@ $subcategory_name =  $row["subcategory_name"];
 				$path = $_SERVER['DOCUMENT_ROOT'];
 				$path .= "/modules/variable_varchar.php";
 				include("$path");
+				$line_2_designation_value=$variable_value;
+				$line_2_designation_source_value=$variable_source_value;
      				?>																	
 
 	
@@ -240,6 +244,8 @@ $subcategory_name =  $row["subcategory_name"];
 				$path = $_SERVER['DOCUMENT_ROOT'];
 				$path .= "/modules/variable_varchar.php";
 				include("$path");
+				$line_3_designation_value=$variable_value;
+				$line_3_designation_source_value=$variable_source_value;
      				?>																	
 	
 	
@@ -284,6 +290,8 @@ $subcategory_name =  $row["subcategory_name"];
 				$path = $_SERVER['DOCUMENT_ROOT'];
 				$path .= "/modules/variable_varchar.php";
 				include("$path");
+				$line_4_designation_value=$variable_value;
+				$line_4_designation_source_value=$variable_source_value;
      				?>																	
 	
 	
@@ -327,13 +335,15 @@ $subcategory_name =  $row["subcategory_name"];
 				$path = $_SERVER['DOCUMENT_ROOT'];
 				$path .= "/modules/variable_varchar.php";
 				include("$path");
+				$line_5_designation_value=$variable_value;
+				$line_5_designation_source_value=$variable_source_value;
      				?>																	
 	
 	
 	
 		
 <?php
-if ($user=='admin' || (!empty($line_5_designation) || !empty($line_4_designation) || !empty($line_3_designation) || !empty($line_2_designation) || !empty($line_1_designation))){
+if ($user=='admin' || (!empty($line_5_designation_value) || !empty($line_4_designation_value) || !empty($line_3_designation_value) || !empty($line_2_designation_value) || !empty($line_1_designation_value))){
 ?>	
 	
 	
