@@ -128,7 +128,7 @@ $page_name =  $row["page_name"];
 				<?php 				
 				} 	
 
-				$back_page='/pages/iframes/templates/template_single_page.php?'.$input_id_name.'='.$input_id;		
+				$back_page='/pages/iframes/templates/template_single_page_pages.php?'.$input_id_name.'='.$input_id;		
 				$path = $_SERVER['DOCUMENT_ROOT'];
 				$path .= "/modules/variable_varchar.php";
 				include("$path");
@@ -176,7 +176,7 @@ $page_name =  $row["page_name"];
 				<?php 				
 				} 	
 	
-				$back_page='/pages/iframes/templates/template_single_page.php?'.$input_id_name.'='.$input_id;		
+				$back_page='/pages/iframes/templates/template_single_page_pages.php?'.$input_id_name.'='.$input_id;		
 				$path = $_SERVER['DOCUMENT_ROOT'];
 				$path .= "/modules/variable_varchar.php";
 				include("$path");
@@ -229,7 +229,7 @@ $page_name =  $row["page_name"];
 				<?php 				
 				} 	
 	
-				$back_page='/pages/iframes/templates/template_single_page.php?'.$input_id_name.'='.$input_id;		
+				$back_page='/pages/iframes/templates/template_single_page_pages.php?'.$input_id_name.'='.$input_id;		
 				$path = $_SERVER['DOCUMENT_ROOT'];
 				$path .= "/modules/variable_varchar.php";
 				include("$path");
@@ -280,7 +280,7 @@ $page_name =  $row["page_name"];
 				<?php 				
 				} 	
 	
-				$back_page='/pages/iframes/templates/template_single_page.php?'.$input_id_name.'='.$input_id;		
+				$back_page='/pages/iframes/templates/template_single_page_pages.php?'.$input_id_name.'='.$input_id;		
 				$path = $_SERVER['DOCUMENT_ROOT'];
 				$path .= "/modules/variable_varchar.php";
 				include("$path");
@@ -334,7 +334,7 @@ $page_name =  $row["page_name"];
 				<?php 				
 				} 	
 	
-				$back_page='/pages/iframes/templates/template_single_page.php?'.$input_id_name.'='.$input_id;		
+				$back_page='/pages/iframes/templates/template_single_page_pages.php?'.$input_id_name.'='.$input_id;		
 				$path = $_SERVER['DOCUMENT_ROOT'];
 				$path .= "/modules/variable_varchar.php";
 				include("$path");
@@ -388,7 +388,7 @@ $page_name =  $row["page_name"];
 				<?php 				
 				} 	
 	
-				$back_page='/pages/iframes/templates/template_single_page.php?'.$input_id_name.'='.$input_id;		
+				$back_page='/pages/iframes/templates/template_single_page_pages.php?'.$input_id_name.'='.$input_id;		
 				$path = $_SERVER['DOCUMENT_ROOT'];
 				$path .= "/modules/variable_varchar.php";
 				include("$path");
@@ -442,7 +442,7 @@ $page_name =  $row["page_name"];
 				<?php 				
 				} 	
 	
-				$back_page='/pages/iframes/templates/template_single_page.php?'.$input_id_name.'='.$input_id;		
+				$back_page='/pages/iframes/templates/template_single_page_pages.php?'.$input_id_name.'='.$input_id;		
 				$path = $_SERVER['DOCUMENT_ROOT'];
 				$path .= "/modules/variable_varchar.php";
 				include("$path");
@@ -494,7 +494,7 @@ $page_name =  $row["page_name"];
 				<?php 				
 				} 	
 	
-				$back_page='/pages/iframes/templates/template_single_page.php?'.$input_id_name.'='.$input_id;		
+				$back_page='/pages/iframes/templates/template_single_page_pages.php?'.$input_id_name.'='.$input_id;		
 				$path = $_SERVER['DOCUMENT_ROOT'];
 				$path .= "/modules/variable_varchar.php";
 				include("$path");
