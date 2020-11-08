@@ -1022,7 +1022,7 @@ if ($user=='admin' || (!empty($label_5_value) || !empty($label_4_value) || !empt
 				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
 				$variable_designation='Paragraph 2';
 				// variable name
-				$variable='paragraph_1';
+				$variable='paragraph_2';
 				// table
 				$table='subcategories';
 				//name of ID columm
@@ -1069,7 +1069,7 @@ if ($user=='admin' || (!empty($label_5_value) || !empty($label_4_value) || !empt
 				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
 				$variable_designation='Paragraph 3';
 				// variable name
-				$variable='paragraph_1';
+				$variable='paragraph_3';
 				// table
 				$table='subcategories';
 				//name of ID columm
@@ -1119,7 +1119,7 @@ if ($user=='admin' || (!empty($label_5_value) || !empty($label_4_value) || !empt
 				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
 				$variable_designation='Paragraph 4';
 				// variable name
-				$variable='paragraph_1';
+				$variable='paragraph_4';
 				// table
 				$table='subcategories';
 				//name of ID columm
