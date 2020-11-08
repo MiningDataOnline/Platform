@@ -168,7 +168,7 @@ $page_name =  $row["page_name"];
 				$show_input_unit='no';
 				//Data type: int, varchar, text
 				$variable_data_type='varchar';	
-				$variable_max_lenght=5000;
+				$variable_max_lenght=1000;
 	
 				if ($show_public=='yes' || $show_intern=='yes' && ($company_editor == 1 || $company_auditor == 1  ||  $user == 'administrador')){
 				?>				  	  
@@ -196,6 +196,320 @@ $page_name =  $row["page_name"];
 
 
 
+
+
+       				 <?php
+				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
+				$variable_designation='Data 2';
+				// variable name
+				$variable='paragraph_2';
+				// table
+				$table='pages';
+				//name of ID columm
+				$id_column_name='ID';
+				//Name of input-ID
+				$input_id=$row_id_x;
+				//Name of input-ID
+				$input_id_name='row_id_x';
+				//show variable for admin + contributers?
+				$show_intern='yes';
+				//show variable for public view?
+				$show_public='yes';	
+				//show variable input field?
+				$show_input='yes';			
+				//show unit input field?
+				$show_input_unit='no';
+				//Data type: int, varchar, text
+				$variable_data_type='varchar';	
+				$variable_max_lenght=1000;
+	
+				if ($show_public=='yes' || $show_intern=='yes' && ($company_editor == 1 || $company_auditor == 1  ||  $user == 'administrador')){
+				?>				  	  
+				<font size="3" color="grey"><?php echo $variable_designation; ?></font>	
+				<?php 				
+				} 	
+	
+				$back_page='/pages/iframes/templates/template_single_page.php?'.$input_id_name.'='.$input_id;		
+				$path = $_SERVER['DOCUMENT_ROOT'];
+				$path .= "/modules/variable_varchar.php";
+				include("$path");
+     				?>																	
+																
+	
+
+	
+
+	
+	
+	
+<br><br>
+	
+	
+	
+
+
+
+       				 <?php
+				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
+				$variable_designation='Data 3';
+				// variable name
+				$variable='paragraph_3';
+				// table
+				$table='pages';
+				//name of ID columm
+				$id_column_name='ID';
+				//Name of input-ID
+				$input_id=$row_id_x;
+				//Name of input-ID
+				$input_id_name='row_id_x';
+				//show variable for admin + contributers?
+				$show_intern='yes';
+				//show variable for public view?
+				$show_public='yes';	
+				//show variable input field?
+				$show_input='yes';			
+				//show unit input field?
+				$show_input_unit='no';
+				//Data type: int, varchar, text
+				$variable_data_type='varchar';	
+				$variable_max_lenght=1000;
+	
+				if ($show_public=='yes' || $show_intern=='yes' && ($company_editor == 1 || $company_auditor == 1  ||  $user == 'administrador')){
+				?>				  	  
+				<font size="3" color="grey"><?php echo $variable_designation; ?></font>	
+				<?php 				
+				} 	
+	
+				$back_page='/pages/iframes/templates/template_single_page.php?'.$input_id_name.'='.$input_id;		
+				$path = $_SERVER['DOCUMENT_ROOT'];
+				$path .= "/modules/variable_varchar.php";
+				include("$path");
+     				?>																	
+																
+	
+
+	
+
+	
+	
+	
+<br><br>
+
+	
+	
+	
+	
+	
+
+
+
+       				 <?php
+				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
+				$variable_designation='Data 4';
+				// variable name
+				$variable='paragraph_4';
+				// table
+				$table='pages';
+				//name of ID columm
+				$id_column_name='ID';
+				//Name of input-ID
+				$input_id=$row_id_x;
+				//Name of input-ID
+				$input_id_name='row_id_x';
+				//show variable for admin + contributers?
+				$show_intern='yes';
+				//show variable for public view?
+				$show_public='yes';	
+				//show variable input field?
+				$show_input='yes';			
+				//show unit input field?
+				$show_input_unit='no';
+				//Data type: int, varchar, text
+				$variable_data_type='varchar';	
+				$variable_max_lenght=1000;
+	
+				if ($show_public=='yes' || $show_intern=='yes' && ($company_editor == 1 || $company_auditor == 1  ||  $user == 'administrador')){
+				?>				  	  
+				<font size="3" color="grey"><?php echo $variable_designation; ?></font>	
+				<?php 				
+				} 	
+	
+				$back_page='/pages/iframes/templates/template_single_page.php?'.$input_id_name.'='.$input_id;		
+				$path = $_SERVER['DOCUMENT_ROOT'];
+				$path .= "/modules/variable_varchar.php";
+				include("$path");
+     				?>																	
+																
+	
+
+	
+
+	
+	
+	
+<br><br>
+
+	
+	
+	
+	
+	
+
+
+
+       				 <?php
+				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
+				$variable_designation='Data 5';
+				// variable name
+				$variable='paragraph_5';
+				// table
+				$table='pages';
+				//name of ID columm
+				$id_column_name='ID';
+				//Name of input-ID
+				$input_id=$row_id_x;
+				//Name of input-ID
+				$input_id_name='row_id_x';
+				//show variable for admin + contributers?
+				$show_intern='yes';
+				//show variable for public view?
+				$show_public='yes';	
+				//show variable input field?
+				$show_input='yes';			
+				//show unit input field?
+				$show_input_unit='no';
+				//Data type: int, varchar, text
+				$variable_data_type='varchar';	
+				$variable_max_lenght=1000;
+	
+				if ($show_public=='yes' || $show_intern=='yes' && ($company_editor == 1 || $company_auditor == 1  ||  $user == 'administrador')){
+				?>				  	  
+				<font size="3" color="grey"><?php echo $variable_designation; ?></font>	
+				<?php 				
+				} 	
+	
+				$back_page='/pages/iframes/templates/template_single_page.php?'.$input_id_name.'='.$input_id;		
+				$path = $_SERVER['DOCUMENT_ROOT'];
+				$path .= "/modules/variable_varchar.php";
+				include("$path");
+     				?>																	
+																
+	
+	
+	
+	
+<br><br>
+	
+	
+	
+	
+	
+	
+
+	
+	
+
+
+
+       				 <?php
+				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
+				$variable_designation='Data 6';
+				// variable name
+				$variable='paragraph_6';
+				// table
+				$table='pages';
+				//name of ID columm
+				$id_column_name='ID';
+				//Name of input-ID
+				$input_id=$row_id_x;
+				//Name of input-ID
+				$input_id_name='row_id_x';
+				//show variable for admin + contributers?
+				$show_intern='yes';
+				//show variable for public view?
+				$show_public='yes';	
+				//show variable input field?
+				$show_input='yes';			
+				//show unit input field?
+				$show_input_unit='no';
+				//Data type: int, varchar, text
+				$variable_data_type='varchar';	
+				$variable_max_lenght=1000;
+	
+				if ($show_public=='yes' || $show_intern=='yes' && ($company_editor == 1 || $company_auditor == 1  ||  $user == 'administrador')){
+				?>				  	  
+				<font size="3" color="grey"><?php echo $variable_designation; ?></font>	
+				<?php 				
+				} 	
+	
+				$back_page='/pages/iframes/templates/template_single_page.php?'.$input_id_name.'='.$input_id;		
+				$path = $_SERVER['DOCUMENT_ROOT'];
+				$path .= "/modules/variable_varchar.php";
+				include("$path");
+     				?>																	
+																
+	
+	
+	
+	
+<br><br>
+		
+	
+	
+
+	
+	
+	
+
+
+
+       				 <?php
+				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
+				$variable_designation='Data 7';
+				// variable name
+				$variable='paragraph_7';
+				// table
+				$table='pages';
+				//name of ID columm
+				$id_column_name='ID';
+				//Name of input-ID
+				$input_id=$row_id_x;
+				//Name of input-ID
+				$input_id_name='row_id_x';
+				//show variable for admin + contributers?
+				$show_intern='yes';
+				//show variable for public view?
+				$show_public='yes';	
+				//show variable input field?
+				$show_input='yes';			
+				//show unit input field?
+				$show_input_unit='no';
+				//Data type: int, varchar, text
+				$variable_data_type='text';	
+				$variable_max_lenght=1000;
+	
+				if ($show_public=='yes' || $show_intern=='yes' && ($company_editor == 1 || $company_auditor == 1  ||  $user == 'administrador')){
+				?>				  	  
+				<font size="3" color="grey"><?php echo $variable_designation; ?></font>	
+				<?php 				
+				} 	
+	
+				$back_page='/pages/iframes/templates/template_single_page.php?'.$input_id_name.'='.$input_id;		
+				$path = $_SERVER['DOCUMENT_ROOT'];
+				$path .= "/modules/variable_varchar.php";
+				include("$path");
+     				?>																	
+																
+	
+	
+	
+	
+<br><br>	
+	
+	
+	
+	
+	
 
 
 
