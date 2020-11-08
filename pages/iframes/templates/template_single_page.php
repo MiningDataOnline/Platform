@@ -161,7 +161,7 @@ $subcategory_name =  $row["subcategory_name"];
 	
 
 	
-	
+<br>		
 	
 
        				 <?php
@@ -205,7 +205,7 @@ $subcategory_name =  $row["subcategory_name"];
 
 	
 	
-	
+<br>		
 	
 	
 
@@ -250,7 +250,7 @@ $subcategory_name =  $row["subcategory_name"];
 	
 	
 	
-	
+<br>		
 	
 	
 	
@@ -296,7 +296,7 @@ $subcategory_name =  $row["subcategory_name"];
 	
 	
 	
-	
+<br>		
 	
 	
 
