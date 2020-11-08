@@ -136,7 +136,7 @@ $subcategory_name =  $row["subcategory_name"];
 				//show variable for admin + contributers?
 				$show_intern='yes';
 				//show variable for public view?
-				$show_public='no';	
+				$show_public='yes';	
 				//show variable input field?
 				$show_input='yes';			
 				//show unit input field?
