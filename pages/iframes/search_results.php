@@ -123,12 +123,14 @@ if ($result55->num_rows > 0) {
 				$path = $_SERVER['DOCUMENT_ROOT'];
 				$path .= "/modules/variable_varchar.php";
 				include("$path");
+			 	$subcategory_name_value=$variable_value;
+
         			?>		
 	
 	
 	
 	
-            <center><a  class ="#5acefa-text" href="<?php echo $link;?>" target='pages_iframe'><font size="3"><?php echo $subcategory_name; ?></font></a></center><br>		
+            <center><a  class ="#5acefa-text" href="<?php echo $link;?>" target='pages_iframe'><font size="3"><?php echo $subcategory_name_value; ?></font></a></center><br>		
      	
 </center>	
 	
