@@ -4,7 +4,7 @@ if ($user == 'admin') {
 
 
 					<?php
-					if (isset($_POST["add_subcategory"])) {
+					if (isset($_POST["add_new_page"])) {
 					$new_page_label = mysqli_real_escape_string($conn, $_GET['new_page_label']);
 					if (empty($new_page_label))
 					{
