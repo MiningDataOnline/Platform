@@ -374,10 +374,17 @@ $subcategory_name =  $row["subcategory_name"];
 
 
 
+			<?php
+			// create pages table
+			$path = $_SERVER['DOCUMENT_ROOT'];
+			$path .= "/modules/requires/create_pages_table.php";
+			require_once("$path");
+?>
 
+	
+	
 
-
-							<center>
+					<center>
 
 
 
@@ -418,7 +425,8 @@ $subcategory_name =  $row["subcategory_name"];
 	
 	
 	
-	
+				</center>
+
 	
 	
 	
