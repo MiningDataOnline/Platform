@@ -87,10 +87,10 @@ if ($result55->num_rows > 0) {
 	
 	
 	
-
+<center>
         			<?php
 				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
-				$variable_designation='Subcategory';
+				$variable_designation='';
 				// variable name
 				$variable='subcategory_name';
 				// table
@@ -104,7 +104,7 @@ if ($result55->num_rows > 0) {
 				//show variable for admin + contributers?
 				$show_intern='yes';
 				//show variable for public view?
-				$show_public='yes';	
+				$show_public='no';	
 				//show variable input field?
 				$show_input='yes';			
 				//show unit input field?
@@ -128,9 +128,9 @@ if ($result55->num_rows > 0) {
 	
 	
 	
-            <center><a  class ="deep-orange-text" href="<?php echo $link;?>" target='pages_iframe'><font size="3"><?php echo $subcategory_name; ?></font></a></center><br>		
+            <center><a  class ="#5acefa-text" href="<?php echo $link;?>" target='pages_iframe'><font size="3"><?php echo $subcategory_name; ?></font></a></center><br>		
      	
-	
+</center>	
 	
 	<?php
             }
@@ -144,7 +144,7 @@ if ($result55->num_rows > 0) {
 
         			<?php
 				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
-				$variable_designation='Subcategory';
+				$variable_designation='';
 				// variable name
 				$variable='subcategory_name';
 				// table
@@ -158,7 +158,7 @@ if ($result55->num_rows > 0) {
 				//show variable for admin + contributers?
 				$show_intern='yes';
 				//show variable for public view?
-				$show_public='yes';	
+				$show_public='no';	
 				//show variable input field?
 				$show_input='yes';			
 				//show unit input field?
