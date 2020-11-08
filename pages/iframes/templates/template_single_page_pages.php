@@ -94,7 +94,7 @@ $page_name =  $row["page_name"];
 <a href="/pages/iframes/templates/template_single_page.php?subcategory_id=<?php echo $subcategory_id; ?>"> <- Go Back</a>
 
 
-
+<br><br>
 
 
 
