@@ -59,43 +59,35 @@ include("$path");
 		<div class="#212121 grey darken-4">
 			<div class="full-height">
 
-				
+				<?php
+				// create subcategory table if it does not exist.
+				// this code is only executed once
+				$path = $_SERVER['DOCUMENT_ROOT'];
+				$path .= "/modules/requires/create_subcategories_table.php";
+				require_once("$path");
+				?>
 
+				<?php
+				// include "add subcategory" to add books..
+				$path = $_SERVER['DOCUMENT_ROOT'];
+				$path .= "/modules/includes/add_subcategory.php";
+				include("$path"); 
+				?>				
 
-			<?php
-			// create subcategory table
-			$path = $_SERVER['DOCUMENT_ROOT'];
-			$path .= "/modules/requires/create_subcategories_table.php";
-			require_once("$path");
-			?>
+				<br><br>	
 
-
-
-			<?php
-			// include "add subcategory" option
-			$path = $_SERVER['DOCUMENT_ROOT'];
-			$path .= "/modules/includes/add_subcategory.php";
-			include("$path"); 
-			?>				
-
-
-
-			<br><br>	
-
-	<?php
-	// check if table config exits....
-	$config_table=0;
-	$query = "SELECT id FROM config";
-	$result = mysqli_query($conn, $query);
-	if(!empty($result)) {
-	?>
-
-
-			<center><iframe src="/pages/iframes/search_results.php"  height="500px"  width="100%" style="border:none;" allowtransparency="true" ></iframe></center> 				
-	<?php
-	}
-	?>
-
+				<?php
+				// check if table config exits.... show search results iframe only if config table exists
+				$config_table=0;
+				$query = "SELECT id FROM config";
+				$result = mysqli_query($conn, $query);
+				if(!empty($result)) {
+				?>
+				<center><iframe src="/pages/iframes/search_results.php"  height="500px"  width="100%" style="border:none;" allowtransparency="true" ></iframe></center> 				
+				<?php
+				}
+				?>
+	
 			</div>  
 		</div>
 	</div>
@@ -107,8 +99,6 @@ include("$path");
 			<center><iframe src="/pages/iframes/start_page.php" height="800px" width="95%"  allowtransparency="true" name="pages_iframe"></iframe></center> 
 
 		
-		
-
 	</div>	
 </div>
 
