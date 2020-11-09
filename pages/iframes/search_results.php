@@ -62,8 +62,10 @@ $template = $row55["template"];
 		
 		
 <?php
-// search and show all subcategories 
-// editor, auditor and admin get the variable with the option to change and verrify them
+// search and show all books 
+// admin get the variable with the option to change and verify them
+// if book name accepted, show link... otherwise show grey text, but no link. 
+// don't show nothing if book name outdated or rejected
 
 $sql55 = "SELECT * FROM subcategories";
 $result55 = $conn->query($sql55);
@@ -72,23 +74,14 @@ if ($result55->num_rows > 0) {
 	$subcategory_id = $row55["ID"];
 	$subcategory_name_activate = $row55["subcategory_name_activate"];
 	$link = '/pages/iframes/templates/'.$template.'.php?subcategory_id='.$subcategory_id;
-	?>		   
-	    
+	?>		    
 
-
-	
-	
-	
-	    
-	    
       	<?php    
 	if ($subcategory_name_activate == 3 || $user == 'admin'){
 	?>
       	<br><br>
-	
-	
-	
-<center>
+
+	<center>
         			<?php
 				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
 				$variable_designation='';
@@ -119,32 +112,22 @@ if ($result55->num_rows > 0) {
 				<font size="3" color="grey"><?php echo $variable_designation; ?></font>	
 				<?php 				
 				} 	
-
 				$back_page='/pages/iframes/search_results.php?'.$input_id_name.'='.$input_id;		
 				$path = $_SERVER['DOCUMENT_ROOT'];
 				$path .= "/modules/variable_varchar.php";
 				include("$path");
 			 	$subcategory_name_value=$variable_value;
-
         			?>		
+	</center>	
 	
-	
-	
-	
-            <center><a  class ="#5acefa-text" href="<?php echo $link;?>" target='pages_iframe'><font size="3"><?php echo $subcategory_name_value; ?></font></a></center><br>		
+        <center><a  class ="#5acefa-text" href="<?php echo $link;?>" target='pages_iframe'><font size="3"><?php echo $subcategory_name_value; ?></font></a></center><br>		
      	
-</center>	
 	
 	<?php
             }
       	else if($subcategory_name_activate == 2)
       	{?>	
 	
-	
-	
-
-	
-
         			<?php
 				// Name of the variable (the name will be viewable). It's not used for nothing other than to name the variable in a readable form
 				$variable_designation='';
