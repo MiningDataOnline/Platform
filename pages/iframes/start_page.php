@@ -61,6 +61,7 @@ include("$path");
 	
 		
 	<?php
+	// get started creating a admin account 
 	if($users_table==0 && $config_table==0) {
 	?>
 	<center><a href="/pages/user_account/sign_up_page_1.php" target='_parent'><font size="5" color="#5acefa">Get Started</font></a></center>
@@ -69,6 +70,7 @@ include("$path");
 	?>	
 
 	<?php
+	// Sign in option as admin (the only user account created until now)
 	if($users_table==1 && $config_table==0 && empty($user)) {
 	?>
 	<center><a href="/pages/user_account/sign_in_page_1.php" target='_parent'><font size="5" color="#5acefa">Sign In</font></a></center>
@@ -77,6 +79,7 @@ include("$path");
 	?>
 
 	<?php
+	// link to set up the wab data warehouse after admin signed in for the first time
 	if($users_table==1 && $config_table==0 && $user=='admin') {
 	?>
 	<center><a href="/pages/settings/settings_page_1.php" target='_parent'><font size="5" color="#5acefa">Settings</font></a></center>
