@@ -2,7 +2,7 @@
 //Database Host
 $db_host = 'localhost';
 //Database Name
-$db_database = 'xxxxx';
+$db_database = 'mdo_db_1';
 //Database Username
 $db_user = 'xxxxx';
 //Database Password
