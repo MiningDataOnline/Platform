@@ -40,6 +40,7 @@ include("$path");
 
 
 <?php
+// get book id
 $subcategory_id = mysqli_real_escape_string($conn, $_GET['subcategory_id']);
 if (empty($subcategory_id))
 {
@@ -48,6 +49,7 @@ $subcategory_id = mysqli_real_escape_string($conn, $_POST['subcategory_id']);
 ?>
 
 <?php
+// get page id sended by "select page" form
 $row_id_x = mysqli_real_escape_string($conn, $_GET['row_id_x']);
 if (empty($row_id_x))
 {
