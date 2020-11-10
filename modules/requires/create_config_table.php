@@ -1,6 +1,5 @@
 <?php
-		
-     
+		     
 // create users table if it does not exist
 			$table='config';
 			$query = "SELECT id FROM $table";
