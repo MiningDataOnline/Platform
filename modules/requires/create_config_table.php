@@ -1,6 +1,7 @@
 <?php
 		
-      // create users table if it does not exist
+     
+// create users table if it does not exist
 			$table='config';
 			$query = "SELECT id FROM $table";
 			$result = mysqli_query($conn, $query);
