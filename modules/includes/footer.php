@@ -9,6 +9,8 @@
 
 
 
+<a href="https://miningdata.online/">powered by MDO Platform</a>
+
 
 
 	</body>
