@@ -98,6 +98,8 @@ include("$path");
 
 			<center><iframe src="/pages/iframes/start_page.php" height="800px" width="95%"  allowtransparency="true" name="pages_iframe"></iframe></center> 
 
+			<center><a href="https://miningdata.online/">powered by MDO Platform</a></center>
+
 		
 	</div>	
 </div>
