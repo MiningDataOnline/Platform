@@ -36,10 +36,6 @@ Let me give you another example:
 
 Let's say that Konrad lives in a city that has no wetter station (somewhere in the wild west) and he built a wetter station using an arduino that measures and inserts the temperature (and the time of each measurement) in his web data warehouse that he built using the MiningDataOnline platform. A girl named Jeunisse that lives 50 km away built exactly the same thing because in her village there is also no wetter station. For some reason or another Alex needs to compare the temperature of those 2 cities in a certain period of time. Both data are in two different web data warehouses, so Alex came with a great idea. Alex created a scientific search engine designed to search structured data found in web data warehouses built on top of MiningDataOnline platform, most specifically Alex built a search engine that is specialised in searching wetter data (temperature, humidity, pressure, the time of each measurement, the coordinates of the sensor, etc.) from thousands web data warehouses based on the MiningDataOnline platform. Since developing search engines for structured data would be a quite simple task (because all web data warehouses built on top of MiningDataOnline platform would use the same standard), now thousands other people have decided to build search engines, but every search engine would be specialised on searching data of a certain category. Now people have the option to pay an extra fee to use search engines owned by individuals across the world to search structured data in multiple web data warehouses. The search engines would be a kind of marketplaces for buying and selling structured data.
 
-Here comes the official video presentation:
-
-https://www.youtube.com/watch?v=ps2ZFNlmtKk
-
 In order for you to better understand what we are aiming to build, I have built a simple prototype (far from being complete). Here is a step by step tutorial on how to download and run the prototype:
 
 https://www.youtube.com/watch?v=uKKeiPsYfls
@@ -80,4 +76,4 @@ implement it in the real world. This project is as close a blockchain can get to
 
 Thanks for your attention!
 
-Aurelio Schug (with the big support from Lavirson Pires (author of the official video presentation))
+Aurelio Schug
