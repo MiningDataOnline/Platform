@@ -1,6 +1,3 @@
-# MiningDataOnline Platform
-MiningDataOnline is an initiative to build a simple to use platform intended for individuals without programming knowledge to build customizable web data warehouses designed to incentivize collection and sharing of structured data in exchange for micro payments.
-
 Hello world,
 
 MiningDataOnline is an initiative to build a simple to use platform intended for individuals without programming knowledge to build customizable web data warehouses designed to incentivize collection and sharing of structured data in exchange for micro payments.
@@ -57,29 +54,29 @@ https://github.com/MiningDataOnline/platform
 
 What are the next steps?
 
-    Re-manufacture the code from scratch while paying special attention on security and “coding best practices” (not the case in the prototype presented!);
+Re-manufacture the code from scratch while paying special attention on security and “coding best practices” (not the case in the prototype presented!);
 
-    enable data configuration (for example: the owner could choose how much it should cost to access a certain data, who should have access to add and/or verify data, etc. etc.). Despite all those options the software should give a minimalist and simple to use feeling;
+enable data configuration (for example: the owner could choose how much it should cost to access a certain data, who should have access to add and/or verify data, etc. etc.). Despite all those options the software should give a minimalist and simple to use feeling;
 
-    implement micro-payments for accessing data using raiden payment system. Raiden tokens will be set as the default payment token, but using other ERC-20 tokens should also be possible;
+implement micro-payments for accessing data using raiden payment system. Raiden tokens will be set as the default payment token, but using other ERC-20 tokens should also be possible;
 
-    in the prototype, books consists only of pages. In the final product books will consist of chapters in witch the pages are found. Pages in the same chapter are all structured the same, but could the structure could differ from pages found in other chapters (it would depend on witch page template is chosen for each chapter). There should be at least 5 different page templates to increase the number of possible use cases (without having to touch the code). At least one of those templates would be designed to handle measurement data (voltage, temperature, etc.) provided by micro-controllers (starting with arduinos);
+in the prototype, books consists only of pages. In the final product books will consist of chapters in witch the pages are found. Pages in the same chapter are all structured the same, but could the structure could differ from pages found in other chapters (it would depend on witch page template is chosen for each chapter). There should be at least 5 different page templates to increase the number of possible use cases (without having to touch the code). At least one of those templates would be designed to handle measurement data (voltage, temperature, etc.) provided by micro-controllers (starting with arduinos);
 
-    every shelf would have a simple (internal) search engine that would only have access to books located in the same shelf;
+every shelf would have a simple (internal) search engine that would only have access to books located in the same shelf;
 
-    numeric data (including measurement data) visualisation should be made possible using charts;
+numeric data (including measurement data) visualisation should be made possible using charts;
 
-    a page of a book in a shelf should be able to import data found in another book (also books found in other shelves) in exchange for a micro-payment (from one shelf to another). Different shelves could be owned by different individuals;
+a page of a book in a shelf should be able to import data found in another book (also books found in other shelves) in exchange for a micro-payment (from one shelf to another). Different shelves could be owned by different individuals;
 
-    develop a global scientific search engine that enables the end user to find and combine data found in pages of books located in different shelves;
+develop a global scientific search engine that enables the end user to find and combine data found in pages of books located in different shelves;
 
-    MiningDataOnline will host (under sub-domains of miningdata.online) web data warehouses of users that are not willing to deal with web servers (technical stuff). It should be possible to create a web data warehouse by a mouse click;
+MiningDataOnline will host (under sub-domains of miningdata.online) web data warehouses of users that are not willing to deal with web servers (technical stuff). It should be possible to create a web data warehouse by a mouse click;
 
-    MiningDataOnline would also provide service to those that want to personalise (modify) their web data warehouses (for whatever reason);
+MiningDataOnline would also provide service to those that want to personalise (modify) their web data warehouses (for whatever reason);
 
-    before the final product is launched, the code should be double-checked by a web security specialist;
+before the final product is launched, the code should be double-checked by a web security specialist;
 
-    implement it in the real world. This project is as close a blockchain can get to the real world;
+implement it in the real world. This project is as close a blockchain can get to the real world;
 
 Thanks for your attention!
 
